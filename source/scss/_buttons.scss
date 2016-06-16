@@ -1,0 +1,49 @@
+// Colours.
+$colour-linkedin-blue: rgba(00,77,181,0.7);
+$colour-github-grey: rgba(31,33,35,0.7);
+$colour-freecodecamp-green: rgba(00,64,00,0.7);
+
+@mixin btn-pseudo-classes($color) {
+
+  &:link { color: #FFFFF; };
+  &:visited { color: #FFFFF; };
+
+  &:hover {
+    background-color: $color;
+    color: #FFFFFF;
+  };
+
+  &:active { color: #FFFFF; };
+
+
+
+}
+
+.btn-big {
+
+  padding: 20px 50px;
+  &:hover {transition: all 0.5s ease;};
+
+  i {
+    font-size: 7em;
+  }
+
+  a {
+    color: white !important;
+  }
+}
+
+.btn-linkedin {
+    display: inline-block;
+    @include btn-pseudo-classes($colour-linkedin-blue);
+}
+
+.btn-github {
+    display: inline-block;
+    @include btn-pseudo-classes($colour-github-grey);
+}
+
+.btn-freecodecamp {
+    display: inline-block;
+    @include btn-pseudo-classes($colour-freecodecamp-green);
+}

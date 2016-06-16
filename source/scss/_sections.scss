@@ -1,0 +1,55 @@
+.section {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+#section-home {
+
+  // Full Viewport.
+  min-height: 100vh;
+
+  // Buffer zone.
+  padding-top: 15vh;
+
+  // Background Image.
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/backgrounds/workspace11.jpg");
+  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  // Fonts.
+  font-family: "Oswald";
+  color: $white;
+  .section-title { font-size: 5em; }; // Section Title.
+  .section-content { font-size: 3em; }; // Section Body.
+
+  hr {
+    border: 0;
+    width: 60%;
+    height: 3px;
+
+    background-color: $white;
+    color: $white;
+  }
+}
+
+#section-aboutme {
+
+  // Full Viewport.
+  min-height: 100vh;
+
+  // Buffer zone.
+  padding-top: 15vh;
+
+  // Background Image.
+  background-image: url("../images/backgrounds/cubes.jpg");
+  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  // Fonts.
+  font-family: "Oswald";
+  .section-title { font-size: 3em; }; // Section Title.
+  .section-content { font-size: 1.5em; }; // Section Body.
+}
