@@ -26,6 +26,12 @@ gulp.task("html", function() {
     .pipe(gulp.dest(destPath));
 });
 
+// Move images.
+gulp.task("images", function() {
+  gulp.src(srcPath + "img/**/*")
+    .pipe(gulp.dest(destPath + "images/"));
+});
+
 // Move JavaScript.
 gulp.task("javascript", function() {
   gulp.src(srcPath + "js/*.js")
@@ -42,6 +48,12 @@ gulp.task("components", function() {
   // Bootstrap.
   gulp.src(modulesPath + "bootstrap/dist/**/*")
     .pipe(gulp.dest(destPath + "components/bootstrap/"));
+
+  // Font-Awesome
+  gulp.src(modulesPath + "font-awesome/css/*")
+    .pipe(gulp.dest(destPath + "components/font-awesome/css/"));
+  gulp.src(modulesPath + "font-awesome/fonts/*")
+    .pipe(gulp.dest(destPath + "components/font-awesome/fonts/"));
 
 });
 
@@ -66,6 +78,7 @@ gulp.task('webserver', function() {
 gulp.task("watch", function() {
   gulp.watch(srcPath + "*.html", ["html"]);
   //gulp.watch(srcPath + "jade/**/*.jade", ["jade"]);
+  gulp.watch(srcPath + "img/backgrounds/*", ["images"]);
   gulp.watch(srcPath + "js/*.js", ["javascript"]);
   gulp.watch(srcPath + "scss/_*.scss", ["scss"]);
   gulp.watch(srcPath + "scss/*.scss", ["scss"]);
@@ -73,4 +86,4 @@ gulp.task("watch", function() {
 
 
 // Default task.
-gulp.task("default", ["watch", /*"jade",*/ "html", "scss", "javascript" ,"components", "webserver"]);
+gulp.task("default", ["watch", /*"jade",*/ "html", "images", "scss", "javascript" ,"components", "webserver"]);
