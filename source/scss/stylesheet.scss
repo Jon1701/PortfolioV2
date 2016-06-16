@@ -6,6 +6,10 @@ $orange: #DB4105;
 
 body {
   background-color: $white;
-  font-family: Verdana;
-  font-size: 1em;
+  font-size: 100%;
 }
+
+
+
+@import 'sections';
+@import 'buttons';
