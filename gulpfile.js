@@ -9,6 +9,17 @@ var srcPath = "./source/";
 var destPath = "./build/";
 var modulesPath = "./node_modules/";
 
+// Jade.
+gulp.task("jade", function() {
+
+  var YOUR_LOCALS = {};
+
+  gulp.src(srcPath + "jade/**/*.jade")
+    .pipe(jade())
+    .pipe(gulp.dest(destPath));
+
+});
+
 // Move HTML.
 gulp.task("html", function() {
   gulp.src(srcPath + "*.html")
@@ -27,6 +38,10 @@ gulp.task("components", function() {
   // jQuery.
   gulp.src(modulesPath + "jquery/dist/jquery.js")
     .pipe(gulp.dest(destPath + "components/jquery/"));
+
+  // Bootstrap.
+  gulp.src(modulesPath + "bootstrap/dist/**/*")
+    .pipe(gulp.dest(destPath + "components/bootstrap/"));
 
 });
 
@@ -50,6 +65,7 @@ gulp.task('webserver', function() {
 // Watch task
 gulp.task("watch", function() {
   gulp.watch(srcPath + "*.html", ["html"]);
+  gulp.watch(srcPath + "jade/**/*.jade", ["jade"]);
   gulp.watch(srcPath + "js/*.js", ["javascript"]);
   gulp.watch(srcPath + "scss/_*.scss", ["scss"]);
   gulp.watch(srcPath + "scss/*.scss", ["scss"]);
@@ -57,4 +73,4 @@ gulp.task("watch", function() {
 
 
 // Default task.
-gulp.task("default", ["watch", "html", "scss", "javascript" ,"components", "webserver"]);
+gulp.task("default", ["watch", "jade", "html", "scss", "javascript" ,"components", "webserver"]);
