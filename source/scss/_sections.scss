@@ -1,22 +1,81 @@
+////////////////////////////////////////////////////////////////////////////////
+//                      Background Images
+////////////////////////////////////////////////////////////////////////////////
+$bg-section-home-url: "../images/backgrounds/workspace11.jpg";
+$bg-section-aboutme-url: "../images/backgrounds/cubes.jpg";
+$bg-section-portfolio-url: "../images/backgrounds/cubes.jpg";
+$bg-section-contact-url: "../images/backgrounds/cubes.jpg";
+
+////////////////////////////////////////////////////////////////////////////////
+//                              Mixins
+////////////////////////////////////////////////////////////////////////////////
+
+// Helper Mixin for the @mixin set-bg-cover.
+// This mixin is used to set the rgba values for the linear-gradient.
+//
+// Arguments:
+//    $red: Red channel value. Integer between 0 and 255 inclusive.
+//    $green: Green channel value. Integer between 0 and 255 inclusive.
+//    $blue: Blue channel value. Integer between 0 and 255 inclusive.
+//    $opacity: Level of transparency of the RGB-values. Float between 0 and 1
+//              inclusive.
+//    $url: URL of the background image.
+@mixin set-bg-rgba-url($red, $green, $blue, $opacity, $url) {
+  background: linear-gradient(
+                rgba($red, $green, $blue, $opacity),
+                rgba($red, $green, $blue, $opacity)
+              ),
+              url($url);
+}
+
+// Mixin to set the background image, overlay colour, and overlay opacity for
+// a particular element.
+//
+// Arguments:
+//    $url: URL of the background image.
+//    $overlay-type: The type of overlay. Possible values are "light", "dark",
+//                    or "none".
+//    $opacity: Level of transparency of the RGB-values. Float between 0 and 1
+//              inclusive.
+@mixin set-bg-cover($url, $overlay-type, $opacity) {
+
+  // Sets the background image to $url with a given $overlay-type and $opacity.
+  @if ($overlay-type == light) {
+    @include set-bg-rgba-url(255, 255, 255, $opacity, $url);
+  } @else if ($overlay-type == dark) {
+    @include set-bg-rgba-url(51, 51, 51, $opacity, $url);
+  } @else {
+    background: url($url);
+  }
+
+  // Background pattern.
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//                              Sections
+////////////////////////////////////////////////////////////////////////////////
+
+// Section.
 .section {
   text-align: center;
   padding-top: 55px;
   padding-bottom: 55px;
 }
 
+// Home Section.
 #section-home {
 
-  // Full Viewport.
+  // Full viewport height.
   min-height: 100vh;
 
   // Buffer zone.
   padding-top: 15vh;
 
   // Background Image.
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/backgrounds/workspace11.jpg");
-  background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+  @include set-bg-cover($bg-section-home-url, "dark", 0.5);
 
   // Fonts.
   font-family: "Oswald";
@@ -24,6 +83,7 @@
   .section-title { font-size: 5em; }; // Section Title.
   .section-content { font-size: 3em; }; // Section Body.
 
+  // Horizontal rule dividing name from repository buttons.
   hr {
     border: 0;
     width: 60%;
@@ -36,20 +96,39 @@
 
 #section-aboutme {
 
-  // Full Viewport.
+  // Full viewport height.
   min-height: 100vh;
 
   // Buffer zone.
   padding-top: 15vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
 
   // Background Image.
-  background-image: url("../images/backgrounds/cubes.jpg");
-  background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+  @include set-bg-cover($bg-section-aboutme-url, "none", 0);
 
   // Fonts.
   font-family: "Oswald";
   .section-title { font-size: 3em; }; // Section Title.
   .section-content { font-size: 1.5em; }; // Section Body.
+}
+
+#section-portfolio {
+
+  // Full viewport height.
+  min-height: 100vh;
+
+  // Buffer zone.
+  padding-top: 15vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  // Background Image.
+  @include set-bg-cover($bg-section-portfolio-url, "none", 0);
+
+  // Fonts.
+  font-family: "Oswald";
+  .section-title { font-size: 3em; }; // Section Title.
+  .section-content { font-size: 1.5em; }; // Section Body.
+
 }
