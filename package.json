@@ -1,0 +1,24 @@
+{
+  "name": "website-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jon1701/WebsiteV2.git"
+  },
+  "author": "Jon1701",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jon1701/WebsiteV2/issues"
+  },
+  "homepage": "https://github.com/Jon1701/WebsiteV2#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}
