@@ -1,3 +1,6 @@
+// Colours
+$colour-navbar-text-hover: rgba(220,20,60,1);
+
 // Navigation Bar.
 .navbar-default {
 
@@ -11,17 +14,16 @@
   // Brand Image.
   .navbar-brand {
     color: white !important;
-    &:hover {color: $orange !important};
+    &:hover {color: $colour-navbar-text-hover !important};
   }
 
   // Page Link Buttons.
   .navbar-nav > li > a {
 
+    // Psuedoclasses
     &:link { color: $white; };
     &:visited { color: $white; };
-
-    &:hover { color: $orange !important; };
-
+    &:hover { color: $colour-navbar-text-hover !important; };
     &:active { color: $white; };
 
     // > Symbol for each button.
