@@ -1,0 +1,9 @@
+// Path to fonts
+$font-path: "../fonts/";
+
+// Oswald
+@font-face {
+  font-family: "Oswald";
+
+  src: url($font-path + "Oswald/Oswald-Regular.ttf")
+}
