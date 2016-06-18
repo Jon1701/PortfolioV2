@@ -2,23 +2,11 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var webserver = require('gulp-webserver');
-//var jade = require("gulp-jade");
 
 // Paths.
 var srcPath = "./source/";
 var destPath = "./build/";
 var modulesPath = "./node_modules/";
-
-// Jade.
-//gulp.task("jade", function() {
-//
-//  var YOUR_LOCALS = {};
-//
-//  gulp.src(srcPath + "jade/**/*.jade")
-//    .pipe(jade())
-//    .pipe(gulp.dest(destPath));
-//});
-
 
 // Move HTML.
 gulp.task("html", function() {
@@ -77,7 +65,6 @@ gulp.task('webserver', function() {
 // Watch task
 gulp.task("watch", function() {
   gulp.watch(srcPath + "*.html", ["html"]);
-  //gulp.watch(srcPath + "jade/**/*.jade", ["jade"]);
   gulp.watch(srcPath + "img/backgrounds/*", ["images"]);
   gulp.watch(srcPath + "js/*.js", ["javascript"]);
   gulp.watch(srcPath + "scss/_*.scss", ["scss"]);
@@ -86,4 +73,4 @@ gulp.task("watch", function() {
 
 
 // Default task.
-gulp.task("default", ["watch", /*"jade",*/ "html", "images", "scss", "javascript" ,"components", "webserver"]);
+gulp.task("default", ["watch", "html", "images", "scss", "javascript" ,"components", "webserver"]);
