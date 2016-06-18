@@ -26,7 +26,7 @@
 
     <!-- Mustache.js -->
     <script type="text/javascript" src="components/mustache/mustache.js"></script>
-
+    <script type="text/javascript" src="js/load-portfolio-template.js"></script>
 
   </head>
 
@@ -113,36 +113,9 @@
 
         <div class="row">
 
-
-
-          <script type="text/javascript">
-
-            $(document).ready(function() {
-
-              // Template.
-              var template = $("#template-portfolio-project").html();
-
-              // Data.
-              var data = {
-                image: "images/placeholders/placeholder-portfolio-image.png",
-                description: "Description",
-                link: {
-                  github: "http://www.github.com",
-                  demo: "http://www.jonbalon.io"
-                }
-              }
-
-              Mustache.parse(template);
-
-              var rendered = Mustache.render(template, data);
-
-              $("#target").html(rendered);
-
-            });
-          </script>
-
           <!-- Portfolio Project Template -->
           <script id="template-portfolio-project" type="x-tmpl-mustache">
+            {{ #projects }}
             <div class="portfolio-panel container-fluid col-xs-6 col-md-3">
 
               <a href="{{ link.demo }}" target="_blank">
@@ -171,6 +144,7 @@
                 {{ description }}
               </div>
             </div>
+            {{ /projects }}
           </script>
 
 
