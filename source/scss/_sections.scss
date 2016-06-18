@@ -7,6 +7,13 @@ $bg-section-portfolio-url: "../images/backgrounds/cubes.jpg";
 $bg-section-contact-url: "../images/backgrounds/cubes.jpg";
 
 ////////////////////////////////////////////////////////////////////////////////
+//                      Colours
+////////////////////////////////////////////////////////////////////////////////
+$colour-html-inner: #F1662B;
+$colour-css-inner: #369CD6;
+$colour-js-inner: #F2BF22;
+
+////////////////////////////////////////////////////////////////////////////////
 //                              Mixins
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -61,18 +68,24 @@ $bg-section-contact-url: "../images/backgrounds/cubes.jpg";
 // Section.
 .section {
   text-align: center;
-  padding-top: 55px;
   padding-bottom: 55px;
-}
-
-// Home Section.
-#section-home {
 
   // Full viewport height.
   min-height: 100vh;
 
   // Buffer zone.
-  padding-top: 15vh;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+// Home Section.
+#section-home {
+
+  // Buffer zone.
+  padding-top: 20vh;
+  padding-left: 0vw;
+  padding-right: 0vw;
 
   // Background Image.
   @include set-bg-cover($bg-section-home-url, "dark", 0.5);
@@ -96,14 +109,6 @@ $bg-section-contact-url: "../images/backgrounds/cubes.jpg";
 
 #section-aboutme {
 
-  // Full viewport height.
-  min-height: 100vh;
-
-  // Buffer zone.
-  padding-top: 15vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
-
   // Background Image.
   @include set-bg-cover($bg-section-aboutme-url, "none", 0);
 
@@ -112,27 +117,19 @@ $bg-section-contact-url: "../images/backgrounds/cubes.jpg";
   .section-title { font-size: 3em; }; // Section Title.
   .section-content { font-size: 1.5em; }; // Section Body.
 
-  .w3c-logo-container {
-     img {
-       display: inline-block;
-       width: 30%;
-
-       &:hover {
-         background-color: $orange;
-       }
-     }
+  // W3C badge container.
+  .w3c-logo-container > img {
+     display: inline-block;
+     width: 30%;
   }
+
+  // W3C badge hover colours.
+  .badge-w3c-html { &:hover { background-color: $colour-html-inner; }; };
+  .badge-w3c-css { &:hover { background-color: $colour-css-inner; }; };
+  .badge-w3c-js { &:hover { background-color: $colour-js-inner; }; };
 }
 
 #section-portfolio {
-
-  // Full viewport height.
-  min-height: 100vh;
-
-  // Buffer zone.
-  padding-top: 15vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
 
   // Background Image.
   @include set-bg-cover($bg-section-portfolio-url, "none", 0);
@@ -145,14 +142,6 @@ $bg-section-contact-url: "../images/backgrounds/cubes.jpg";
 }
 
 #section-contact {
-
-  // Full viewport height.
-  min-height: 100vh;
-
-  // Buffer zone.
-  padding-top: 15vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
 
   // Background Image.
   @include set-bg-cover($bg-section-contact-url, "none", 0);
