@@ -9,9 +9,9 @@ body {
   font-size: 100%;
 }
 
-
-@import '_fonts';
+// Partials.
+@import "_fonts";
 @import "_navbar";
-@import 'sections';
-@import 'buttons';
-@import 'portfolio-panel';
+@import "_buttons";
+@import "_sections";
+@import "_portfolio-panel";
