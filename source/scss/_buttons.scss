@@ -1,46 +1,63 @@
-// Colours.
+////////////////////////////////////////////////////////////////////////////////
+//                             Colours
+////////////////////////////////////////////////////////////////////////////////
 $colour-linkedin-blue: rgba(00,77,181,0.7);
 $colour-github-grey: rgba(31,33,35,0.7);
 $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
+////////////////////////////////////////////////////////////////////////////////
+//                              Mixins
+////////////////////////////////////////////////////////////////////////////////
+
+// Sets the pseudoclasses for a particular element.
+//
+// Arguments:
+//  $color: The colour of the hover effect.
 @mixin btn-pseudo-classes($color) {
 
-  &:link { color: #FFFFF; };
-  &:visited { color: #FFFFF; };
+  &:link { color: $white; };
+  &:visited { color: $white; };
 
   &:hover {
     background-color: $color;
-    color: #FFFFFF;
+    color: $white;
   };
 
-  &:active { color: #FFFFF; };
+  &:active { color: $white; };
 
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//                              Buttons
+////////////////////////////////////////////////////////////////////////////////
+
+// Big button.
 .btn-big {
 
   padding: 20px 50px;
   &:hover {transition: all 0.5s ease;};
 
-  i {
-    font-size: 7em;
-  }
+  // Icon size.
+  i { font-size: 7em; }
 
-  a {
-    color: white !important;
-  }
+  // Force link font colour to white.
+  a { color: white !important; }
+
 }
 
+// LinkedIn button.
 .btn-linkedin {
     display: inline-block;
     @include btn-pseudo-classes($colour-linkedin-blue);
 }
 
+// GitHub button.
 .btn-github {
     display: inline-block;
     @include btn-pseudo-classes($colour-github-grey);
 }
 
+// FreeCodeCamp button.
 .btn-freecodecamp {
     display: inline-block;
     @include btn-pseudo-classes($colour-freecodecamp-green);
