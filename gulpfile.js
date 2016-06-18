@@ -56,6 +56,12 @@ gulp.task("scss", function() {
     .pipe(gulp.dest(destPath + "css"));
 });
 
+// Move templates.
+gulp.task("templates", function() {
+  gulp.src(srcPath + "templates/*")
+    .pipe(gulp.dest(destPath + "js/templates/"));
+});
+
 // Webserver.
 gulp.task('webserver', function() {
   gulp.src("./build")
@@ -71,10 +77,11 @@ gulp.task("watch", function() {
   gulp.watch(srcPath + "*.html", ["html"]);
   gulp.watch(srcPath + "img/backgrounds/*", ["images"]);
   gulp.watch(srcPath + "js/*.js", ["javascript"]);
+  gulp.watch(srcPath + "templates/*.js", ["templates"]);
   gulp.watch(srcPath + "scss/_*.scss", ["scss"]);
   gulp.watch(srcPath + "scss/*.scss", ["scss"]);
 });
 
 
 // Default task.
-gulp.task("default", ["watch", "html", "images", "scss", "javascript" ,"components", "webserver"]);
+gulp.task("default", ["watch", "html", "images", "scss", "javascript" ,"components", "templates", "webserver"]);
