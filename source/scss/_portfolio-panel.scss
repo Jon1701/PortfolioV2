@@ -1,6 +1,12 @@
+// Portfolio project container.
 .portfolio-panel {
   padding-top: 15px;
+}
 
+// Portfolio project repository button container.
+.portfolio-button-container {
+
+  // Link pseudoclasses.
   a {
     &:link { color: $grey; };
     &:visited { color: $grey; };
@@ -13,6 +19,7 @@
   }
 }
 
+// Individual project repository buttons.
 .portfolio-button {
   display: inline-block;
   margin: 0 auto;
