@@ -43,6 +43,10 @@ gulp.task("components", function() {
   gulp.src(modulesPath + "font-awesome/fonts/*")
     .pipe(gulp.dest(destPath + "components/font-awesome/fonts/"));
 
+  // Mustache.js
+  gulp.src(modulesPath + "mustache/mustache.js")
+    .pipe(gulp.dest(destPath + "components/mustache/"));
+
 });
 
 // Compile and move .scss.
