@@ -111,6 +111,17 @@ $bg-section-contact-url: "../images/backgrounds/cubes.jpg";
   font-family: "Oswald";
   .section-title { font-size: 3em; }; // Section Title.
   .section-content { font-size: 1.5em; }; // Section Body.
+
+  .w3c-logo-container {
+     img {
+       display: inline-block;
+       width: 30%;
+
+       &:hover {
+         background-color: $orange;
+       }
+     }
+  }
 }
 
 #section-portfolio {
