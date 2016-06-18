@@ -1,0 +1,40 @@
+$red: red;
+
+
+.navbar-default {
+
+  font-family: "Oswald" !important;
+  font-size: 1.5em;
+
+  background-color: transparent !important;
+  border-color: transparent !important;
+
+  .navbar-brand {
+    color: white !important;
+    &:hover {color: $orange !important};
+  }
+
+  .navbar-nav > li > a {
+
+    &:link { color: $white; };
+    &:visited { color: $white; };
+
+    &:hover { color: $orange !important; };
+
+    &:active { color: $white; };
+  }
+}
+
+
+
+  /*
+  &:link { color: $red; };
+  &:visited { color: $red; };
+
+  &:hover {
+    background-color: none;
+    color: $red;
+  };
+
+  &:active { color: $red; };
+  */
