@@ -56,6 +56,12 @@ gulp.task("scss", function() {
     .pipe(gulp.dest(destPath + "css"));
 });
 
+// Fonts.
+gulp.task("fonts", function() {
+  gulp.src(srcPath + "fonts/**/*")
+    .pipe(gulp.dest(destPath + "fonts/"));
+});
+
 // Move templates.
 /*
 gulp.task("templates", function() {
@@ -86,4 +92,4 @@ gulp.task("watch", function() {
 
 
 // Default task.
-gulp.task("default", ["watch", "html", "images", "scss", "javascript" ,"components", /*"templates",*/ "webserver"]);
+gulp.task("default", ["watch", "html", "images", "scss", "javascript" ,"components", "fonts", /*"templates",*/ "webserver"]);
