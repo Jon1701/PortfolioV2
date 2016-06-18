@@ -1,19 +1,20 @@
-$red: red;
-
-
+// Navigation Bar.
 .navbar-default {
 
+  // Fonts.
   font-family: "Oswald" !important;
   font-size: 1.5em;
 
   background-color: transparent !important;
   border-color: transparent !important;
 
+  // Brand Image.
   .navbar-brand {
     color: white !important;
     &:hover {color: $orange !important};
   }
 
+  // Page Link Buttons.
   .navbar-nav > li > a {
 
     &:link { color: $white; };
@@ -23,22 +24,9 @@ $red: red;
 
     &:active { color: $white; };
 
+    // > Symbol for each button.
     span {
       visibility: hidden;
     }
   }
 }
-
-
-
-  /*
-  &:link { color: $red; };
-  &:visited { color: $red; };
-
-  &:hover {
-    background-color: none;
-    color: $red;
-  };
-
-  &:active { color: $red; };
-  */
