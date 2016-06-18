@@ -132,3 +132,23 @@ $bg-section-contact-url: "../images/backgrounds/cubes.jpg";
   .section-content { font-size: 1.5em; }; // Section Body.
 
 }
+
+#section-contact {
+
+  // Full viewport height.
+  min-height: 100vh;
+
+  // Buffer zone.
+  padding-top: 15vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  // Background Image.
+  @include set-bg-cover($bg-section-contact-url, "none", 0);
+
+  // Fonts.
+  font-family: "Oswald";
+  .section-title { font-size: 3em; }; // Section Title.
+  .section-content { font-size: 1.5em; }; // Section Body.
+
+}
