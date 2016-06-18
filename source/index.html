@@ -26,7 +26,6 @@
 
     <!-- Mustache.js -->
     <script type="text/javascript" src="components/mustache/mustache.js"></script>
-    <script type="x-tmpl-mustache" src="js/templates/template-portfolio-project.js"></script>
 
 
   </head>
@@ -113,6 +112,71 @@
       <div class="section-content">
 
         <div class="row">
+
+
+
+          <script type="text/javascript">
+
+            $(document).ready(function() {
+
+              // Template.
+              var template = $("#template-portfolio-project").html();
+
+              // Data.
+              var data = {
+                image: "images/placeholders/placeholder-portfolio-image.png",
+                description: "Description",
+                link: {
+                  github: "http://www.github.com",
+                  demo: "http://www.jonbalon.io"
+                }
+              }
+
+              Mustache.parse(template);
+
+              var rendered = Mustache.render(template, data);
+
+              $("#target").html(rendered);
+
+            });
+          </script>
+
+          <!-- Portfolio Project Template -->
+          <script id="template-portfolio-project" type="x-tmpl-mustache">
+            <div class="portfolio-panel container-fluid col-xs-6 col-md-3">
+
+              <a href="{{ link.demo }}" target="_blank">
+                <img src="{{ image }}" alt="{{ description }}" class="img-responsive portfolio-image">
+              </a>
+
+              <div class="portfolio-button-container">
+
+                <a href="{{ link.github }}" target="_blank">
+                  <div class="portfolio-button">
+                    <i class="fa fa-github-square fa-fw"></i>
+                    GitHub
+                  </div>
+                </a>
+
+                <a href="{{ link.demo }}" target="_blank">
+                  <div class="portfolio-button">
+                    <i class="fa fa-play-circle-o fa-fw"></i>
+                    Demo
+                  </div>
+                </a>
+
+              </div>
+
+              <div class="portfolio-description">
+                {{ description }}
+              </div>
+            </div>
+          </script>
+
+
+          <div id="target"></div>
+
+
 
           <script type="text/javascript">
           /*
