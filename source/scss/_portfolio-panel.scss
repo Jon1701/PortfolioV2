@@ -1,6 +1,7 @@
 // Portfolio project container.
 .portfolio-panel {
   padding-top: 15px;
+  display: block;
 }
 
 // Portfolio image.
@@ -8,6 +9,13 @@
 
   border: solid 1px $grey;
   padding: 3px;
+
+  // Hover effect.
+  &:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+  }
 
 }
 
