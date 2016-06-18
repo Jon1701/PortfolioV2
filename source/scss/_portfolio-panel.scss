@@ -1,5 +1,16 @@
 .portfolio-panel {
   padding-top: 15px;
+
+  a {
+    &:link { color: $grey; };
+    &:visited { color: $grey; };
+
+    &:hover {
+      color: $orange;
+    };
+
+    &:active { color: $grey; };
+  }
 }
 
 .portfolio-button {
