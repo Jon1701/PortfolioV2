@@ -112,9 +112,11 @@
             {{ #projects }}
             <div class="portfolio-panel container-fluid col-xs-6 col-md-3">
 
-              <a href="{{ link.demo }}" target="_blank">
-                <img src="{{ image }}" alt="{{ description }}" class="img-responsive portfolio-image">
-              </a>
+              <div class="portfolio-image-container">
+                <a href="{{ link.demo }}" target="_blank">
+                  <img src="{{ image }}" alt="{{ description }}" class="img-responsive portfolio-image">
+                </a>
+              </div>
 
               <div class="portfolio-button-container">
 
