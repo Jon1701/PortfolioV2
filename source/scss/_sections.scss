@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 //                      Background Images
 ////////////////////////////////////////////////////////////////////////////////
-$bg-section-home-url: "../images/backgrounds/workspace11.jpg";
+$bg-section-home-url: "../images/backgrounds/W1YL4ZANPU.png";
 $bg-section-aboutme-url: "../images/backgrounds/cubes.jpg";
 $bg-section-portfolio-url: "../images/backgrounds/cubes.jpg";
 $bg-section-contact-url: "../images/backgrounds/cubes.jpg";
@@ -88,7 +88,7 @@ $colour-js-inner: #F2BF22;
   padding-right: 0vw;
 
   // Background Image.
-  @include set-bg-cover($bg-section-home-url, "dark", 0.7);
+  @include set-bg-cover($bg-section-home-url, "dark", 0.3);
 
   // Fonts.
   font-family: "Oswald";
