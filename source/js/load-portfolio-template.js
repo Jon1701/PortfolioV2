@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-  // Template.
+  // Template script.
   var template = $("#template-portfolio-project").html();
 
-  // Data.
+  // Portfolio Project Data.
   var data = {
     projects: [
 
@@ -36,10 +36,13 @@ $(document).ready(function() {
     ]
   } // End data
 
+  // Parse template.
   Mustache.parse(template);
 
+  // Render template.
   var rendered = Mustache.render(template, data);
 
-  $("#target").html(rendered);
+  // Fill in HTML.
+  $("#portfolio-target").html(rendered);
 
 });
