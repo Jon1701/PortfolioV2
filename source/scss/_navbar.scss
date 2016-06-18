@@ -22,6 +22,10 @@ $red: red;
     &:hover { color: $orange !important; };
 
     &:active { color: $white; };
+
+    span {
+      visibility: hidden;
+    }
   }
 }
 
