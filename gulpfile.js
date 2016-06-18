@@ -57,10 +57,12 @@ gulp.task("scss", function() {
 });
 
 // Move templates.
+/*
 gulp.task("templates", function() {
   gulp.src(srcPath + "templates/*")
     .pipe(gulp.dest(destPath + "js/templates/"));
 });
+*/
 
 // Webserver.
 gulp.task('webserver', function() {
@@ -84,4 +86,4 @@ gulp.task("watch", function() {
 
 
 // Default task.
-gulp.task("default", ["watch", "html", "images", "scss", "javascript" ,"components", "templates", "webserver"]);
+gulp.task("default", ["watch", "html", "images", "scss", "javascript" ,"components", /*"templates",*/ "webserver"]);
