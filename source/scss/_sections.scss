@@ -88,7 +88,7 @@ $colour-js-inner: #F2BF22;
   padding-right: 0vw;
 
   // Background Image.
-  @include set-bg-cover($bg-section-home-url, "dark", 0.5);
+  @include set-bg-cover($bg-section-home-url, "dark", 0.7);
 
   // Fonts.
   font-family: "Oswald";

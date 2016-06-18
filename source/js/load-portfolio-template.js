@@ -8,7 +8,7 @@ $(document).ready(function() {
     projects: [
 
       {
-        image: "images/placeholders/placeholder-portfolio-image.png",
+        image: "images/placeholders/portfolio-image.png",
         description: "Nulla culpa anim do aliqua aute fugiat excepteur fugiat consectetur deserunt sint consectetur eu reprehenderit in laboris.",
         link: {
           github: "http://www.github.com",
@@ -17,7 +17,7 @@ $(document).ready(function() {
       },
 
       {
-        image: "images/placeholders/placeholder-portfolio-image.png",
+        image: "images/placeholders/portfolio-image.png",
         description: "Deserunt culpa adipisicing magna quis qui amet labore ad incididunt.",
         link: {
           github: "http://www.github.com",
@@ -26,7 +26,7 @@ $(document).ready(function() {
       },
 
       {
-        image: "images/placeholders/placeholder-portfolio-image.png",
+        image: "images/placeholders/portfolio-image.png",
         description: "Sit sunt duis pariatur velit esse amet qui sint enim eiusmod incididunt fugiat ex.",
         link: {
           github: "http://www.github.com",
