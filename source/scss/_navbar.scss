@@ -1,6 +1,13 @@
 // Colours
 $colour-navbar-text-hover: rgba(220,20,60,1);
 
+.navbar-lightdark-bg {
+  background-color: rgba(56,56,56,0.75) !important;
+}
+.navbar-transparent-bg {
+  background-color: transparent !important;
+}
+
 // Navigation Bar.
 .navbar-default {
 
@@ -8,7 +15,7 @@ $colour-navbar-text-hover: rgba(220,20,60,1);
   font-family: "Oswald" !important;
   font-size: 1.5em;
 
-  background-color: transparent !important;
+  //background-color: transparent;
   border-color: transparent !important;
 
   // Brand Image.
@@ -19,8 +26,10 @@ $colour-navbar-text-hover: rgba(220,20,60,1);
 
   // Page Link Buttons.
   .navbar-nav > li > a {
+    color: white !important;
 
     // Psuedoclasses
+    &:focus { color: $white; };
     &:link { color: $white; };
     &:visited { color: $white; };
     &:hover { color: $colour-navbar-text-hover !important; };
