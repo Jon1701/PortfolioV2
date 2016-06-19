@@ -1,22 +1,6 @@
-// Colours
-$colour-navbar-text-hover: #DC143C; // Red variant.
-
-// Navbar toggle.
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-  background-color: transparent;
-
-  &:hover, &:focus {
-    background-color: transparent;
-  }
-
-
-
-  .icon-bar {
-    background-color: $white;
-    border: solid 2px white;
-  }
-}
+////////////////////////////////////////////////////////////////////////////////
+// Navigation Bar Custom Background Classes
+////////////////////////////////////////////////////////////////////////////////
 
 .navbar-lightdark-bg {
   background-color: rgba(51,51,51,0.5);
@@ -26,6 +10,40 @@ $colour-navbar-text-hover: #DC143C; // Red variant.
   background-color: transparent;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+// Navigation Bar Toggle
+////////////////////////////////////////////////////////////////////////////////
+
+// Colours.
+$colour-navbar-toggle-bg: white;
+$colour-navbar-toggle: white;
+
+// Navigation bar toggle box.
+.navbar-default .navbar-toggle {
+
+  // No border or backgrounds.
+  border-color: transparent;
+  background-color: transparent;
+
+  // No effect on hover or focus.
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+
+  // Hamburger.
+  .icon-bar {
+    background-color: $colour-navbar-toggle-bg;
+    border: solid 1.5px $colour-navbar-toggle;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Navigation Bar
+////////////////////////////////////////////////////////////////////////////////
+
+// Colours.
+$colour-navbar-text-hover: #DC143C; // Red variant.
+
 // Navigation Bar.
 .navbar-default {
 
@@ -33,37 +51,40 @@ $colour-navbar-text-hover: #DC143C; // Red variant.
   font-family: "Oswald";
   font-size: 2em;
 
-  //background-color: transparent;
+  // No border.
   border-color: transparent;
 
   // Brand Image.
   .navbar-brand {
+
+    // Fonts.
     font-size: 1.25em;
     color: white;
     float: left;
 
-    &:focus { color: $white; };
-    &:link { color: $white; };
-    &:visited { color: $white; };
-    &:hover { color: $white; };
-
+    // Pseudoclasses. Text colour is always white.
+    &:focus { color: white; };
+    &:link { color: white; };
+    &:visited { color: white; };
+    &:hover { color: white; };
   }
 
-  // Page Link Buttons.
+  // Navbar links.
   .navbar-nav > li > a {
 
     // Link colour.
-    color: $white;
+    color: white;
 
-    // Psuedoclasses
-    &:focus { color: $white; };
-    &:link { color: $white; };
-    &:visited { color: $white; };
+    // Psuedoclasses. Text changes colour on hover.
+    &:focus { color: white; };
+    &:link { color: white; };
+    &:visited { color: white; };
     &:hover { color: $colour-navbar-text-hover; };
 
-    // > Symbol for each button.
+    // Hide the span containing the > element.
     span {
       visibility: hidden;
     }
+
   }
 }
