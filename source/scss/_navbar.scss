@@ -4,6 +4,18 @@ $colour-navbar-text-hover: #DC143C; // Red variant.
 // Navbar toggle.
 .navbar-default .navbar-toggle {
   border-color: transparent;
+  background-color: transparent;
+
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+
+
+
+  .icon-bar {
+    background-color: $white;
+    border: solid 2px white;
+  }
 }
 
 .navbar-lightdark-bg {
