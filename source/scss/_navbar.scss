@@ -1,14 +1,15 @@
 // Colours
-$colour-navbar-text-hover: #DC143C;
+$colour-navbar-text-hover: #DC143C; // Red variant.
 
 // Navbar toggle.
 .navbar-default .navbar-toggle {
-  border-color: red;
+  border-color: transparent;
 }
 
 .navbar-lightdark-bg {
   background-color: rgba(51,51,51,0.5);
 }
+
 .navbar-transparent-bg {
   background-color: transparent;
 }
@@ -18,7 +19,7 @@ $colour-navbar-text-hover: #DC143C;
 
   // Fonts.
   font-family: "Oswald";
-  font-size: 1.5em;
+  font-size: 2em;
 
   //background-color: transparent;
   border-color: transparent;
@@ -28,18 +29,25 @@ $colour-navbar-text-hover: #DC143C;
     font-size: 1.25em;
     color: white;
     float: left;
+
+    &:focus { color: $white; };
+    &:link { color: $white; };
+    &:visited { color: $white; };
+    &:hover { color: $white; };
+
   }
 
   // Page Link Buttons.
   .navbar-nav > li > a {
-    color: white;
+
+    // Link colour.
+    color: $white;
 
     // Psuedoclasses
     &:focus { color: $white; };
     &:link { color: $white; };
     &:visited { color: $white; };
     &:hover { color: $colour-navbar-text-hover; };
-    &:active { color: $white; };
 
     // > Symbol for each button.
     span {
