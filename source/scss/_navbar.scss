@@ -20,8 +20,8 @@ $colour-navbar-text-hover: #DC143C;
 
   // Brand Image.
   .navbar-brand {
+    font-size: 1.25em;
     color: white !important;
-    &:hover {color: $colour-navbar-text-hover !important};
   }
 
   // Page Link Buttons.
