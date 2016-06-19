@@ -2,9 +2,9 @@
 //                      Background Images
 ////////////////////////////////////////////////////////////////////////////////
 $bg-section-home-url: "../images/backgrounds/W1YL4ZANPU.png";
-$bg-section-aboutme-url: "../images/backgrounds/cubes.jpg";
-$bg-section-portfolio-url: "../images/backgrounds/cubes.jpg";
-$bg-section-contact-url: "../images/backgrounds/cubes.jpg";
+$bg-section-aboutme-url: "../images/backgrounds/cubes.png";
+$bg-section-portfolio-url: "../images/backgrounds/cubes.png";
+$bg-section-contact-url: "../images/backgrounds/cubes.png";
 
 ////////////////////////////////////////////////////////////////////////////////
 //                      Colours
@@ -111,7 +111,7 @@ $colour-js-inner: #F2BF22;
 #section-aboutme {
 
   // Background Image.
-  @include set-bg-cover($bg-section-aboutme-url, "none", 0);
+  background: url($bg-section-aboutme-url);
 
   // Fonts.
   font-family: "Oswald";
@@ -133,7 +133,7 @@ $colour-js-inner: #F2BF22;
 #section-portfolio {
 
   // Background Image.
-  @include set-bg-cover($bg-section-portfolio-url, "none", 0);
+  background: url($bg-section-portfolio-url);
 
   // Fonts.
   font-family: "Oswald";
@@ -145,7 +145,7 @@ $colour-js-inner: #F2BF22;
 #section-contact {
 
   // Background Image.
-  @include set-bg-cover($bg-section-contact-url, "none", 0);
+  background: url($bg-section-contact-url);
 
   // Fonts.
   font-family: "Oswald";
