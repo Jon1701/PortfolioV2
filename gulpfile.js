@@ -1,3 +1,5 @@
+"use strict";
+
 ////////////////////////////////////////////////////////////////////////////////
 // Gulp modules.
 ////////////////////////////////////////////////////////////////////////////////
@@ -8,9 +10,9 @@ var webserver = require('gulp-webserver');
 ////////////////////////////////////////////////////////////////////////////////
 // Paths
 ////////////////////////////////////////////////////////////////////////////////
-var srcPath = "source/";
-var destPath = "build/";
-var modulesPath = "node_modules/";
+var srcPath = "./source/";
+var destPath = "./build/";
+var modulesPath = "./node_modules/";
 
 ////////////////////////////////////////////////////////////////////////////////
 // Tasks
@@ -30,14 +32,14 @@ gulp.task("images", function() {
 
 // Move JavaScript.
 gulp.task("javascript", function() {
-  gulp.src(srcPath + "javascript/**/*.js")
+  gulp.src(srcPath + "javascript/**/*")
     .pipe(gulp.dest(destPath + "javascript/"));
 });
 
 // Compile and move stylesheets.
 gulp.task("stylesheets", function() {
-  gulp.src(srcPath + "stylesheets/**/*.scss")
-    .pipe(sass())
+  gulp.src(srcPath + "stylesheets/**/*")
+    .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest(destPath + "stylesheets/"));
 });
 
@@ -90,12 +92,12 @@ gulp.task("watch", function() {
   gulp.watch(srcPath + "fonts/**/*", ["fonts"]); // Fonts.
   gulp.watch(srcPath + "images/**/*", ["images"]); // Images.
   gulp.watch(srcPath + "javascript/**/*", ["javascript"]); // JavaScript.
-  gulp.watch(srcPath + "stylesheets/**/_*.scss", ["stylesheets"]); // SASS Partials.
   gulp.watch(srcPath + "stylesheets/**/*.scss", ["stylesheets"]); // SASS Main.
+  gulp.watch(srcPath + "stylesheets/**/_*.scss", ["stylesheets"]); // SASS Partials.
   gulp.watch(srcPath + "*.html", ["html"]); // HTML files.
 });
 
 ////////////////////////////////////////////////////////////////////////////////
 // Default Task.
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task("default", ["fonts", "images", "javascript", "stylesheets", "html", "components", "webserver"]);
+gulp.task("default", ["fonts", "images", "javascript", "stylesheets", "html", "components", "watch", "webserver"]);
