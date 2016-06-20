@@ -34,7 +34,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 // Big button.
 .btn-big {
 
-  padding: 20px 50px;
   &:hover {transition: all 0.5s ease;};
 
   // Icon size.
@@ -47,18 +46,15 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
 // LinkedIn button.
 .btn-linkedin {
-    display: inline-block;
     @include btn-pseudo-classes($colour-linkedin-blue);
 }
 
 // GitHub button.
 .btn-github {
-    display: inline-block;
     @include btn-pseudo-classes($colour-github-grey);
 }
 
 // FreeCodeCamp button.
 .btn-freecodecamp {
-    display: inline-block;
     @include btn-pseudo-classes($colour-freecodecamp-green);
 }
