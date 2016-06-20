@@ -8,11 +8,11 @@ $(document).ready(function() {
     projects: [
 
       {
-        image: "images/placeholders/portfolio-image.png",
-        description: "Nulla culpa anim do aliqua aute fugiat excepteur fugiat consectetur deserunt sint consectetur eu reprehenderit in laboris.",
+        image: "images/portfolio/cover-quote-generator.png",
+        description: "Life is Strange Quote Generator",
         link: {
-          github: "http://www.github.com",
-          demo: "http://www.jonbalon.io"
+          github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
+          demo: "portfolio/LifeIsStrangeQuoteGenerator/"
         }
       },
 
