@@ -19,8 +19,10 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   &:visited { color: $white; };
 
   &:hover {
-    background-color: $color;
-    color: $white;
+    //background-color: $color;
+    i {
+      color: $color;
+    }
   };
 
   &:active { color: $white; };
