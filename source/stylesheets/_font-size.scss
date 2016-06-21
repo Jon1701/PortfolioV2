@@ -5,13 +5,13 @@
 }
 
 .section {
-  .section-title { font-size: 5em; }; // Section Title.
-  .section-content { font-size: 2.5em; }; // Section Body.
+  .title { font-size: 5em; }; // Section Title.
+  .content { font-size: 2.5em; }; // Section Body.
 }
 
 #section-home {
-  .section-title { font-size: 8em; }; // Section Title.
-  .section-content { font-size: 4em; }; // Section Body.
+  .title { font-size: 8em; }; // Section Title.
+  .content { font-size: 4em; }; // Section Body.
 
   .btn-big { i { font-size: 12em; } };
 }
