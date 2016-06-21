@@ -22,6 +22,7 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
     //background-color: $color;
     i {
       color: $color;
+      transition: all 0.5s ease;
     }
   };
 
