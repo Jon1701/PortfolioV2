@@ -13,7 +13,10 @@
     .left {
       display: table-cell;
       width: 50%;
-      img { max-width: 100%; padding: 2px;};
+      img {
+        max-width: 100%;
+        padding: 2px;
+      };
     } // End left panel.
 
     // Right Panel contains the description and buttons.
