@@ -114,52 +114,53 @@
     <section id="section-portfolio" class="section">
       <div class="title">PORTFOLIO</div>
 
-      <div class="content">
+      <!-- Portfolio Project Template #2 -->
+      <script id="template-portfolio-project" type="x-tmpl-mustache">
+        {{ #projects }}
 
-        <div class="row">
+        <!-- Begin Portfolio Container -->
+        <div class="portfolio-container">
 
-          <!-- Portfolio Project Template -->
-          <script id="template-portfolio-project" type="x-tmpl-mustache">
-            {{ #projects }}
-            <div class="portfolio-panel container-fluid col-xs-6 col-md-4 col-lg-4">
+          <!-- Left Panel -->
+          <div class="left">
+            <img src="{{ image }}"/>
+          </div><!-- End Left Panel -->
 
-              <div class="portfolio-image-container">
-                <a href="{{ link.demo }}" target="_blank">
-                  <img src="{{ image }}" alt="{{ description }}" class="img-responsive portfolio-image">
-                </a>
-              </div>
+          <!-- Right Panel -->
+          <div class="right">
 
-              <div class="portfolio-button-container">
+            <!-- Title -->
+            <div class="title">
+              {{ description }}
+            </div><!-- End Title -->
 
-                <a href="{{ link.github }}" target="_blank">
-                  <div class="portfolio-button">
-                    <i class="fa fa-github-square fa-fw"></i>
-                    <span>GitHub</span>
-                  </div>
-                </a>
+            <!-- Buttons -->
+            <div class="buttons">
 
-                <a href="{{ link.demo }}" target="_blank">
-                  <div class="portfolio-button">
-                    <i class="fa fa-play-circle-o fa-fw"></i>
-                    <span>Demo</span>
-                  </div>
-                </a>
+              <!-- GitHub -->
+              <a href="{{ link.github }}" target="_blank">
+                <button type="button">
+                  <i class="fa fa-github fa-fw"></i><br/>
+                  <span>GitHub</span>
+                </button>
+              </a>
 
-              </div>
+              <!-- Demo -->
+              <a href="{{ link.demo }}" target="_blank">
+                <button type="button">
+                  <i class="fa fa-play-circle-o fa-fw"></i><br/>
+                  <span>Demo</span>
+                </button>
+              </a>
+            </div><!-- End Buttons -->
+          </div><!-- End Right Panel -->
+        </div><!-- End Portfolio Container -->
 
-              <div class="portfolio-description">
-                {{ description }}
-              </div>
-            </div>
-            {{ /projects }}
-          </script>
+        {{ /projects }}
+      </script>
 
-          <!-- Target DOM node for Portfolio Project Rendering -->
-          <div id="portfolio-target"></div>
-
-        </div>
-
-      </div>
+      <!-- Template Target -->
+      <div class="content" id="portfolio-target"></div>
 
     </section>
 

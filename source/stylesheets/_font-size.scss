@@ -12,15 +12,10 @@
 #section-home {
   .title { font-size: 8em; }; // Section Title.
   .content { font-size: 4em; }; // Section Body.
-
   .btn-big { i { font-size: 12em; } };
 }
 
-.portfolio-button {
-  i { font-size: 1.5em; }; // Button Icon
-  span {font-size: 1.25em; }; // Button Text.
-}
-
-.portfolio-description {
-  font-size: 0.8em;
+#section-portfolio {
+  .right .title { font-size: 1em; } // Right Panel Title.
+  button i { font-size: 3em; } // Icon Size.
 }
