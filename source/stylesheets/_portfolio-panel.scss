@@ -1,18 +1,22 @@
 #portfolio-target {
 
+  // Force section to act like a table.
   display: table;
   width: 100%;
 
+  // Each project is a row.
   .portfolio-container {
     display: table-row;
     margin: 5px;
 
+    // Left Panel contains the image.
     .left {
       display: table-cell;
       width: 50%;
-      img { max-width: 100%; padding: 3px;};
+      img { max-width: 100%; padding: 2px;};
     } // End left panel.
 
+    // Right Panel contains the description and buttons.
     .right {
       display: table-cell;
       width: 50%;
