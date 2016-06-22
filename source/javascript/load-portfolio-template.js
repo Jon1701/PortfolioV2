@@ -12,16 +12,16 @@ $(document).ready(function() {
         description: "Life is Strange Quote Generator",
         link: {
           github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
-          demo: "portfolio/LifeIsStrangeQuoteGenerator/"
+          demo: "#"
         }
       },
 
       {
-        image: "images/placeholders/portfolio-image.png",
-        description: "Deserunt culpa adipisicing magna quis qui amet labore ad incididunt.",
+        image: "images/portfolio/cover-twitch-viewer.png",
+        description: "TwitchViewer",
         link: {
-          github: "http://www.github.com",
-          demo: "http://www.jonbalon.io"
+          github: "https://github.com/Jon1701/TwitchViewer",
+          demo: "#"
         }
       },
 
