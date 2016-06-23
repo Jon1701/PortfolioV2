@@ -26,11 +26,11 @@ $(document).ready(function() {
       },
 
       {
-        image: "images/placeholders/portfolio-image.png",
-        description: "Sit sunt duis pariatur velit esse amet qui sint enim eiusmod incididunt fugiat ex.",
+        image: "../images/portfolio/cover-simongame.png",
+        description: "Simon Game",
         link: {
-          github: "http://www.github.com",
-          demo: "http://www.jonbalon.io"
+          github: "https://github.com/Jon1701/SimonGame",
+          demo: "../portfolio/SimonGame"
         }
       }
     ]
