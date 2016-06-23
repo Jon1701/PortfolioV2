@@ -1,0 +1,59 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%; }
+
+#container-application {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto; }
+
+#container-logo {
+  max-width: 100%;
+  text-align: center;
+  margin: 20px; }
+  #container-logo img {
+    width: 35%; }
+
+#container-tabs {
+  margin-top: 5px; }
+  #container-tabs .tab {
+    display: inline-block;
+    background-color: #6441A5;
+    color: white;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em; }
+    #container-tabs .tab:hover {
+      background-color: #262626; }
+
+#tbl-streams {
+  width: 100%; }
+  #tbl-streams .stream-image {
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px #6441A5; }
+    #tbl-streams .stream-image img {
+      max-width: 100%; }
+  #tbl-streams .stream-info {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.75em;
+    background-color: white;
+    border-bottom: solid 1px #6441A5; }
+    #tbl-streams .stream-info a {
+      text-decoration: none; }
+      #tbl-streams .stream-info a:focus {
+        color: #262626; }
+      #tbl-streams .stream-info a:link {
+        color: #262626; }
+      #tbl-streams .stream-info a:visited {
+        color: #262626; }
+      #tbl-streams .stream-info a:hover {
+        color: #6441A5; }
+      #tbl-streams .stream-info a em {
+        font-size: 0.6em; }

@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Simon Game</title>
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Share+Tech+Mono" rel="stylesheet"/>
+
+    <!-- Application Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/stylesheet.css"/>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="components/jquery/jquery.js"></script>
+
+    <!-- Game Logic -->
+    <script type="text/javascript" src="javascript/simon.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Audio elements -->
+    <audio id="simon-audio1" preload="auto"><source src="media/audio/simonSound1.mp3" type="audio/mp3"/></audio>
+    <audio id="simon-audio2" preload="auto"><source src="media/audio/simonSound2.mp3" type="audio/mp3"/></audio>
+    <audio id="simon-audio3" preload="auto"><source src="media/audio/simonSound3.mp3" type="audio/mp3"/></audio>
+    <audio id="simon-audio4" preload="auto"><source src="media/audio/simonSound4.mp3" type="audio/mp3"/></audio>
+
+    <!-- Board -->
+    <div id="board" class="middle noselect">
+
+      <!-- Board Buttons -->
+      <div id="board-buttons">
+        <div>
+          <div id="btn-green" class="corner-round-topleft border-green btn btn-green-inactive"></div>
+          <div id="btn-red" class="corner-round-topright border-red btn btn-red-inactive"></div>
+        </div>
+        <div>
+          <div id="btn-yellow" class="corner-round-bottomleft border-yellow btn btn-yellow-inactive"></div>
+          <div id="btn-blue" class="corner-round-bottomright border-blue btn btn-blue-inactive"></div>
+        </div>
+      </div>
+
+      <!-- Inner Donut Border -->
+      <div id="board-buttons-inner-donut" class="middle">
+        <div>
+          <div class="corner-round-topleft border-green btn"></div>
+          <div class="corner-round-topright border-red btn"></div>
+        </div>
+        <div>
+          <div class="corner-round-bottomleft border-yellow btn"></div>
+          <div class="corner-round-bottomright border-blue btn"></div>
+        </div>
+      </div>
+
+      <!-- Mask to prevent button press -->
+      <div id="board-mask"></div>
+
+      <!-- Control Panel Outer Donut -->
+      <div id="control-panel-outer-donut" class="middle"></div>
+
+      <!-- Control Panel -->
+      <div id="control-panel" class="middle">
+
+        <!-- Title -->
+        <div id="title">Simon</div>
+
+        <!-- LCD -->
+        <div><button id="lcd">--</button></div>
+
+        <!-- Buttons -->
+        <div>
+          <!-- Start Button -->
+          <button id="btn-start">
+            <span id="indicator-start" class="indicator-red-off">&#9635;</span><br/>
+            Start
+          </button>
+
+          <!-- Strict Button -->
+          <button id="btn-strict">
+            <span id="indicator-strict" class="indicator-yellow-off">&#9635;</span><br/>
+            Strict
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
