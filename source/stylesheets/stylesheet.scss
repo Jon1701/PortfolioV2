@@ -11,6 +11,12 @@ body {
   font-size: 100%;
 }
 
+.popover-portfolio-description {
+  display: none;
+  background-color: $white;
+  border: solid 1px $lightgrey;
+}
+
 // Partials.
 @import "_fonts";
 @import "_navbar";

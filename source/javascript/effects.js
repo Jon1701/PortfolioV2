@@ -72,6 +72,13 @@ $(document).ready(function() {
   $('[data-toggle="popover"]').popover({
     container: 'body',
     html:true,
+    content: function() {
+
+      // Get the portfolio referenced by this popover.
+      var reference = $(this).attr("data-portfolio-reference")
+
+      return $("#" + reference).html();
+    }
   });
 
 });

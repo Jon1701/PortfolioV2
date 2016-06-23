@@ -9,8 +9,12 @@ $(document).ready(function() {
 
       {
         image: "../images/portfolio/cover-quote-generator.png",
-        description: "Life is Strange Quote Generator",
-        popoverDescription: "Built with: <ul><li>jQuery</li></ul>",
+        title: "Life is Strange Quote Generator",
+        description: "Relive the horror here with quotes from the game",
+        popover: {
+          id: "popover-1"
+        },
+        components: ["jQuery"],
         link: {
           github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
           demo: "../portfolio/LifeIsStrangeQuoteGenerator"
@@ -19,8 +23,12 @@ $(document).ready(function() {
 
       {
         image: "../images/portfolio/cover-twitch-viewer.png",
-        description: "TwitchViewer",
-        popoverDescription: "Built with: <ul><li>React.js</li></ul>",
+        title: "TwitchViewer",
+        description: "See your favourite streamers",
+        popover: {
+          id: "popover-2"
+        },
+        components: ["React.js"],
         link: {
           github: "https://github.com/Jon1701/TwitchViewer",
           demo: "../portfolio/TwitchViewer"
@@ -29,8 +37,12 @@ $(document).ready(function() {
 
       {
         image: "../images/portfolio/cover-simongame.png",
-        description: "Simon Game",
-        popoverDescription: "Built with: <ul><li>jQuery</li></ul>",
+        title: "Simon Game",
+        description: "Really old game",
+        popover: {
+          id: "popover-3"
+        },
+        components: ["jQuery"],
         link: {
           github: "https://github.com/Jon1701/SimonGame",
           demo: "../portfolio/SimonGame"
