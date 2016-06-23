@@ -10,6 +10,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-quote-generator.png",
         description: "Life is Strange Quote Generator",
+        popoverDescription: "Built with: <ul><li>jQuery</li></ul>",
         link: {
           github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
           demo: "../portfolio/LifeIsStrangeQuoteGenerator"
@@ -19,6 +20,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-twitch-viewer.png",
         description: "TwitchViewer",
+        popoverDescription: "Built with: <ul><li>React.js</li></ul>",
         link: {
           github: "https://github.com/Jon1701/TwitchViewer",
           demo: "../portfolio/TwitchViewer"
@@ -28,6 +30,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-simongame.png",
         description: "Simon Game",
+        popoverDescription: "Built with: <ul><li>jQuery</li></ul>",
         link: {
           github: "https://github.com/Jon1701/SimonGame",
           demo: "../portfolio/SimonGame"

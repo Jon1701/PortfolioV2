@@ -137,12 +137,10 @@
           </div>
 
             <div class="btn-group" role="group">
-              <a href="{{ link.info }}" target="_blank">
-                <button type="button" class="btn btn-default btn-portfolio-info">
-                  <div><i class="fa fa-info-circle fa-fw"></i></div>
-                  <div>Info</div>
-                </button>
-              </a>
+              <button type="button" class="btn btn-default btn-portfolio-info" data-toggle="popover" data-placement="top" title="{{ description }}" data-content="{{ popoverDescription }}">
+                <div><i class="fa fa-info-circle fa-fw"></i></div>
+                <div>Info</div>
+              </button>
             </div>
 
             <div class="btn-group" role="group">
