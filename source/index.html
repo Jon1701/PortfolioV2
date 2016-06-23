@@ -114,8 +114,38 @@
     <section id="section-portfolio" class="section">
       <div class="title">PORTFOLIO</div>
 
-      <!-- Portfolio Project Template #2 -->
+      <!-- Portfolio Project Template #1 -->
       <script id="template-portfolio-project" type="x-tmpl-mustache">
+        {{ #projects }}
+        <div class="portfolio-panel container-fluid col-xs-6 col-md-4 col-lg-4">
+          <div class="portfolio-image-container">
+            <a href="{{ link.demo }}" target="_blank">
+              <img src="{{ image }}" alt="{{ description }}" class="img-responsive portfolio-image">
+            </a>
+          </div>
+          <div class="portfolio-button-container">
+            <a href="{{ link.github }}" target="_blank">
+              <div class="portfolio-button">
+                <i class="fa fa-github-square fa-fw"></i>
+                <span>GitHub</span>
+              </div>
+            </a>
+            <a href="{{ link.demo }}" target="_blank">
+              <div class="portfolio-button">
+                <i class="fa fa-play-circle-o fa-fw"></i>
+                <span>Demo</span>
+              </div>
+            </a>
+          </div>
+          <div class="portfolio-description">
+            {{ description }}
+          </div>
+        </div>
+        {{ /projects }}
+      </script>
+
+      <!-- Portfolio Project Template #2 -->
+      <script id="template-portfolio-project-2" type="x-tmpl-mustache">
         {{ #projects }}
 
         <!-- Begin Portfolio Container -->
@@ -161,10 +191,12 @@
         {{ /projects }}
       </script>
 
-      <!-- Template Target
+      <!-- Template Target -->
       <div class="content" id="portfolio-target"></div>
-      -->
       
+
+
+
     </section>
 
     <a name="section-contact"></a>
