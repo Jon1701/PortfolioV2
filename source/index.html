@@ -137,10 +137,12 @@
             </div>
 
             <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default btn-portfolio-info">
-                <div><i class="fa fa-info-circle fa-fw"></i></div>
-                <div>Info</div>
-              </button>
+              <a href="{{ link.info }}" target="_blank">
+                <button type="button" class="btn btn-default btn-portfolio-info">
+                  <div><i class="fa fa-info-circle fa-fw"></i></div>
+                  <div>Info</div>
+                </button>
+              </a>
             </div>
 
             <div class="btn-group" role="group">
@@ -154,9 +156,15 @@
 
           </div>
 
-          <div class="portfolio-description">
-            {{ description }}
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <div class="portfolio-description">
+                {{ description }}
+              </div>
+            </div>
           </div>
+
+
 
         </div>
         {{ /projects }}
