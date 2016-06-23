@@ -12,9 +12,9 @@
 
   // Hover effect.
   &:hover {
-    -moz-box-shadow: 0 0 10px #ccc;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px $grey;
+    -webkit-box-shadow: 0 0 10px $grey;
+    box-shadow: 0 0 10px $grey;
   }
 
 }
@@ -26,13 +26,10 @@
   a {
     &:link { color: $grey; };
     &:visited { color: $grey; };
-
-    &:hover {
-      color: $orange;
-    };
-
+    &:hover { color: $red; };
     &:active { color: $grey; };
   }
+  font-size: 1.25em;
 }
 
 // Individual project repository buttons.
