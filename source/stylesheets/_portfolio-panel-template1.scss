@@ -1,0 +1,45 @@
+// Portfolio project container.
+.portfolio-panel {
+  padding-top: 15px;
+  display: block;
+}
+
+// Portfolio image.
+.portfolio-image {
+
+  border: solid 1px $grey;
+  padding: 3px;
+
+  // Hover effect.
+  &:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+  }
+
+}
+
+// Portfolio project repository button container.
+.portfolio-button-container {
+
+  // Link pseudoclasses.
+  a {
+    &:link { color: $grey; };
+    &:visited { color: $grey; };
+
+    &:hover {
+      color: $orange;
+    };
+
+    &:active { color: $grey; };
+  }
+}
+
+// Individual project repository buttons.
+.portfolio-button {
+  display: inline-block;
+  margin: 0 auto;
+
+  float: left;
+  width: 50%;
+}
