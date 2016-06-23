@@ -120,9 +120,28 @@ $colour-js-inner: #F2BF22;
   font-family: "Oswald";
 
   // W3C badge container.
-  .w3c-logo-container > img {
-     display: inline-block;
-     width: 30%;
+  .w3c-logo-container {
+    width: 100%;
+
+    img {
+       display: inline-block;
+       width: 30%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .w3c-logo-container {
+
+      width: 950px;
+
+      margin: 0 auto;
+
+      img {
+         display: inline-block;
+         width: 300px;
+      }
+
+    }
   }
 
   // W3C badge hover colours.
