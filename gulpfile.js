@@ -72,6 +72,10 @@ gulp.task("components", function() {
   gulp.src(modulesPath + "font-awesome/fonts/*")
     .pipe(gulp.dest(destPath + "components/font-awesome/fonts/"));
 
+  // Font-mfizz
+  gulp.src(srcPath + "components/font-mfizz-2.3.0/**/*")
+    .pipe(gulp.dest(destPath + "components/font-mfizz/"));
+
   // Mustache.js
   gulp.src(modulesPath + "mustache/mustache.js")
     .pipe(gulp.dest(destPath + "components/mustache/"));
