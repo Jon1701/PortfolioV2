@@ -38,7 +38,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-simongame.png",
         title: "Simon Game",
-        description: "Really old game",
+        description: "Simon Game",
         popover: {
           id: "popover-3"
         },

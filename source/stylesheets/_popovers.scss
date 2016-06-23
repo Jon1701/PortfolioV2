@@ -1,0 +1,18 @@
+.popover {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.popover-portfolio-description {
+  background-color: $white;
+  border: solid 1px $lightgrey;
+}
+
+.popover-title {
+  font-size: 2em;
+  text-align: center;
+}
+.popover-content {
+  font-size: 1.75em;
+  div { text-align: center; };
+}

@@ -12,25 +12,12 @@ body {
 }
 
 
-.popover-portfolio-description {
-  background-color: $white;
-  border: solid 1px $lightgrey;
-}
-
-.popover-title {
-  font-size: 2em
-  text-align: center;
-}
-.popover-content {
-  font-size: 1.75em;
-  div { text-align: center; };
-}
-
 // Partials.
 @import "_fonts";
 @import "_navbar";
 @import "_buttons";
 @import "_sections";
+@import "_popovers";
 @import "_portfolio-panel-template1";
 //@import "_portfolio-panel-template2";
 @import "_font-size";
