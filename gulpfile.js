@@ -36,6 +36,12 @@ gulp.task("javascript", function() {
     .pipe(gulp.dest(destPath + "javascript/"));
 });
 
+// Move portfolio.
+gulp.task("portfolio", function() {
+  gulp.src(srcPath + "portfolio/**/*")
+    .pipe(gulp.dest(destPath + "portfolio/"));
+});
+
 // Compile and move stylesheets.
 gulp.task("stylesheets", function() {
   gulp.src(srcPath + "stylesheets/**/*")
@@ -92,6 +98,7 @@ gulp.task("watch", function() {
   gulp.watch(srcPath + "fonts/**/*", ["fonts"]); // Fonts.
   gulp.watch(srcPath + "images/**/*", ["images"]); // Images.
   gulp.watch(srcPath + "javascript/**/*", ["javascript"]); // JavaScript.
+  gulp.watch(srcPath + "portfolio/**/*", ["portfolio"]); // JavaScript.
   gulp.watch(srcPath + "stylesheets/**/*.scss", ["stylesheets"]); // SASS Main.
   gulp.watch(srcPath + "stylesheets/**/_*.scss", ["stylesheets"]); // SASS Partials.
   gulp.watch(srcPath + "*.html", ["html"]); // HTML files.
@@ -100,4 +107,4 @@ gulp.task("watch", function() {
 ////////////////////////////////////////////////////////////////////////////////
 // Default Task.
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task("default", ["fonts", "images", "javascript", "stylesheets", "html", "components", "watch", "webserver"]);
+gulp.task("default", ["fonts", "images", "javascript", "portfolio", "stylesheets", "html", "components", "watch", "webserver"]);
