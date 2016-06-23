@@ -8,35 +8,45 @@
     border-top: 0px;
     border-bottom: 0px;
     font-size: 0.75em;
+    border: 0px;
 
     &:hover {
       color: $red;
       background-color: $white;
     }
+
+
   }
 
-  .btn-github-portfolio { border-right: 0px; };
-  .btn-demo-portfolio { border-left: 0px; };
+  .btn-array {
+    border-left: solid 1px $lightgrey;
+    border-right: solid 1px $lightgrey;
 
+  }
   .portfolio-description {
     background-color: $white;
-    border: solid 1px $lightgrey;
+    border-left: solid 1px $lightgrey;
+    border-right: solid 1px $lightgrey;
+    border-bottom: solid 1px $lightgrey;
+
   }
 
 }
 
 // Portfolio image.
-.portfolio-image {
+.portfolio-image-container {
 
-  border: solid 1px $lightgrey;
-  background-color: $white;
-  padding: 3px;
+  img {
+    border: solid 1px $lightgrey;
+    background-color: $white;
+    padding: 3px;
 
-  // Hover effect.
-  &:hover {
-    -moz-box-shadow: 0 0 10px $grey;
-    -webkit-box-shadow: 0 0 10px $grey;
-    box-shadow: 0 0 10px $grey;
+    // Hover effect.
+    &:hover {
+      -moz-box-shadow: 0 0 10px $grey;
+      -webkit-box-shadow: 0 0 10px $grey;
+      box-shadow: 0 0 10px $grey;
+    }
   }
 
 }

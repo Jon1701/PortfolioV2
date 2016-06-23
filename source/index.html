@@ -118,16 +118,18 @@
       <script id="template-portfolio-project" type="x-tmpl-mustache">
         {{ #projects }}
         <div class="portfolio-panel container-fluid col-xs-12 col-md-6 col-lg-4">
+
           <div class="portfolio-image-container">
             <a href="{{ link.demo }}" target="_blank">
-              <img src="{{ image }}" alt="{{ description }}" class="img-responsive portfolio-image">
+              <img src="{{ image }}" alt="{{ description }}" class="img-responsive">
             </a>
           </div>
 
-          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group btn-group-justified btn-array" role="group" aria-label="...">
+
             <div class="btn-group" role="group">
               <a href="{{ link.github }}" target="_blank">
-                <button type="button" class="btn btn-default btn-github-portfolio">
+                <button type="button" class="btn btn-default btn-portfolio-github">
                   <div><i class="fa fa-github fa-fw"></i></div>
                   <div>GitHub</div>
                 </button>
@@ -135,18 +137,27 @@
             </div>
 
             <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-portfolio-info">
+                <div><i class="fa fa-info-circle fa-fw"></i></div>
+                <div>Info</div>
+              </button>
+            </div>
+
+            <div class="btn-group" role="group">
               <a href="{{ link.demo }}" target="_blank">
-                <button type="button" class="btn btn-default btn-demo-portfolio">
+                <button type="button" class="btn btn-default btn-portfolio-demo">
                   <div><i class="fa fa-play-circle-o fa-fw"></i></div>
                   <div>Demo</div>
                 </button>
               </a>
             </div>
+
           </div>
 
           <div class="portfolio-description">
             {{ description }}
           </div>
+
         </div>
         {{ /projects }}
       </script>
