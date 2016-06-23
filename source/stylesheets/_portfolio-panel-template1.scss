@@ -2,12 +2,33 @@
 .portfolio-panel {
   padding-top: 15px;
   display: block;
+
+  .btn-default {
+    border-radius: 0;
+    border-bottom: 0px;
+    font-size: 0.75em;
+
+    &:hover {
+      color: $red;
+      background-color: $white;
+    }
+  }
+
+  .btn-github-portfolio { border-right: 0px; };
+  .btn-demo-portfolio { border-left: 0px; };
+
+  .portfolio-description {
+    background-color: $white;
+    border: solid 1px $lightgrey;
+  }
+
 }
 
 // Portfolio image.
 .portfolio-image {
 
-  border: solid 1px $grey;
+  border: solid 1px $lightgrey;
+  background-color: $white;
   padding: 3px;
 
   // Hover effect.
@@ -17,26 +38,4 @@
     box-shadow: 0 0 10px $grey;
   }
 
-}
-
-// Portfolio project repository button container.
-.portfolio-button-container {
-
-  // Link pseudoclasses.
-  a {
-    &:link { color: $grey; };
-    &:visited { color: $grey; };
-    &:hover { color: $red; };
-    &:active { color: $grey; };
-  }
-  font-size: 1.25em;
-}
-
-// Individual project repository buttons.
-.portfolio-button {
-  display: inline-block;
-  margin: 0 auto;
-
-  float: left;
-  width: 50%;
 }

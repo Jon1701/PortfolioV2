@@ -123,20 +123,27 @@
               <img src="{{ image }}" alt="{{ description }}" class="img-responsive portfolio-image">
             </a>
           </div>
-          <div class="portfolio-button-container">
-            <a href="{{ link.github }}" target="_blank">
-              <div class="portfolio-button">
-                <i class="fa fa-github fa-fw"></i>
-                <span>GitHub</span>
-              </div>
-            </a>
-            <a href="{{ link.demo }}" target="_blank">
-              <div class="portfolio-button">
-                <i class="fa fa-play-circle-o fa-fw"></i>
-                <span>Demo</span>
-              </div>
-            </a>
+
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <a href="{{ link.github }}" target="_blank">
+                <button type="button" class="btn btn-default btn-github-portfolio">
+                  <div><i class="fa fa-github fa-fw"></i></div>
+                  <div>GitHub</div>
+                </button>
+              </a>
+            </div>
+
+            <div class="btn-group" role="group">
+              <a href="{{ link.github }}" target="_blank">
+                <button type="button" class="btn btn-default btn-demo-portfolio">
+                  <div><i class="fa fa-play-circle-o fa-fw"></i></div>
+                  <div>Demo</div>
+                </button>
+              </a>
+            </div>
           </div>
+
           <div class="portfolio-description">
             {{ description }}
           </div>
