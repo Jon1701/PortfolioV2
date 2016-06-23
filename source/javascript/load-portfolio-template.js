@@ -8,20 +8,20 @@ $(document).ready(function() {
     projects: [
 
       {
-        image: "images/portfolio/cover-quote-generator.png",
+        image: "../images/portfolio/cover-quote-generator.png",
         description: "Life is Strange Quote Generator",
         link: {
           github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
-          demo: "#"
+          demo: "../portfolio/LifeIsStrangeQuoteGenerator"
         }
       },
 
       {
-        image: "images/portfolio/cover-twitch-viewer.png",
+        image: "../images/portfolio/cover-twitch-viewer.png",
         description: "TwitchViewer",
         link: {
           github: "https://github.com/Jon1701/TwitchViewer",
-          demo: "#"
+          demo: "../portfolio/TwitchViewer"
         }
       },
 
