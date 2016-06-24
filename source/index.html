@@ -168,11 +168,11 @@
 
             <br/>
 
-            <div style="text-align:center;">
+            <div style="display: flex; justify-content: space-between;">
               {{ #components }}
-            <div>
-              <img src="{{ img }}" alt="{{ name }}"/>
-            </div>
+              <div style"display: inline-block;width:100%;">
+                <img src="{{ img }}" alt="{{ name }}" style="max-height:100px"/>
+              </div>
             {{ /components }}
             </div>
 
