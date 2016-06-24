@@ -1,23 +1,33 @@
 $(document).ready(function() {
 
-  // Component: jQuery
-  var cmptJquery = {
-    name: "jQuery",
-    img: "../images/logos/jQuery/jQuery-Logo.png"
-  };
+  // Components
+  var component = {
 
-  // Component: React
-  var cmptReact = {
-    name: "React",
-    img: "../images/logos/React/react-logo.png"
-  };
+    // Bootstrap
+    bootstrap : {
+      name: "Bootstrap",
+      img: "../images/logos/Bootstrap/bootstrap-solid.png"
+    },
 
-  // Component: Sass
-  var cmptSass = {
-    name: "Sass",
-    img: "../images/logos/Sass/color-1c4aab2b.png"
+    // jQuery
+    jquery: {
+      name: "jQuery",
+      img: "../images/logos/jQuery/jQuery-Logo.png"
+    },
+
+    // React
+    react: {
+      name: "React",
+      img: "../images/logos/React/react-logo.png"
+    },
+
+    // Sass
+    sass: {
+      name: "Sass",
+      img: "../images/logos/Sass/color-1c4aab2b.png"
+    }
+
   }
-
 
   // Select the template.
   var template = $("#template-portfolio-project").html();
@@ -25,7 +35,7 @@ $(document).ready(function() {
   // Portfolio Project Data.
   var data = {
 
-    // List of prof=jects.
+    // List of projects.
     projects: [
 
       {
@@ -35,7 +45,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-1"
         },
-        components: [cmptJquery],
+        components: [component.jquery, component.sass],
         link: {
           github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
           demo: "../portfolio/LifeIsStrangeQuoteGenerator"
@@ -49,7 +59,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-2"
         },
-        components: [cmptJquery, cmptReact, cmptSass],
+        components: [component.jquery, component.react, component.sass],
         link: {
           github: "https://github.com/Jon1701/TwitchViewer",
           demo: "../portfolio/TwitchViewer"
@@ -63,7 +73,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-3"
         },
-        components: [cmptJquery, cmptSass],
+        components: [component.jquery, component.sass],
         link: {
           github: "https://github.com/Jon1701/SimonGame",
           demo: "../portfolio/SimonGame"
@@ -77,7 +87,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-4"
         },
-        components: [cmptJquery],
+        components: [component.bootstrap, component.jquery],
         link: {
           github: "https://github.com/Jon1701/WikiViewer",
           demo: "../portfolio/WikiViewer"
