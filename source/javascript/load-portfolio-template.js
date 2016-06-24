@@ -1,5 +1,24 @@
 $(document).ready(function() {
 
+  // Component: jQuery
+  var cmptJquery = {
+    name: "jQuery",
+    img: "../images/logos/jQuery/jQuery-Logo.png"
+  };
+
+  // Component: React
+  var cmptReact = {
+    name: "React",
+    img: "../images/logos/React/react-logo.png"
+  };
+
+  // Component: Sass
+  var cmptSass = {
+    name: "Sass",
+    img: "../images/logos/Sass/color-1c4aab2b.png"
+  }
+
+
   // Select the template.
   var template = $("#template-portfolio-project").html();
 
@@ -12,11 +31,11 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-quote-generator.png",
         title: "Life is Strange Quote Generator",
-        description: "Relive the horror here with quotes from the game",
+        description: "Relive the horror here with quotes from the game.",
         popover: {
           id: "popover-1"
         },
-        components: ["jQuery"],
+        components: [cmptJquery],
         link: {
           github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
           demo: "../portfolio/LifeIsStrangeQuoteGenerator"
@@ -26,11 +45,11 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-twitch-viewer.png",
         title: "TwitchViewer",
-        description: "See your favourite streamers",
+        description: "See which of your favourite streamers are online and what they are playing.",
         popover: {
           id: "popover-2"
         },
-        components: ["React.js", "jQuery"],
+        components: [cmptJquery, cmptReact, cmptSass],
         link: {
           github: "https://github.com/Jon1701/TwitchViewer",
           demo: "../portfolio/TwitchViewer"
@@ -40,11 +59,11 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-simongame.png",
         title: "Simon Game",
-        description: "Simon Game",
+        description: "A classic, rebuilt for modern times, and in HD",
         popover: {
           id: "popover-3"
         },
-        components: ["jQuery"],
+        components: [cmptJquery, cmptSass],
         link: {
           github: "https://github.com/Jon1701/SimonGame",
           demo: "../portfolio/SimonGame"

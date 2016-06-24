@@ -161,17 +161,19 @@
             </div>
           </div>
 
+
           <div class="popover-portfolio-description hide" id="{{ popover.id }}">
 
             <div>{{ description }}</div>
+
             <br/>
+
+            <div style="text-align:center;">
+              {{ #components }}
             <div>
-              <div>Built using:</div>
-              <ul style="display: inline-block;">
-                {{ #components }}
-                <li> {{ . }}</li>
-                {{ /components }}
-              </ul>
+              <img src="{{ img }}" alt="{{ name }}"/>
+            </div>
+            {{ /components }}
             </div>
 
           </div>
