@@ -168,10 +168,12 @@
 
             <br/>
 
-            <div style="display: flex; justify-content: space-between;">
+            <div style>
               {{ #components }}
-              <div style"display: inline-block;width:100%;">
-                <img src="{{ img }}" alt="{{ name }}" style="max-height:100px"/>
+              <div>
+                <!--<img src="{{ img }}" alt="{{ name }}" style="max-height:100px"/>-->
+
+                <button class="btn btn-default">{{ name }}</button>
               </div>
             {{ /components }}
             </div>
