@@ -15,6 +15,12 @@ $(document).ready(function() {
       img: "../images/logos/jQuery/jQuery-Logo.png"
     },
 
+    // Mustache.js
+    mustache: {
+      name: "mustache.js",
+      img: null
+    },
+
     // React
     react: {
       name: "React",
@@ -41,7 +47,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-quote-generator.png",
         title: "Life is Strange Quote Generator",
-        description: "Relive the horror here with quotes from the game.",
+        description: "Relive the horror here with quotes from the game, also comes with relaxing sountrack",
         popover: {
           id: "popover-1"
         },
@@ -55,7 +61,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-twitch-viewer.png",
         title: "TwitchViewer",
-        description: "See which of your favourite streamers are online and what they are playing.",
+        description: "View which of my favourite streamers are online and what they are playing",
         popover: {
           id: "popover-2"
         },
@@ -69,7 +75,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-simongame.png",
         title: "Simon Game",
-        description: "A classic, rebuilt for modern times, and in HD",
+        description: "A classic, rebuilt for modern times, and in 4K",
         popover: {
           id: "popover-3"
         },
@@ -83,11 +89,11 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-wikiviewer.png",
         title: "Wiki Viewer",
-        description: "Search wikipedia",
+        description: "Search for Wikipedia using Wikipedia",
         popover: {
           id: "popover-4"
         },
-        components: [component.bootstrap, component.jquery],
+        components: [component.bootstrap, component.mustache, component.jquery],
         link: {
           github: "https://github.com/Jon1701/WikiViewer",
           demo: "../portfolio/WikiViewer"
