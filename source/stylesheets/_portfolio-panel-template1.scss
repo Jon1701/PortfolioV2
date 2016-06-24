@@ -1,52 +1,61 @@
-// Portfolio project container.
+////////////////////////////////////////////////////////////////////////////////
+// Single portfolio panel
+////////////////////////////////////////////////////////////////////////////////
 .portfolio-panel {
-  padding-top: 15px;
   display: block;
+  padding-top: 15px;
 
-  .btn-default {
-    border-radius: 0;
-    border-top: 0px;
-    border-bottom: 0px;
-    font-size: 0.75em;
-    border: 0px;
+  // Portfolio Image Container.
+  .portfolio-image-container {
 
-    &:hover {
-      color: $red;
+    // Image
+    img {
+      border: solid 1px $lightgrey;
       background-color: $white;
-    }
+      padding: 3px;
 
+      // Image hover effect.
+      &:hover {
+        -moz-box-shadow: 0 0 10px $grey;
+        -webkit-box-shadow: 0 0 10px $grey;
+        box-shadow: 0 0 10px $grey;
+      }
+    }
 
   }
 
+  // Container for Demo, Info, GitHub buttons.
   .btn-array {
     border-left: solid 1px $lightgrey;
     border-right: solid 1px $lightgrey;
   }
 
+  // Demo, Info, GitHub button styles.
+  .btn-default {
+
+    // Borders.
+    border: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-radius: 0;
+
+    font-size: 0.75em;
+
+    // Hover styles.
+    &:hover {
+      color: $red;
+      background-color: $white;
+    }
+
+  }
+
+  // Portfolio Title.
   .portfolio-description {
     background-color: $white;
     border-left: solid 1px $lightgrey;
     border-right: solid 1px $lightgrey;
     border-bottom: solid 1px $lightgrey;
     width: 100%;
-  }
-
-}
-
-// Portfolio image.
-.portfolio-image-container {
-
-  img {
-    border: solid 1px $lightgrey;
-    background-color: $white;
-    padding: 3px;
-
-    // Hover effect.
-    &:hover {
-      -moz-box-shadow: 0 0 10px $grey;
-      -webkit-box-shadow: 0 0 10px $grey;
-      box-shadow: 0 0 10px $grey;
-    }
   }
 
 }

@@ -70,16 +70,14 @@ $(document).ready(function() {
   // Popovers.
   //////////////////////////////////////////////////////////////////////////////
   $('[data-toggle="popover"]').popover({
-    container: '.portfolio-image-container',
+    container: ".portfolio-image-container",
     html:true,
     content: function() {
 
       // Get the portfolio referenced by this popover.
       var reference = $(this).attr("data-portfolio-reference")
 
-      //$(".popover").css({"width": "1000px !important"});
-      //$(".popover").css({"min-width": "1000px !important"});
-
+      // Return rendered HTML portfolio description.
       return $("#" + reference).html();
     }
   });

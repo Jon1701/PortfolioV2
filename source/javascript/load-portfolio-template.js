@@ -1,10 +1,12 @@
 $(document).ready(function() {
 
-  // Template script.
+  // Select the template.
   var template = $("#template-portfolio-project").html();
 
   // Portfolio Project Data.
   var data = {
+
+    // List of prof=jects.
     projects: [
 
       {
@@ -48,7 +50,7 @@ $(document).ready(function() {
           demo: "../portfolio/SimonGame"
         }
       }
-    ]
+    ]// End list.
   } // End data
 
   // Parse template.
@@ -57,7 +59,7 @@ $(document).ready(function() {
   // Render template.
   var rendered = Mustache.render(template, data);
 
-  // Fill in HTML.
+  // Attach template.
   $("#portfolio-target").html(rendered);
 
 });

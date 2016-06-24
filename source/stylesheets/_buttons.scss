@@ -1,12 +1,12 @@
 ////////////////////////////////////////////////////////////////////////////////
-//                             Colours
+// Colours
 ////////////////////////////////////////////////////////////////////////////////
 $colour-linkedin-blue: rgba(00,77,181,0.7);
 $colour-github-grey: rgba(31,33,35,0.7);
 $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
 ////////////////////////////////////////////////////////////////////////////////
-//                              Mixins
+// Mixins
 ////////////////////////////////////////////////////////////////////////////////
 
 // Sets the pseudoclasses for a particular element.
@@ -31,7 +31,7 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-//                              Buttons
+// Buttons.
 ////////////////////////////////////////////////////////////////////////////////
 
 // Big button.
@@ -45,16 +45,10 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 }
 
 // LinkedIn button.
-.btn-linkedin {
-    @include btn-pseudo-classes($colour-linkedin-blue);
-}
+.btn-linkedin { @include btn-pseudo-classes($colour-linkedin-blue); };
 
 // GitHub button.
-.btn-github {
-    @include btn-pseudo-classes($colour-github-grey);
-}
+.btn-github { @include btn-pseudo-classes($colour-github-grey); };
 
 // FreeCodeCamp button.
-.btn-freecodecamp {
-    @include btn-pseudo-classes($colour-freecodecamp-green);
-}
+.btn-freecodecamp { @include btn-pseudo-classes($colour-freecodecamp-green); };

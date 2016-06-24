@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-//                      Background Images
+// Background Image URLs
 ////////////////////////////////////////////////////////////////////////////////
 $bg-section-home-url: "../images/backgrounds/W1YL4ZANPU.png";
 $bg-section-aboutme-url: "../images/backgrounds/cubes.png";
@@ -7,14 +7,14 @@ $bg-section-portfolio-url: "../images/backgrounds/cubes.png";
 $bg-section-contact-url: "../images/backgrounds/cubes.png";
 
 ////////////////////////////////////////////////////////////////////////////////
-//                      Colours
+// Colours
 ////////////////////////////////////////////////////////////////////////////////
 $colour-html-inner: #F1662B;
 $colour-css-inner: #369CD6;
 $colour-js-inner: #F2BF22;
 
 ////////////////////////////////////////////////////////////////////////////////
-//                              Mixins
+// Mixins
 ////////////////////////////////////////////////////////////////////////////////
 
 // Helper Mixin for the @mixin set-bg-cover.
@@ -62,10 +62,10 @@ $colour-js-inner: #F2BF22;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-//                              Sections
+// Sections
 ////////////////////////////////////////////////////////////////////////////////
 
-// Section.
+// Base section styles.
 .section {
   text-align: center;
   padding-bottom: 55px;
@@ -111,6 +111,7 @@ $colour-js-inner: #F2BF22;
 
 }
 
+// About Me
 #section-aboutme {
 
   // Background Image.
@@ -152,6 +153,7 @@ $colour-js-inner: #F2BF22;
   .badge-w3c-js { &:hover { background-color: $colour-js-inner; }; };
 }
 
+// Portfolio
 #section-portfolio {
 
   // Background Image.
@@ -162,6 +164,7 @@ $colour-js-inner: #F2BF22;
 
 }
 
+// Contact
 #section-contact {
 
   // Background Image.
