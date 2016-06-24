@@ -68,6 +68,20 @@ $(document).ready(function() {
           github: "https://github.com/Jon1701/SimonGame",
           demo: "../portfolio/SimonGame"
         }
+      },
+
+      {
+        image: "../images/portfolio/cover-wikiviewer.png",
+        title: "Wiki Viewer",
+        description: "Search wikipedia",
+        popover: {
+          id: "popover-4"
+        },
+        components: [cmptJquery],
+        link: {
+          github: "https://github.com/Jon1701/WikiViewer",
+          demo: "../portfolio/WikiViewer"
+        }
       }
     ]// End list.
   } // End data
