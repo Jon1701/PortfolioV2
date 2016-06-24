@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald/Oswald-Regular.ttf"); }
+
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 100%; }
@@ -23,19 +27,25 @@ body {
     float: left;
     width: 33.33%;
     text-align: center;
+    box-shadow: 0 5px #3B2064;
     font-size: 1.5em;
     padding-top: 0.25em;
-    padding-bottom: 0.25em; }
+    padding-bottom: 0.25em;
+    margin-bottom: 5px; }
     #container-tabs .tab:hover {
-      background-color: #262626; }
+      background-color: #3B2064; }
 
 #tbl-streams {
-  width: 100%; }
+  width: 100%;
+  border-spacing: 0px; }
   #tbl-streams .stream-image {
     width: 15%;
     margin: 0;
     padding: 0;
-    border-bottom: solid 1px #6441A5; }
+    border-bottom: solid 1px #6441A5;
+    border-left: solid 1px #6441A5;
+    border-right: solid 1px #6441A5;
+    background-color: #6441A5; }
     #tbl-streams .stream-image img {
       max-width: 100%; }
   #tbl-streams .stream-info {
@@ -44,7 +54,8 @@ body {
     text-align: center;
     font-size: 1.75em;
     background-color: white;
-    border-bottom: solid 1px #6441A5; }
+    border-bottom: solid 1px #6441A5;
+    border-right: solid 1px #6441A5; }
     #tbl-streams .stream-info a {
       text-decoration: none; }
       #tbl-streams .stream-info a:focus {
