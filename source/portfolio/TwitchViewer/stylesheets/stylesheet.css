@@ -37,13 +37,13 @@ body {
 
 #tbl-streams {
   width: 100%;
+  border: solid 1px #6441A5;
   border-spacing: 0px; }
   #tbl-streams .stream-image {
     width: 15%;
     margin: 0;
     padding: 0;
     border-bottom: solid 1px #6441A5;
-    border-left: solid 1px #6441A5;
     border-right: solid 1px #6441A5;
     background-color: #6441A5; }
     #tbl-streams .stream-image img {
@@ -54,8 +54,7 @@ body {
     text-align: center;
     font-size: 1.75em;
     background-color: white;
-    border-bottom: solid 1px #6441A5;
-    border-right: solid 1px #6441A5; }
+    border-top: solid 1px #6441A5; }
     #tbl-streams .stream-info a {
       text-decoration: none; }
       #tbl-streams .stream-info a:focus {
