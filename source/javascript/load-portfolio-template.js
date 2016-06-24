@@ -30,7 +30,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-2"
         },
-        components: ["React.js"],
+        components: ["React.js", "jQuery"],
         link: {
           github: "https://github.com/Jon1701/TwitchViewer",
           demo: "../portfolio/TwitchViewer"
