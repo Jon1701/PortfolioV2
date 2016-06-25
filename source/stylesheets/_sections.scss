@@ -1,10 +1,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Background Image URLs
 ////////////////////////////////////////////////////////////////////////////////
-$bg-section-home-url: "../images/backgrounds/W1YL4ZANPU.png";
-$bg-section-aboutme-url: "../images/backgrounds/cubes.png";
+$bg-section-home-url: "../images/backgrounds/footer_lodyas/footer_lodyas.png";
+$bg-section-aboutme-url: "../images/backgrounds/cubes/cubes.png";
 $bg-section-portfolio-url: "../images/backgrounds/cubes.png";
-$bg-section-contact-url: "../images/backgrounds/cubes.png";
+$bg-section-contact-url: "../images/backgrounds/px_by_Gre3g/px_by_Gre3g.png";
 
 ////////////////////////////////////////////////////////////////////////////////
 // Colours
@@ -88,7 +88,9 @@ $colour-js-inner: #F2BF22;
   padding-right: 0vw;
 
   // Background Image.
-  @include set-bg-cover($bg-section-home-url, "dark", 0.3);
+  //@include set-bg-cover($bg-section-home-url, "dark", 0.3);
+  // Background Image.
+  background: url($bg-section-home-url);
 
   // Fonts.
   font-family: "Oswald";
@@ -172,5 +174,6 @@ $colour-js-inner: #F2BF22;
 
   // Fonts.
   font-family: "Oswald";
+  color: white;
 
 }
