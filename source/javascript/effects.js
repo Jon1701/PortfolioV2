@@ -70,7 +70,7 @@ $(document).ready(function() {
   // Popovers.
   //////////////////////////////////////////////////////////////////////////////
   $('[data-toggle="popover"]').popover({
-    container: ".portfolio-image-container",
+    container: ".portfolio-panel",
     html:true,
     content: function() {
 
@@ -80,6 +80,10 @@ $(document).ready(function() {
       // Return rendered HTML portfolio description.
       return $("#" + reference).html();
     }
+  });
+
+  $('[data-toggle="popover"]').on("click", function() {
+    $('[data-toggle="popover"]').not(this).popover("hide");
   });
 
 });
