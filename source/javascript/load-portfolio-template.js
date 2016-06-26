@@ -60,12 +60,12 @@ $(document).ready(function() {
 
       {
         image: "../images/portfolio/cover-pumpkindoro-timer.png",
-        title: "Pumpkindoro timer",
-        description: "A variation of the world famous Pomodoro Timer, but made with real Pumpkins",
+        title: "Pumpkindoro Timer",
+        description: "A variation of the world famous Pomodoro Timer, but made with real pumpkins",
         popover: {
           id: "popover-5"
         },
-        components: [component.jquery],
+        components: [component.jquery, component.sass],
         link: {
           github: "https://github.com/Jon1701/PumpkindoroTimer",
           demo: "../portfolio/PumpkindoroTimer"
