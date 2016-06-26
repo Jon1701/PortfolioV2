@@ -200,67 +200,6 @@
         {{ /projects }}
       </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- Portfolio Project Template #2 -->
-      <script id="template-portfolio-project-2" type="x-tmpl-mustache">
-        {{ #projects }}
-
-        <!-- Begin Portfolio Container -->
-        <div class="portfolio-container">
-
-          <!-- Left Panel -->
-          <a href="{{ link.demo }}" target="_blank">
-            <div class="left">
-              <img src="{{ image }}"/>
-            </div><!-- End Left Panel -->
-          </a>
-
-          <!-- Right Panel -->
-          <div class="right">
-
-            <!-- Title -->
-            <div class="title">
-              {{ description }}
-            </div><!-- End Title -->
-
-            <!-- Buttons -->
-            <div class="buttons">
-
-              <!-- GitHub -->
-              <a href="{{ link.github }}" target="_blank">
-                <button type="button">
-                  <i class="fa fa-github fa-fw"></i><br/>
-                  <span>GitHub</span>
-                </button>
-              </a>
-
-              <!-- Demo -->
-              <a href="{{ link.demo }}" target="_blank">
-                <button type="button">
-                  <i class="fa fa-play-circle-o fa-fw"></i><br/>
-                  <span>Demo</span>
-                </button>
-              </a>
-            </div><!-- End Buttons -->
-          </div><!-- End Right Panel -->
-        </div><!-- End Portfolio Container -->
-
-        {{ /projects }}
-      </script>
-
       <!-- Template Target -->
       <div class="content" id="portfolio-target"></div>
 
@@ -275,21 +214,18 @@
 
       <div class="content">
 
-        <p>
-          Nulla quis ad nulla est laborum velit aliquip duis fugiat magna magna irure.
-        </p>
-
         <form class="form-horizontal">
         <fieldset>
 
         <!-- Form Name -->
         <legend>Contact Me</legend>
 
-        <!-- Textarea -->
+        <!-- Text input-->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="textarea">Your message</label>
+          <label class="col-md-4 control-label" for="textinput">Name</label>
           <div class="col-md-4">
-            <textarea class="form-control" id="textarea" name="textarea"></textarea>
+          <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
+
           </div>
         </div>
 
@@ -302,12 +238,11 @@
           </div>
         </div>
 
-        <!-- Text input-->
+        <!-- Textarea -->
         <div class="form-group">
-          <label class="col-md-4 control-label" for="textinput">Name</label>
+          <label class="col-md-4 control-label" for="textarea">Your message</label>
           <div class="col-md-4">
-          <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" required="">
-
+            <textarea class="form-control" id="textarea" name="textarea"></textarea>
           </div>
         </div>
 
@@ -322,14 +257,8 @@
         </fieldset>
         </form>
 
-
       </div>
     </section>
-
-
-
-
-
 
   </body>
 
