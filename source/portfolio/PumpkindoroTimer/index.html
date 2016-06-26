@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Pumpkindoro Timer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Application Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+
+    <!-- jQuery -->
+    <script src="components/jquery/jquery.js"></script>
+
+    <!-- Application Script -->
+    <script type="text/javascript" src="javascript/pomodoro-clock.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Start Main Container -->
+    <div id="app-container" class="noselect middle">
+
+      <!-- Controls -->
+      <div class="controls">
+
+        <div class="duration">
+          <div class="name">Session Length</div>
+          <div class="widgets" id="parent-duration">
+            <span class="minus">&#10096;</span>
+            <span class="value">1</span>
+            <span class="plus">&#10097;</span>
+          </div>
+        </div>
+
+        <div class="break">
+          <div class="name">Break Length</div>
+          <div class="widgets" id="parent-break">
+            <span class="minus">&#10096;</span>
+            <span class="value">30</span>
+            <span class="plus">&#10097;</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Clock -->
+      <div class="clock">
+
+        <!-- Display Session Time -->
+        <div id="display-session" class="container-clockdisplay middle">
+          <div class="mode">
+            Session
+          </div>
+          <div class="display">
+            1:00
+          </div>
+        </div>
+
+        <!-- Display Break Time -->
+        <div id="display-break" class="container-clockdisplay middle hidden">
+          <div class="mode">
+            Break
+          </div>
+          <div class="display">
+            30:00
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Instructions -->
+      <div id="instructions">Click the above circle to start/stop the timer.</div>
+
+    </div>
+    <!-- End Main Container -->
+
+  </body>
+</html>

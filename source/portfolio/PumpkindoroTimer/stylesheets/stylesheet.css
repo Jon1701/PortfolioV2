@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald/Oswald-Regular.ttf"); }
+
+body {
+  background-color: #333333;
+  color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%; }
+
+#app-container {
+  position: absolute;
+  width: 100%; }
+  #app-container .controls {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0px; }
+    #app-container .controls .duration {
+      display: inline-block;
+      margin-right: 100px; }
+    #app-container .controls .break {
+      display: inline-block;
+      margin-left: 100px; }
+    #app-container .controls .minus, #app-container .controls .plus {
+      padding-left: 25px;
+      padding-right: 25px;
+      cursor: hand; }
+  #app-container .clock {
+    cursor: hand;
+    font-size: 3em;
+    position: relative;
+    width: 550px;
+    height: 550px;
+    background-color: #333333;
+    margin: 0 auto;
+    text-align: center;
+    border: solid 20px white;
+    border-radius: 100%; }
+
+.container-clockdisplay {
+  position: absolute; }
+
+#instructions {
+  margin-top: 15px;
+  font-size: 2em;
+  text-align: center; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  not supported by any browser */ }
+
+.middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.hidden {
+  visibility: hidden; }

@@ -59,16 +59,16 @@ $(document).ready(function() {
       },
 
       {
-        image: "../images/portfolio/cover-twitch-viewer.png",
-        title: "TwitchViewer",
-        description: "View which of my favourite streamers are online and what they are playing",
+        image: "../images/portfolio/cover-pumpkindoro-timer.png",
+        title: "Pumpkindoro timer",
+        description: "A variation of the world famous Pomodoro Timer, but made with real Pumpkins",
         popover: {
-          id: "popover-2"
+          id: "popover-5"
         },
-        components: [component.jquery, component.react, component.sass],
+        components: [component.jquery],
         link: {
-          github: "https://github.com/Jon1701/TwitchViewer",
-          demo: "../portfolio/TwitchViewer"
+          github: "https://github.com/Jon1701/PumpkindoroTimer",
+          demo: "../portfolio/PumpkindoroTimer"
         }
       },
 
@@ -87,6 +87,20 @@ $(document).ready(function() {
       },
 
       {
+        image: "../images/portfolio/cover-twitch-viewer.png",
+        title: "TwitchViewer",
+        description: "View which of my favourite streamers are online and what they are playing",
+        popover: {
+          id: "popover-2"
+        },
+        components: [component.jquery, component.react, component.sass],
+        link: {
+          github: "https://github.com/Jon1701/TwitchViewer",
+          demo: "../portfolio/TwitchViewer"
+        }
+      },
+
+      {
         image: "../images/portfolio/cover-wikiviewer.png",
         title: "Wiki Viewer",
         description: "Search for Wikipedia using Wikipedia",
@@ -99,6 +113,7 @@ $(document).ready(function() {
           demo: "../portfolio/WikiViewer"
         }
       }
+      
     ]// End list.
   } // End data
 
