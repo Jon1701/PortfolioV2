@@ -47,7 +47,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-quote-generator.png",
         title: "Life is Strange Quote Generator",
-        description: "Relive the horror here with quotes from the game, also comes with relaxing sountrack",
+        description: "Relive the horror here with quotes from the game, also comes with a relaxing soundtrack",
         popover: {
           id: "popover-1"
         },
@@ -113,7 +113,7 @@ $(document).ready(function() {
           demo: "../portfolio/WikiViewer"
         }
       }
-      
+
     ]// End list.
   } // End data
 
