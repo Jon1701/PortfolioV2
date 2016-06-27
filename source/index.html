@@ -137,34 +137,44 @@
         {{ #projects }}
         <div class="portfolio-panel container-fluid col-xs-12 col-md-6 col-lg-4">
 
+          <!-- Portfolio Title -->
           <div class="portfolio-title">
             {{ title }}
           </div>
+          <!-- End Portfolio Title -->
 
+          <!-- Portfolio Image -->
           <div class="portfolio-image-container">
             <a href="{{ link.demo }}" target="_blank">
               <img src="{{ image }}" alt="{{ title }}" class="img-responsive">
             </a>
           </div>
+          <!-- End Portfolio Image -->
 
+          <!-- Portfolio Button Array -->
           <div class="btn-group btn-group-justified btn-array" role="group" aria-label="...">
 
-          <div class="btn-group" role="group">
-            <a href="{{ link.demo }}" target="_blank">
-              <button type="button" class="btn btn-default btn-portfolio-demo">
-                <div><i class="fa fa-play-circle-o fa-fw"></i></div>
-                <div>Demo</div>
-              </button>
-            </a>
-          </div>
+            <!-- Demo -->
+            <div class="btn-group" role="group">
+              <a href="{{ link.demo }}" target="_blank">
+                <button type="button" class="btn btn-default btn-portfolio-demo">
+                  <div><i class="fa fa-play-circle-o fa-fw"></i></div>
+                  <div>Demo</div>
+                </button>
+              </a>
+            </div>
+            <!-- End Demo -->
 
+            <!-- More Info -->
             <div class="btn-group" role="group">
               <button type="button" class="btn btn-default btn-portfolio-info" data-portfolio-reference="{{ popover.id }}">
                 <div><i class="fa fa-info-circle fa-fw"></i></div>
                 <div>More Info</div>
               </button>
             </div>
+            <!-- End More Info -->
 
+            <!-- GitHub -->
             <div class="btn-group" role="group">
               <a href="{{ link.github }}" target="_blank">
                 <button type="button" class="btn btn-default btn-portfolio-github">
@@ -173,10 +183,13 @@
                 </button>
               </a>
             </div>
+            <!-- End GitHub -->
 
           </div>
+          <!-- End Portfolio Button Array -->
 
-          <div class="popover-portfolio-description hide" id="{{ popover.id }}">
+          <!-- Popover Portfolio Description -->
+          <div class="popover-portfolio-description hide clearfix" id="{{ popover.id }}">
 
             <div class="portfolio-description">
               {{ description }}
@@ -190,7 +203,9 @@
                 </div>
               {{ /components }}
             </div>
+
           </div>
+          <!-- End Popover Portfolio Description -->
 
         </div>
         {{ /projects }}
