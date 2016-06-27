@@ -135,10 +135,12 @@
       <!-- Portfolio Project Template #1 -->
       <script id="template-portfolio-project" type="x-tmpl-mustache">
         {{ #projects }}
-        <div class="portfolio-panel container-fluid col-xs-12 col-md-6 col-lg-4">
+
+        <!-- Template Container -->
+        <div class="container-portfolio-project container-fluid col-xs-12 col-md-6 col-lg-4">
 
           <!-- Portfolio Title -->
-          <div class="portfolio-title">
+          <div class="portfolio-project-title">
             {{ title }}
           </div>
           <!-- End Portfolio Title -->
@@ -152,7 +154,7 @@
           <!-- End Portfolio Image -->
 
           <!-- Portfolio Button Array -->
-          <div class="btn-group btn-group-justified btn-array" role="group" aria-label="...">
+          <div class="btn-group btn-group-justified portfolio-project-btn-array" role="group" aria-label="...">
 
             <!-- Demo -->
             <div class="btn-group" role="group">
@@ -167,7 +169,7 @@
 
             <!-- More Info -->
             <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default btn-portfolio-info" data-portfolio-reference="{{ popover.id }}">
+              <button type="button" class="btn btn-default btn-portfolio-info" data-portfolio-reference="{{ popout.id }}">
                 <div><i class="fa fa-info-circle fa-fw"></i></div>
                 <div>More Info</div>
               </button>
@@ -188,10 +190,10 @@
           </div>
           <!-- End Portfolio Button Array -->
 
-          <!-- Popover Portfolio Description -->
-          <div class="popover-portfolio-description hide clearfix" id="{{ popover.id }}">
+          <!-- Popout Portfolio Description -->
+          <div class="container-portfolio-project-description hide clearfix" id="{{ popout.id }}">
 
-            <div class="portfolio-description">
+            <div class="portfolio-project-description">
               {{ description }}
             </div>
 
@@ -205,9 +207,10 @@
             </div>
 
           </div>
-          <!-- End Popover Portfolio Description -->
+          <!-- End Popout Portfolio Description -->
 
         </div>
+        <!-- End Template Container -->
         {{ /projects }}
       </script>
 

@@ -67,8 +67,8 @@ $(document).ready(function() {
         image: "../images/portfolio/cover-quote-generator.png",
         title: "Life is Strange Quote Generator",
         description: "Relive the horror here with quotes from the game",
-        popover: {
-          id: "popover-1"
+        popout: {
+          id: "portfolio-project-1"
         },
         components: [component.html5, component.css3, component.javascript, component.jquery],
         link: {
@@ -81,8 +81,8 @@ $(document).ready(function() {
         image: "../images/portfolio/cover-pumpkindoro-timer.png",
         title: "Pumpkindoro Timer",
         description: "A variation of the world famous Pomodoro Timer, now made with real pumpkins.",
-        popover: {
-          id: "popover-5"
+        popout: {
+          id: "portfolio-project-2"
         },
         components: [component.html5, component.css3, component.javascript, component.jquery],
         link: {
@@ -95,8 +95,8 @@ $(document).ready(function() {
         image: "../images/portfolio/cover-simongame.png",
         title: "Simon Game",
         description: "A classic, rebuilt for modern times, and in 4K. (Batteries not included)",
-        popover: {
-          id: "popover-3"
+        popout: {
+          id: "portfolio-project-3"
         },
         components: [component.html5, component.css3, component.javascript, component.jquery],
         link: {
@@ -109,8 +109,8 @@ $(document).ready(function() {
         image: "../images/portfolio/cover-twitch-viewer.png",
         title: "TwitchViewer",
         description: "See what some of my favourite Twitch streamers are playing",
-        popover: {
-          id: "popover-2"
+        popout: {
+          id: "portfolio-project-4"
         },
         components: [component.html5, component.css3, component.javascript, component.jquery, component.react],
         link: {
@@ -123,8 +123,8 @@ $(document).ready(function() {
         image: "../images/portfolio/cover-wikiviewer.png",
         title: "Wiki Viewer",
         description: "Search for Wikipedia using Wikipedia",
-        popover: {
-          id: "popover-4"
+        popout: {
+          id: "portfolio-project-5"
         },
         components: [component.html5, component.css3, component.javascript, component.jquery, component.mustache],
         link: {

@@ -67,38 +67,46 @@ $(document).ready(function() {
   });
 
   //////////////////////////////////////////////////////////////////////////////
-  // Popovers.
+  // Portfolio Project Description Popouts.
   //////////////////////////////////////////////////////////////////////////////
+
+  // When a .btn-portfolio-btn is clicked, need to find the value of the
+  // data-portfolio-reference property of the clicked item.
+  //
+  // This value will reference the Description container
+  // (.container-portfolio-project-description). We want to hide all those
+  // containers, except for the container references by the currently
+  // pressed Info button.
+  //
+  // TLDR: If "More Info" is pressed, hide all other Description containers
+  // and only show the container for the selected portfolio project. Also, if
+  // the same "More Info" button is pressed, close its Description.
+  //
   $(".btn-portfolio-info").on("click", function() {
 
-    // Get the data-portfolio-reference value.
-    var reference = $(this).data("portfolio-reference");
+    // Get the data-portfolio-reference value for the clicked element.
+    var currentReference = $(this).data("portfolio-reference");
 
-    // Hide all descriptions.
-    $(".popover-portfolio-description").addClass("hide");
+    // Select all More Info buttons.
+    var allReferences = $(".btn-portfolio-info").toArray();
 
-    // Select the <div> with id reference and toggle its .hide class.
-    $("#" + reference).toggleClass("hide");
+    // Get a list of all data-portfolio-reference="" values attached to the
+    // More Info buttons.
+    allReferences = $(".btn-portfolio-info").map(function() {
+      return $(this).data("portfolio-reference");
+    }).get();
+
+    // Delete the data-portfolio-reference value of the selected element.
+    allReferences.splice(allReferences.indexOf(currentReference), 1);
+
+    // Hide the Description containers for all others
+    allReferences.forEach(function(val, idx, arr) {
+      $("#" + val).addClass("hide");
+    });
+
+    // Show the container we want.
+    $("#" + currentReference).toggleClass("hide");
 
   });
-
-  /*
-  $('[data-toggle="popover"]').popover({
-    container: ".portfolio-panel",
-    html:true,
-    content: function() {
-
-      // Get the portfolio referenced by this popover.
-      var reference = $(this).attr("data-portfolio-reference")
-
-      // Return rendered HTML portfolio description.
-      return $("#" + reference).html();
-    }
-  });
-
-  $('[data-toggle="popover"]').on("click", function() {
-    $('[data-toggle="popover"]').not(this).popover("hide");
-  });
-  */
 
 });
