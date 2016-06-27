@@ -5,6 +5,8 @@
   display: block;
   padding-top: 15px;
 
+  position: relative;
+
   // Portfolio Image Container.
   .portfolio-image-container {
 
@@ -68,19 +70,25 @@
   }
 
   .container-portfolio-project-description {
+
+    // Can be placed anywhere in the container.
+    position: absolute;
+    width: 100%;
+
     background-color: $white;
-    border-left: solid 1px $lightgrey;
-    border-right: solid 1px $lightgrey;
-    border-bottom: solid 1px $lightgrey;
 
     padding-left: 5px;
     padding-right: 5px;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    // Border box shadow effect.
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.75);
 
     .portfolio-project-description {
       background-color: $white;
-      border-bottom: solid 1px $lightgrey;
-      padding-top: 15px;
       padding-bottom: 15px;
       width: 100%;
       font-size: 1em;
