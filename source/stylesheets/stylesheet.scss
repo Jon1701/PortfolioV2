@@ -8,6 +8,12 @@ $black: #000000;
 $orange: #DB4105;
 $red: #DC143C;
 
+////////////////////////////////////////////////////////////////////////////////
+// Special Classses
+////////////////////////////////////////////////////////////////////////////////
+
+
+// Center horizonally and vertically.
 .center-middle {
   position: fixed;
   top: 50%;
@@ -15,16 +21,27 @@ $red: #DC143C;
   transform: translate(-50%, -50%);
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+
 ////////////////////////////////////////////////////////////////////////////////
 // Body
 ////////////////////////////////////////////////////////////////////////////////
 body {
   background-color: $grey;
   font-size: 100%;
-}
-
-.visibility-hidden {
-  visibility: hidden;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

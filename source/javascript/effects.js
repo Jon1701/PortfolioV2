@@ -107,6 +107,11 @@ $(document).ready(function() {
     // Show the container we want.
     $("#" + currentReference).toggleClass("hide");
 
+    $("#" + currentReference).on("click", function() {
+      $(this).addClass("hide");
+    });
+
   });
+
 
 });
