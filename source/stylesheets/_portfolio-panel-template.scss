@@ -67,13 +67,11 @@
 
   .portfolio-description {
     background-color: $white;
-    border-left: solid 1px $lightgrey;
-    border-right: solid 1px $lightgrey;
-    border-top: solid 1px $lightgrey;
+    border-bottom: solid 1px $lightgrey;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
-    font-size: 0.8em;
+    font-size: 1.25em;
   }
 
   .popover-portfolio-description {
