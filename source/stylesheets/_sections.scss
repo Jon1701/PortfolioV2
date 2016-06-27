@@ -151,6 +151,10 @@ $colour-js-inner: #F2BF22;
   .badge-w3c-html { &:hover { background-color: $colour-html-inner; }; };
   .badge-w3c-css { &:hover { background-color: $colour-css-inner; }; };
   .badge-w3c-js { &:hover { background-color: $colour-js-inner; }; };
+
+  .container-devicons {
+    font-size: 4em;
+  }
 }
 
 // Portfolio
