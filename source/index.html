@@ -167,9 +167,9 @@
           </div>
 
             <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default btn-portfolio-info" data-toggle="popover" data-placement="top" title="{{ title }}" data-content="{{ popoverDescription }}" data-portfolio-reference="{{ popover.id }}">
+              <button type="button" class="btn btn-default btn-portfolio-info" data-portfolio-reference="{{ popover.id }}">
                 <div><i class="fa fa-info-circle fa-fw"></i></div>
-                <div>Info</div>
+                <div>More Info</div>
               </button>
             </div>
 
@@ -184,14 +184,7 @@
 
           </div>
 
-
-
           <div class="popover-portfolio-description hide" id="{{ popover.id }}">
-
-            <div>{{ description }}</div>
-
-            <br/>
-
             <div class="container-devicon-array">
               {{ #components }}
                 <div class="container-devicon">
@@ -200,7 +193,6 @@
                 </div>
               {{ /components }}
             </div>
-
           </div>
 
         </div>

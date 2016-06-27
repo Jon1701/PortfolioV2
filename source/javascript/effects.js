@@ -69,6 +69,17 @@ $(document).ready(function() {
   //////////////////////////////////////////////////////////////////////////////
   // Popovers.
   //////////////////////////////////////////////////////////////////////////////
+  $(".btn-portfolio-info").on("click", function() {
+
+    // Get the data-portfolio-reference value.
+    var reference = $(this).data("portfolio-reference");
+
+    // Select the <div> with id reference and toggle its .hide class.
+    $("#" + reference).toggleClass("hide");
+
+  });
+
+  /*
   $('[data-toggle="popover"]').popover({
     container: ".portfolio-panel",
     html:true,
@@ -85,5 +96,6 @@ $(document).ready(function() {
   $('[data-toggle="popover"]').on("click", function() {
     $('[data-toggle="popover"]').not(this).popover("hide");
   });
+  */
 
 });
