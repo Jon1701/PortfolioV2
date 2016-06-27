@@ -107,8 +107,14 @@ $(document).ready(function() {
     // Show the container we want.
     $("#" + currentReference).toggleClass("hide");
 
-    $("#" + currentReference).on("click", function() {
+    // Close Description container when clicked-up.
+    $("#" + currentReference).mouseup(function() {
       $(this).addClass("hide");
+    });
+
+    // Close Description container when body is clicked.
+    $("body").mouseup(function() {
+     $("#" + currentReference).addClass("hide");
     });
 
   });
