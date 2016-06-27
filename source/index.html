@@ -187,14 +187,13 @@
 
             <br/>
 
-            <div style>
+            <div class="container-devicon-array">
               {{ #components }}
-              <div>
-                <!--<img src="{{ img }}" alt="{{ name }}" style="max-height:100px"/>-->
-
-                <button class="btn btn-default">{{ name }}</button>
-              </div>
-            {{ /components }}
+                <div class="container-devicon">
+                  <div class="icon"><span class="{{ className }}"></span></div>
+                  <div class="icon-name">{{ name }}</div>
+                </div>
+              {{ /components }}
             </div>
 
           </div>

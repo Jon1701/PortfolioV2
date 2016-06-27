@@ -165,8 +165,18 @@ $colour-js-inner: #F2BF22;
   .portfolio-description {
     padding-top: 15px;
     padding-bottom: 15px;
-
   }
+
+  .container-devicon-array {
+    display: flex;
+    justify-content: space-between;
+
+    .container-devicon {
+      display: inline-block;
+      .icon { font-size: 2.5em;};
+    }
+  }
+
 
 }
 

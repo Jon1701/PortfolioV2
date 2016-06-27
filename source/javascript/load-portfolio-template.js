@@ -3,34 +3,53 @@ $(document).ready(function() {
   // Components
   var component = {
 
+    // CSS3
+    css3 : {
+      name: "CSS3",
+      className: "devicons devicons-css3"
+    },
+
     // Bootstrap
     bootstrap : {
       name: "Bootstrap",
-      img: "../images/logos/Bootstrap/bootstrap-solid.png"
+      className: "devicons devicons-bootstrap"
+    },
+
+    // HTML5
+    html5 : {
+      name: "HTML5",
+      className: "devicons devicons-html5"
     },
 
     // jQuery
     jquery: {
       name: "jQuery",
-      img: "../images/logos/jQuery/jQuery-Logo.png"
+      className: "devicons devicons-jquery"
+    },
+
+    // JavaScript
+    javascript: {
+      name: "JavaScript",
+      className: "devicons devicons-javascript_badge"
     },
 
     // Mustache.js
     mustache: {
       name: "mustache.js",
-      img: null
+      className: "devicons devicons-codepen visibility-hidden"
+
     },
 
     // React
     react: {
       name: "React",
-      img: "../images/logos/React/react-logo.png"
+      className: "devicons devicons-react"
     },
 
     // Sass
     sass: {
       name: "Sass",
-      img: "../images/logos/Sass/color-1c4aab2b.png"
+      className: "devicons devicons-sass"
     }
 
   }
@@ -51,7 +70,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-1"
         },
-        components: [component.jquery, component.sass],
+        components: [component.html5, component.css3, component.javascript, component.jquery],
         link: {
           github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
           demo: "../portfolio/LifeIsStrangeQuoteGenerator"
@@ -65,7 +84,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-5"
         },
-        components: [component.jquery, component.sass],
+        components: [component.html5, component.css3, component.javascript, component.jquery],
         link: {
           github: "https://github.com/Jon1701/PumpkindoroTimer",
           demo: "../portfolio/PumpkindoroTimer"
@@ -79,7 +98,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-3"
         },
-        components: [component.jquery, component.sass],
+        components: [component.html5, component.css3, component.javascript, component.jquery],
         link: {
           github: "https://github.com/Jon1701/SimonGame",
           demo: "../portfolio/SimonGame"
@@ -93,7 +112,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-2"
         },
-        components: [component.jquery, component.react, component.sass],
+        components: [component.html5, component.css3, component.javascript, component.jquery, component.react],
         link: {
           github: "https://github.com/Jon1701/TwitchViewer",
           demo: "../portfolio/TwitchViewer"
@@ -107,7 +126,7 @@ $(document).ready(function() {
         popover: {
           id: "popover-4"
         },
-        components: [component.bootstrap, component.mustache, component.jquery],
+        components: [component.html5, component.css3, component.javascript, component.jquery, component.mustache],
         link: {
           github: "https://github.com/Jon1701/WikiViewer",
           demo: "../portfolio/WikiViewer"
