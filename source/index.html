@@ -137,6 +137,18 @@
         {{ #projects }}
         <div class="portfolio-panel container-fluid col-xs-12 col-md-6 col-lg-4">
 
+
+          <div class="portfolio-title">
+            {{ title }}
+          </div>
+
+          <div class="portfolio-description">
+            {{ description }}
+          </div>
+
+
+
+
           <div class="portfolio-image-container">
             <a href="{{ link.demo }}" target="_blank">
               <img src="{{ image }}" alt="{{ title }}" class="img-responsive">
@@ -172,13 +184,6 @@
 
           </div>
 
-          <div class="btn-group btn-group-justified" role="group" aria-label="...">
-            <div class="btn-group" role="group">
-              <div class="portfolio-description">
-                {{ title }}
-              </div>
-            </div>
-          </div>
 
 
           <div class="popover-portfolio-description hide" id="{{ popover.id }}">
