@@ -74,6 +74,9 @@ $(document).ready(function() {
     // Get the data-portfolio-reference value.
     var reference = $(this).data("portfolio-reference");
 
+    // Hide all descriptions.
+    $(".popover-portfolio-description").addClass("hide");
+
     // Select the <div> with id reference and toggle its .hide class.
     $("#" + reference).toggleClass("hide");
 
