@@ -76,6 +76,11 @@ gulp.task("components", function() {
   gulp.src(modulesPath + "mustache/mustache.js")
     .pipe(gulp.dest(destPath + "components/mustache/"));
 
+  // Dev Icons
+  gulp.src(modulesPath + "devicons/css/*")
+    .pipe(gulp.dest(destPath + "components/devicons/css/"));
+    gulp.src(modulesPath + "devicons/fonts/*")
+      .pipe(gulp.dest(destPath + "components/devicons/fonts/"));
 });
 
 // Webserver.
