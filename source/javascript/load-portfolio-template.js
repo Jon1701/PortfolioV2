@@ -66,7 +66,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-quote-generator.png",
         title: "Life is Strange Quote Generator",
-        description: "Relive the horror here with quotes from the game, also comes with a relaxing soundtrack",
+        description: "Relive the horror here with quotes from the game",
         popover: {
           id: "popover-1"
         },
@@ -80,7 +80,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-pumpkindoro-timer.png",
         title: "Pumpkindoro Timer",
-        description: "A variation of the world famous Pomodoro Timer, but made with real pumpkins",
+        description: "A variation of the world famous Pomodoro Timer",
         popover: {
           id: "popover-5"
         },
@@ -108,7 +108,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-twitch-viewer.png",
         title: "TwitchViewer",
-        description: "View which of my favourite streamers are online and what they are playing",
+        description: "See what some of my favourite Twitch streamers are playing",
         popover: {
           id: "popover-2"
         },
