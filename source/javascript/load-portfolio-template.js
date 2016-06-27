@@ -80,7 +80,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-pumpkindoro-timer.png",
         title: "Pumpkindoro Timer",
-        description: "A variation of the world famous Pomodoro Timer",
+        description: "A variation of the world famous Pomodoro Timer, now made with real pumpkins.",
         popover: {
           id: "popover-5"
         },
@@ -94,7 +94,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-simongame.png",
         title: "Simon Game",
-        description: "A classic, rebuilt for modern times, and in 4K",
+        description: "A classic, rebuilt for modern times, and in 4K. (Batteries not included)",
         popover: {
           id: "popover-3"
         },
