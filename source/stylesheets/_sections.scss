@@ -143,7 +143,6 @@ $colour-js-inner: #F2BF22;
          width: 300px;
          padding: 50px;
       }
-
     }
   }
 
@@ -152,9 +151,22 @@ $colour-js-inner: #F2BF22;
   .badge-w3c-css { &:hover { background-color: $colour-css-inner; }; };
   .badge-w3c-js { &:hover { background-color: $colour-js-inner; }; };
 
-  .container-devicons {
-    font-size: 4em;
+  // Array of devicons.
+  .container-devicons-array {
+
+    // One single devicon container.
+    .container-devicon {
+      display: inline-block;
+
+      // Icon size.
+      .icon {font-size: 2em;};
+
+      // Icon name.
+      .name {font-size: 0.75em;}
+    }
+
   }
+
 }
 
 // Portfolio
