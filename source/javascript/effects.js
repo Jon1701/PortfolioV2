@@ -112,15 +112,9 @@ $(document).ready(function() {
       $(this).addClass("hide");
     });
 
-    // Close Description container when body is clicked.
-    /*
-    $("body").mouseup(function() {
-     $("#" + currentReference).addClass("hide");
-    });
-    */
-
-
   });
+
+
 
 
 });
