@@ -139,11 +139,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   // Fonts.
   font-family: "Oswald";
 
-  // W3C badge hover colours.
-  .badge-w3c-html { &:hover { background-color: $colour-html-inner; }; };
-  .badge-w3c-css { &:hover { background-color: $colour-css-inner; }; };
-  .badge-w3c-js { &:hover { background-color: $colour-js-inner; }; };
-
   .container-w3c-badges {
     div img {
       margin: 0 auto;
@@ -166,11 +161,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
   // Background Image.
   background: url($bg-section-portfolio-url);
-
-  .portfolio-description {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
 
   .container-devicon-array {
 
