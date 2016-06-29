@@ -139,36 +139,17 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   // Fonts.
   font-family: "Oswald";
 
-  // W3C badge container.
-  .w3c-logo-container {
-    width: 100%;
-
-    img {
-       display: inline-block;
-       width: 30%;
-       padding: 50px;
-    }
-  }
-
-  @media (min-width: 1000px) {
-    .w3c-logo-container {
-
-      width: 950px;
-
-      margin: 0 auto;
-
-      img {
-         display: inline-block;
-         width: 300px;
-         padding: 50px;
-      }
-    }
-  }
-
   // W3C badge hover colours.
   .badge-w3c-html { &:hover { background-color: $colour-html-inner; }; };
   .badge-w3c-css { &:hover { background-color: $colour-css-inner; }; };
   .badge-w3c-js { &:hover { background-color: $colour-js-inner; }; };
+
+  .container-w3c-badges {
+    div img {
+      margin: 0 auto;
+      width: 10vw;
+    }
+  }
 
   // Array of devicons.
   .container-devicons-array {
