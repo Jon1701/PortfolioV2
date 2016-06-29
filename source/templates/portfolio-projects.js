@@ -28,7 +28,8 @@ $(document).ready(function() {
     jquery: {
       name: "jQuery",
       className: "devicons devicons-jquery",
-      iconName:"devicons-jquery"
+      iconName:"devicons-jquery",
+      iconDescription: "A JavaScript library used to provide a View for data rendered as HTML."
     },
 
     // JavaScript
@@ -42,7 +43,8 @@ $(document).ready(function() {
     mustache: {
       name: "mustache.js",
       className: "devicons devicons-code",
-      iconName:"devicons-code"
+      iconName:"devicons-code",
+      iconDescription: "A logic-less HTML templating system."
 
     },
 
@@ -50,14 +52,16 @@ $(document).ready(function() {
     react: {
       name: "React",
       className: "devicons devicons-react",
-      iconName:"devicons-react"
+      iconName:"devicons-react",
+      iconDescription: "A JavaScript library used to provide a View for data rendered as HTML."
     },
 
     // Sass
     sass: {
       name: "Sass",
       className: "devicons devicons-sass",
-      iconName:"devicons-sass"
+      iconName:"devicons-sass",
+      iconDescription: "A CSS pre-processor with syntax advancements."
     }
 
   }
