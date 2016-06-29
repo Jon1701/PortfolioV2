@@ -41,7 +41,7 @@ $red: #DC143C;
 ////////////////////////////////////////////////////////////////////////////////
 body {
   background-color: $grey;
-  
+
   // Fonts.
   font-family: "Oswald";
   font-size: 100%;
@@ -55,3 +55,4 @@ body {
 @import "_sections";
 @import "_portfolio-panel-template";
 @import "_font-size";
+@import "_devicon-hover";

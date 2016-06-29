@@ -193,7 +193,7 @@
         <script id="template-aboutme-devicons" type="x-tmpl-mustache">
           <div class="container-devicons-array">
             {{ #iconData }}
-              <div class="container-devicon">
+              <div class="container-devicon container-{{ iconName }}" title="{{ description }}">
                 <div class="icon"><span class="{{ className }}"></span></div>
                 <div class="name">{{ name }}</div>
               </div>
@@ -309,9 +309,9 @@
 
             <div class="container-devicon-array">
               {{ #components }}
-                <div class="container-devicon">
+                <div class="container-devicon container-{{ iconName }}">
                   <div class="icon"><span class="{{ className }}"></span></div>
-                  <div class="icon-name">{{ name }}</div>
+                  <div class="name">{{ name }}</div>
                 </div>
               {{ /components }}
             </div>

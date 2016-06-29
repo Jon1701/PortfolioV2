@@ -1,0 +1,25 @@
+@mixin colourize($colour) {
+  &:hover {
+    .icon { color: $colour; transition: all 0.5s ease; };
+    .name { color: $colour; transition: all 0.5s ease; };
+  }
+}
+
+.container-devicons-jquery { @include colourize(#0769AD); };
+.container-devicons-bootstrap { @include colourize(#563D7C); };
+.container-devicons-react { @include colourize(#61DAFB); };
+.container-devicons-code { @include colourize(#333333); };
+.container-devicons-atom { @include colourize(#40A977); };
+.container-devicons-git { @include colourize(#F14E32); };
+.container-devicons-github_badge { @include colourize(#333333); };
+.container-devicons-gulp { @include colourize(#CF4646); };
+.container-devicons-sass { @include colourize(#C6538C); };
+.container-devicons-debian { @include colourize(#D70A53); };
+.container-devicons-ubuntu { @include colourize(#E95420); };
+.container-devicons-terminal { @include colourize(#333333); };
+.container-devicons-mongodb { @include colourize(#7FC857); };
+.container-devicons-python { @include colourize(#3D83BE); };
+
+.container-devicons-css3 { @include colourize(#369CD6); };
+.container-devicons-javascript_badge { @include colourize(#F2BF22); };
+.container-devicons-html5 { @include colourize(#F1662B); };

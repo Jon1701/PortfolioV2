@@ -10,52 +10,101 @@ $(document).ready(function() {
     iconData : [
       {
         className: "devicons devicons-jquery",
-        name: "jQuery"
+        iconName: "devicons-jquery",
+        name: "jQuery",
+        description: "A JavaScript library which makes HTML DOM traversal/manipulation, event handling, animation, and AJAX much simpler and easy to use."
       },
 
       {
         className: "devicons devicons-bootstrap",
-        name: "Bootstrap"
+        iconName: "devicons-bootstrap",
+        name: "Bootstrap",
+        description: "A web framework for designing responsive websites. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components."
       },
 
       {
         className: "devicons devicons-react",
-        name: "React"
+        iconName: "devicons-react",
+        name: "React",
+        description: "A JavaScript library used to provide a View for data rendered as HTML."
       },
+
+      {
+        className: "devicons devicons-code",
+        iconName: "devicons-code",
+        name: "mustache.js",
+        description: "A logic-less HTML templating system."
+      },
+
 
       {
         className: "devicons devicons-atom",
-        name: "Atom"
+        iconName: "devicons-atom",
+        name: "Atom",
+        description: "A free and open-source text and source code editor."
       },
 
       {
-        className: "devicons devicons-github_full",
-        name: "GitHub"
+        className: "devicons devicons-git",
+        iconName: "devicons-git",
+        name: "Git",
+        description: "A version control system used for software development."
+      },
+
+      {
+        className: "devicons devicons-github_badge",
+        iconName: "devicons-github_badge",
+        name: "GitHub",
+        description: "A web-based Git repository hosting service."
       },
 
       {
         className: "devicons devicons-gulp",
-        name: "Gulp"
+        iconName: "devicons-gulp",
+        name: "Gulp",
+        description: "A streaming build system used to automate and enhance your development workflow."
       },
 
       {
         className: "devicons devicons-sass",
-        name: "Sass"
+        iconName: "devicons-sass",
+        name: "Sass",
+        description: "A CSS pre-processor with syntax advancements."
       },
 
       {
         className: "devicons devicons-debian",
-        name: "Debian"
+        iconName: "devicons-debian",
+        name: "Debian",
+        description: "A UNIX-like operating system composed of free software."
+      },
+
+      {
+        className: "devicons devicons-ubuntu",
+        iconName: "devicons-ubuntu",
+        name: "Ubuntu",
+        description: "A Debian-based Linux operating system."
+      },
+
+      {
+        className: "devicons devicons-terminal",
+        iconName: "devicons-terminal",
+        name: "Bash",
+        description: "A command interpreter for the GNU operating system."
       },
 
       {
         className: "devicons devicons-mongodb",
-        name: "MongoDB"
+        iconName: "devicons-mongodb",
+        name: "MongoDB",
+        description: "A free and open-source document-oriented database."
       },
 
       {
         className: "devicons devicons-python",
-        name: "Python"
+        iconName: "devicons-python",
+        name: "Python",
+        description: "A general-purpose, interpreted programming language."
       }
     ]
 

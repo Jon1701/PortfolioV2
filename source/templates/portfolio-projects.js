@@ -6,50 +6,58 @@ $(document).ready(function() {
     // CSS3
     css3 : {
       name: "CSS3",
-      className: "devicons devicons-css3"
+      className: "devicons devicons-css3",
+      iconName:"devicons-css3"
     },
 
     // Bootstrap
     bootstrap : {
       name: "Bootstrap",
-      className: "devicons devicons-bootstrap"
+      className: "devicons devicons-bootstrap",
+      iconName:"devicons-bootstrap"
     },
 
     // HTML5
     html5 : {
       name: "HTML5",
-      className: "devicons devicons-html5"
+      className: "devicons devicons-html5",
+      iconName:"devicons-html5"
     },
 
     // jQuery
     jquery: {
       name: "jQuery",
-      className: "devicons devicons-jquery"
+      className: "devicons devicons-jquery",
+      iconName:"devicons-jquery"
     },
 
     // JavaScript
     javascript: {
       name: "JavaScript",
-      className: "devicons devicons-javascript_badge"
+      className: "devicons devicons-javascript_badge",
+      iconName:"devicons-javascript_badge"
     },
 
     // Mustache.js
     mustache: {
       name: "mustache.js",
-      className: "devicons devicons-codepen visibility-hidden"
+      className: "devicons devicons-code",
+      iconName:"devicons-code"
 
     },
 
     // React
     react: {
       name: "React",
-      className: "devicons devicons-react"
+      className: "devicons devicons-react",
+      iconName:"devicons-react"
     },
 
     // Sass
     sass: {
       name: "Sass",
-      className: "devicons devicons-sass"
+      className: "devicons devicons-sass",
+      iconName:"devicons-sass"
     }
 
   }
