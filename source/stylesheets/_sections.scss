@@ -111,12 +111,7 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   .container-devicons-array {
 
     // Icon hover effects.
-    .icon {
-      &:hover {
-        transition: all 0.5s ease;
-        text-decoration: none;
-      }
-    }
+    .icon { &:hover { transition: all 0.5s ease; }; };
 
     // Icon colours.
     .fa-github:hover {color: $colour-github-grey; };
@@ -128,6 +123,7 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
       &:link { color: $white; };
       &:visited { color: $white; };
       &:active { color: $white; };
+      &:hover { text-decoration: none; };
     }
 
   } // end devicons container array.
@@ -276,9 +272,30 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
 // Footer.
 #section-footer {
-  min-height: 25vh;
+  min-height: 5vh;
 
   // Fonts.
   font-family: "Oswald";
   color: white;
+
+  // Developer icons (actually font-awesome) for GitHub, LinkedIn, FreeCodeCamp
+  .container-devicons-array {
+
+    // Icon hover effects.
+    .icon { &:hover { transition: all 0.5s ease; }; };
+
+    // Icon colours.
+    .fa-github:hover {color: $colour-github-grey; };
+    .fa-linkedin-square:hover {color: $colour-linkedin-blue; };
+    .fa-fire:hover {color: $colour-freecodecamp-green; };
+
+    // Link colours.
+    a {
+      &:link { color: $white; };
+      &:visited { color: $white; };
+      &:active { color: $white; };
+      &:hover { text-decoration: none; };
+    }
+  }
+
 }
