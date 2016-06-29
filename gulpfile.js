@@ -49,6 +49,11 @@ gulp.task("stylesheets", function() {
     .pipe(gulp.dest(destPath + "stylesheets/"));
 });
 
+gulp.task("templates", function() {
+  gulp.src(srcPath + "templates/**/*")
+    .pipe(gulp.dest(destPath + "templates/"));
+});
+
 // Move HTML files.
 gulp.task("html", function() {
   gulp.src(srcPath + "*.html")
@@ -106,10 +111,11 @@ gulp.task("watch", function() {
   gulp.watch(srcPath + "portfolio/**/*", ["portfolio"]); // JavaScript.
   gulp.watch(srcPath + "stylesheets/**/*.scss", ["stylesheets"]); // SASS Main.
   gulp.watch(srcPath + "stylesheets/**/_*.scss", ["stylesheets"]); // SASS Partials.
+  gulp.watch(srcPath + "templates/**/*", ["templates"]); // SASS Partials.
   gulp.watch(srcPath + "*.html", ["html"]); // HTML files.
 });
 
 ////////////////////////////////////////////////////////////////////////////////
 // Default Task.
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task("default", ["fonts", "images", "javascript", "portfolio", "stylesheets", "html", "components", "watch", "webserver"]);
+gulp.task("default", ["fonts", "images", "javascript", "portfolio", "stylesheets", "templates", "html", "components", "watch", "webserver"]);
