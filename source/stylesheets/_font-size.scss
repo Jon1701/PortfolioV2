@@ -145,8 +145,8 @@
 
 // Base section styles
 .section {
-  .title { font-size: 5em; }; // Section Title.
-  .content { font-size: 2.5em; }; // Section Body.
+
+  //.content { font-size: 2.5em; }; // Section Body.
 }
 
 // Home
@@ -158,12 +158,20 @@
 
 // About Me
 #section-aboutme {
-  .icon { font-size: 2em; }; // Icon size.
-  .name { font-size: 0.75em; }; // Icon name.
+  .title { font-size: 5em; }; // Section Title.
+  .content { font-size: 2.75em; }; // Section content;
+
+    .icon { font-size: 2.5em; }; // Icon size.
+    .name { font-size: 1em; }; // Icon name.
 }
 
 // Portfolio
 #section-portfolio {
+
+  .title { font-size: 5em; }; // Section Title.
+
+  // Portfolio project title.
+  .portfolio-project-title { font-size: 2.5em; };
 
   // Portfolio Project Buttons (Demo, More Info, GitHub).
   .portfolio-project-btn-array {
@@ -171,13 +179,31 @@
     .name {font-size: 1.25em; };
   };
 
-  // Popover icons.
-  .container-devicon { .icon { font-size: 2.5em; }; };
+  // Popover.
+  .container-portfolio-project-description {
+
+    // Description
+    .portfolio-project-description { font-size: 2.5em; };
+
+    // Icon and Name
+    .container-devicon {
+      .icon { font-size: 5em; };
+      .name { font-size: 2.25em; };
+    };
+
+  }// End Popover.
+
+}
+
+// Contact
+#section-contact {
+  .title { font-size: 5em; }; // Section Title.
+  .content { font-size: 3em; }; // Section Body.
 }
 
 // Footer
 #section-footer {
-  .title { font-size: 8em; }; // Section Title.
+
   .content { font-size: 3em; }; // Section Body.
   .icon { font-size: 2.5em; }; // Icon size.
 }
