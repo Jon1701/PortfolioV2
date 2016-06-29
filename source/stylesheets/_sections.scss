@@ -222,7 +222,7 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   form {
 
     .fieldset {
-      margin-bottom: 25px;
+      margin-top: 25px;
     }
 
     // Textbox.
@@ -260,11 +260,20 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
       min-width: 60vw;
       max-width: 60vw;
 
+      margin-top: 45px;
+
       border: solid 1px $white;
       background-color: transparent;
       color: $white;
 
+      // Remove outline
       &:focus { outline: none; };
+
+      // Button hover.
+      &:hover {
+        background-color: $white;
+        color: $grey;
+      }
     }
   }
 
