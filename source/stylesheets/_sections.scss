@@ -211,12 +211,66 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 // Contact
 #section-contact {
 
+  min-height: 1vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
   // Background Image.
   background: url($bg-section-contact-url);
 
   // Fonts.
   font-family: "Oswald";
   color: white;
+
+  // Forms
+  form {
+
+    .fieldset {
+      margin-bottom: 25px;
+    }
+
+    // Textbox.
+    input[type="text"] {
+      background-color: transparent;
+      border: 0px;
+      border-bottom: solid 5px $white;
+      &:focus { outline: none; };
+
+      width: 60vw;
+      min-width: 60vw;
+      max-width: 60vw;
+
+      text-align: center;
+    }
+
+    // Label.
+    label { text-align: left; };
+
+    // Textarea.
+    textarea {
+      background-color: transparent;
+      border: 0;
+      border-bottom: solid 5px $white;
+      &:focus { outline: none; };
+
+      width: 60vw;
+      min-width: 60vw;
+      max-width: 60vw;
+    }
+
+    // Submit button
+    button {
+      width: 60vw;
+      min-width: 60vw;
+      max-width: 60vw;
+
+      border: solid 1px $white;
+      background-color: transparent;
+      color: $white;
+
+      &:focus { outline: none; };
+    }
+  }
 
 }
 
