@@ -272,7 +272,15 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
 // Footer.
 #section-footer {
-  min-height: 5vh;
+
+  // No padding, and no minimum height.
+  padding: 0;
+  min-height: 0vh;
+
+  // Add padding to top and bottom.
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+
 
   // Fonts.
   font-family: "Oswald";
