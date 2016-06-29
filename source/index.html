@@ -24,9 +24,10 @@
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css"/>
 
-    <!-- Mustache.js -->
+    <!-- Mustache.js & templates -->
     <script type="text/javascript" src="components/mustache/mustache.js"></script>
     <script type="text/javascript" src="templates/portfolio-projects.js"></script>
+    <script type="text/javascript" src="templates/aboutme-devicons.js"></script>
 
     <!-- Miscellaneous effects -->
     <script type="text/javascript" src="javascript/effects.js"></script>
@@ -125,61 +126,19 @@
           <img src="images/logos/JS/logo-js-nopadding.png" class="badge-w3c-js img-responsive"/>
         </div>
 
-        <!-- Array of devicons -->
-        <div class="container-devicons-array">
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-jquery"></span></div>
-            <div class="name">jQuery</div>
+        <script id="template-aboutme-devicons" type="x-tmpl-mustache">
+          <div class="container-devicons-array">
+            {{ #iconData }}
+              <div class="container-devicon">
+                <div class="icon"><span class="{{ className }}"></span></div>
+                <div class="name">{{ name }}</div>
+              </div>
+            {{ /iconData }}
           </div>
+        </script>
 
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-bootstrap"></span></div>
-            <div class="name">Bootstrap</div>
-          </div>
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-react"></span></div>
-            <div class="name">React</div>
-          </div>
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-atom"></span></div>
-            <div class="name">Atom</div>
-          </div>
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-github_full"></span></div>
-            <div class="name">GitHub</div>
-          </div>
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-gulp"></span></div>
-            <div class="name">Gulp</div>
-          </div>
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-sass"></span></div>
-            <div class="name">Sass</div>
-          </div>
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-debian"></span></div>
-            <div class="name">Debian</div>
-          </div>
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-mongodb"></span></div>
-            <div class="name">MongoDB</div>
-          </div>
-
-          <div class="container-devicon">
-            <div class="icon"><span class="devicons devicons-python"></span></div>
-            <div class="name">Python</div>
-          </div>
-
-        </div>
-        <!-- End array of devicons -->
+        <!-- Devicons template target -->
+        <div id="template-target-aboutme-devicons"></div>
 
       </div>
     </section>
