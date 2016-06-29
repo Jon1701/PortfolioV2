@@ -12,6 +12,9 @@ $bg-section-contact-url: "../images/backgrounds/footer_lodyas/footer_lodyas.png"
 $colour-html-inner: #F1662B;
 $colour-css-inner: #369CD6;
 $colour-js-inner: #F2BF22;
+$colour-linkedin-blue: rgba(00,77,181,0.7);
+$colour-github-grey: rgba(31,33,35,0.7);
+$colour-freecodecamp-green: rgba(00,64,00,0.7);
 
 ////////////////////////////////////////////////////////////////////////////////
 // Mixins
@@ -94,11 +97,6 @@ $colour-js-inner: #F2BF22;
   font-family: "Oswald";
   color: $white;
 
-  .btn-github, .btn-linkedin, .btn-freecodecamp {
-    display: inline-block;
-    padding: 20px 50px;
-  }
-
   // Horizontal rule dividing name from repository buttons.
   hr {
     border: 0;
@@ -107,6 +105,29 @@ $colour-js-inner: #F2BF22;
 
     background-color: $white;
     color: $white;
+  }
+
+  // Developer icons (actually font-awesome) for GitHub, LinkedIn, FreeCodeCamp
+  .container-devicons-array {
+
+    // Icon size.
+    .icon { font-size: 10em; };
+
+    // Icon colours.
+    .fa-github:hover {color: $colour-github-grey; };
+    .fa-linkedin-square:hover {color: $colour-linkedin-blue; };
+    .fa-fire:hover {color: $colour-freecodecamp-green; };
+
+    // Link effects.
+    a {
+      &:link { color: $white; };
+      &:visited { color: $white; };
+      &:active { color: $white; };
+      &:hover {
+        transition: all 0.5s ease;
+        text-decoration: none;
+      }
+    }
   }
 
 }
