@@ -110,25 +110,27 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   // Developer icons (actually font-awesome) for GitHub, LinkedIn, FreeCodeCamp
   .container-devicons-array {
 
-    // Icon size.
-    .icon { font-size: 10em; };
+    // Icon hover effects.
+    .icon {
+      &:hover {
+        transition: all 0.5s ease;
+        text-decoration: none;
+      }
+    }
 
     // Icon colours.
     .fa-github:hover {color: $colour-github-grey; };
     .fa-linkedin-square:hover {color: $colour-linkedin-blue; };
     .fa-fire:hover {color: $colour-freecodecamp-green; };
 
-    // Link effects.
+    // Link colours.
     a {
       &:link { color: $white; };
       &:visited { color: $white; };
       &:active { color: $white; };
-      &:hover {
-        transition: all 0.5s ease;
-        text-decoration: none;
-      }
     }
-  }
+
+  } // end devicons container array.
 
 }
 
@@ -176,15 +178,7 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   .container-devicons-array {
 
     // One single devicon container.
-    .container-devicon {
-      display: inline-block;
-
-      // Icon size.
-      .icon {font-size: 2em;};
-
-      // Icon name.
-      .name {font-size: 0.75em;}
-    }
+    .container-devicon { display: inline-block; };
 
   }
 
@@ -196,22 +190,19 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   // Background Image.
   background: url($bg-section-portfolio-url);
 
-  // Fonts.
-  font-family: "Oswald";
-
   .portfolio-description {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
   .container-devicon-array {
+
+    // Space icon containers out.
     display: flex;
     justify-content: space-between;
 
-    .container-devicon {
-      display: inline-block;
-      .icon { font-size: 2.5em;};
-    }
+    // Icon containers on the same line.
+    .container-devicon { display: inline-block; };
   }
 
 

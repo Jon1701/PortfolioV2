@@ -49,8 +49,6 @@
       border-radius: 0px;
       outline: none;
 
-      font-size: 0.75em;
-
       // Hover styles.
       &:hover {
         color: $red;
@@ -85,7 +83,6 @@
     .portfolio-project-description {
       padding-bottom: 15px;
       width: 100%;
-      font-size: 1em;
     }
   }
 
