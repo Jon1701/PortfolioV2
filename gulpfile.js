@@ -5,7 +5,11 @@
 ////////////////////////////////////////////////////////////////////////////////
 var gulp = require("gulp");
 var sass = require("gulp-sass");
-var webserver = require('gulp-webserver');
+var webserver = require("gulp-webserver");
+
+var uncss = require("gulp-uncss");
+var concat = require("gulp-concat");
+var nano = require("gulp-cssnano");
 
 ////////////////////////////////////////////////////////////////////////////////
 // Paths
@@ -53,6 +57,10 @@ gulp.task("portfolio", function() {
 gulp.task("stylesheets", function() {
   gulp.src(srcPath + "stylesheets/**/*")
     .pipe(sass().on("error", sass.logError))
+    .pipe(uncss({
+      html: [srcPath + "index.html"]
+    }))
+    .pipe(nano())
     .pipe(gulp.dest(destPath + "stylesheets/"));
 });
 
@@ -93,6 +101,7 @@ gulp.task("components", function() {
     .pipe(gulp.dest(destPath + "components/devicons/css/"));
     gulp.src(modulesPath + "devicons/fonts/*")
       .pipe(gulp.dest(destPath + "components/devicons/fonts/"));
+
 });
 
 // Webserver.
