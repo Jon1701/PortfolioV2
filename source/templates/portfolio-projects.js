@@ -148,7 +148,7 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-website.png",
         title: "JonBalon.io",
-        description: "Press F5",
+        description: "Press F5 (or Command-R)",
         popout: {
           id: "portfolio-project-6"
         },
