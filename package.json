@@ -21,10 +21,7 @@
     "devicons": "^1.8.0",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssnano": "^2.1.2",
     "gulp-sass": "^2.3.2",
-    "gulp-uncss": "^1.0.5",
     "gulp-webserver": "^0.9.1",
     "jquery": "^2.2.4",
     "mustache": "^2.2.1"
