@@ -23,3 +23,7 @@
 .container-devicons-css3 { @include colourize(#369CD6); };
 .container-devicons-javascript_badge { @include colourize(#F2BF22); };
 .container-devicons-html5 { @include colourize(#F1662B); };
+
+.container-devicons-github_badge { @include colourize($lightgrey); };
+.container-devicons-code { @include colourize($lightgrey); };
+.container-devicons-terminal { @include colourize($lightgrey); };

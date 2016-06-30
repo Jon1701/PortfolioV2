@@ -57,7 +57,6 @@ $(document).ready(function() {
         description: "A logic-less HTML templating system."
       },
 
-
       {
         className: "devicons devicons-atom",
         iconName: "devicons-atom",
