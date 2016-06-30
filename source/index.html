@@ -31,8 +31,8 @@
     <!-- Miscellaneous effects -->
     <script type="text/javascript" src="javascript/effects.js"></script>
 
-    <!-- Officia fugiat in non occaecat sint do eu cillum aute eu id ex. -->
-    <script type="text/javascript" src="javascript/consectetur.js"></script>
+    <!-- Form action fill-in -->
+    <script type="text/javascript" src="javascript/forms.js"></script>
 
   </head>
 
@@ -289,7 +289,10 @@
       <div class="content">
 
         <!-- Alert box -->
-        <div class="alert alert-success" role="alert">Message sent</div>
+        <div id="form-alertbox" class="alert alert-success" role="alert">
+          <div>Message sent</div>
+          <div class="fa fa-times-circle fa-fw"></div>
+        </div>
 
         <!-- Contact Form -->
         <form id="form-contact" method="POST">
@@ -297,7 +300,7 @@
           <!-- Name -->
           <div class="fieldset">
             <div>
-              <input type="text" name="name" required>
+              <input id="field-name" class="field-neutral" type="text" name="name" required>
             </div>
             <div>
               <label for="name">Name</label>
@@ -307,7 +310,7 @@
           <!-- Email -->
           <div class="fieldset">
             <div>
-              <input type="text" name="_replyto" required>
+              <input id="field-email" class="field-neutral" type="text" name="_replyto" required>
             </div>
             <div>
               <label for="_replyto">Email</label>
@@ -320,7 +323,7 @@
           <!-- Message -->
           <div class="fieldset">
           <div>
-            <textarea name="message" required></textarea>
+            <textarea id="field-message" class="field-neutral" name="message" required></textarea>
           </div>
           <div>
             <label for="message">Message</label>

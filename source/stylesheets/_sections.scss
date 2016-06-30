@@ -210,8 +210,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
     // Textbox.
     input[type="text"] {
       background-color: transparent;
-      border: 0px;
-      border-bottom: solid 5px $white;
       &:focus { outline: none; };
 
       width: 60vw;
@@ -227,8 +225,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
     // Textarea.
     textarea {
       background-color: transparent;
-      border: 0;
-      border-bottom: solid 5px $white;
       &:focus { outline: none; };
 
       width: 60vw;
