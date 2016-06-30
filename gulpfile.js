@@ -18,6 +18,13 @@ var modulesPath = "./node_modules/";
 // Tasks
 ////////////////////////////////////////////////////////////////////////////////
 
+// Move CNAME.
+// Move fonts.
+gulp.task("cname", function() {
+  gulp.src("assets/CNAME")
+    .pipe(gulp.dest(destPath));
+})
+
 // Move fonts.
 gulp.task("fonts", function() {
   gulp.src(srcPath + "fonts/**/*")
@@ -118,4 +125,4 @@ gulp.task("watch", function() {
 ////////////////////////////////////////////////////////////////////////////////
 // Default Task.
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task("default", ["fonts", "images", "javascript", "portfolio", "stylesheets", "templates", "html", "components", "watch", "webserver"]);
+gulp.task("default", ["cname", "fonts", "images", "javascript", "portfolio", "stylesheets", "templates", "html", "components", "watch", "webserver"]);
