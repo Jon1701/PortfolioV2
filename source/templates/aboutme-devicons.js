@@ -9,6 +9,27 @@ $(document).ready(function() {
     // List of icon data.
     iconData : [
       {
+        className: "devicons devicons-html5",
+        iconName: "devicons-html5",
+        name: "HTML5",
+        description: "A markup language used for structuring and presenting content on the World Wide Web"
+      },
+
+      {
+        className: "devicons devicons-css3",
+        iconName: "devicons-css3",
+        name: "CSS3",
+        description: "A style sheet language used for describing the presentation of a document written in a markup language"
+      },
+
+      {
+        className: "devicons devicons-javascript_badge",
+        iconName: "devicons-javascript_badge",
+        name: "JavaScript",
+        description: "A high-level, dynamic, untyped, and interpreted programming language. Alongside HTML and CSS, it is one of the three core technologies of World Wide Web content production"
+      },
+
+      {
         className: "devicons devicons-jquery",
         iconName: "devicons-jquery",
         name: "jQuery",
