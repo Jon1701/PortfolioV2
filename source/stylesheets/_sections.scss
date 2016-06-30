@@ -5,6 +5,7 @@ $bg-section-home-url: "../images/backgrounds/W1YL4ZANPU.png";
 $bg-section-aboutme-url: "../images/backgrounds/cubes/cubes.png";
 $bg-section-portfolio-url: "../images/backgrounds/cubes/cubes.png";
 $bg-section-contact-url: "../images/backgrounds/footer_lodyas/footer_lodyas.png";
+$bg-section-footer-url: "../images/backgrounds/dark_wood/dark_wood.png";
 
 ////////////////////////////////////////////////////////////////////////////////
 // Colours
@@ -100,15 +101,21 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   // Horizontal rule dividing name from repository buttons.
   hr {
     border: 0;
-    width: 60%;
+    width: 20%;
     height: 3px;
 
     background-color: $white;
     color: $white;
   }
 
+  .content {
+    margin-bottom: 50px;
+  }
+
   // Developer icons (actually font-awesome) for GitHub, LinkedIn, FreeCodeCamp
   .container-devicons-array {
+
+    margin-top: 50px;
 
     // Icon hover effects.
     .icon { &:hover { transition: all 0.5s ease; }; };
@@ -162,6 +169,11 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   // Background Image.
   background: url($bg-section-portfolio-url);
 
+  .blurb {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
   .container-devicon-array {
 
     // Space icon containers out.
@@ -179,8 +191,8 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 #section-contact {
 
   min-height: 1vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+
+  padding-bottom: 13vh;
 
   // Background Image.
   background: url($bg-section-contact-url);
@@ -233,6 +245,9 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
       margin-top: 45px;
 
+      padding-top: 15px;
+      padding-bottom: 15px;
+
       border: solid 1px $white;
       background-color: transparent;
       color: $white;
@@ -244,6 +259,7 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
       &:hover {
         background-color: $white;
         color: $grey;
+        transition: all 1s ease;
       }
     }
   }
@@ -253,13 +269,17 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 // Footer.
 #section-footer {
 
+  // Background Image.
+  //background: url($bg-section-footer-url);
+  background-color: $grey;
+
   // No padding, and no minimum height.
   padding: 0;
   min-height: 0vh;
 
   // Add padding to top and bottom.
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 
   // Fonts.
   font-family: "Oswald";
@@ -268,6 +288,9 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   // Developer icons (actually font-awesome) for GitHub, LinkedIn, FreeCodeCamp
   .container-devicons-array {
 
+    margin-bottom: 30px;
+
+    /*
     // Icon hover effects.
     .icon { &:hover { transition: all 0.5s ease; }; };
 
@@ -275,6 +298,7 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
     .fa-github:hover {color: $colour-github-grey; };
     .fa-linkedin-square:hover {color: $colour-linkedin-blue; };
     .fa-fire:hover {color: $colour-freecodecamp-green; };
+    */
 
     // Link colours.
     a {

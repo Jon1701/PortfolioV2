@@ -170,6 +170,9 @@
 
   .title { font-size: 5em; }; // Section Title.
 
+  // Tiny blurb.
+  .blurb { font-size: 2.75em; };
+
   // Portfolio project title.
   .portfolio-project-title { font-size: 2.5em; };
 
@@ -204,6 +207,6 @@
 // Footer
 #section-footer {
 
-  .content { font-size: 3em; }; // Section Body.
-  .icon { font-size: 2.5em; }; // Icon size.
+  .content { font-size: 2em; }; // Section Body.
+  .icon { font-size: 2.75em; }; // Icon size.
 }
