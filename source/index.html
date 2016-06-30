@@ -31,6 +31,12 @@
     <!-- Miscellaneous effects -->
     <script type="text/javascript" src="javascript/effects.js"></script>
 
+    <!-- consectetur -->
+    <script type="text/javascript" src="javascript/consectetur.js"></script>
+
+
+
+
   </head>
 
   <body>
@@ -388,30 +394,50 @@
 
       <div class="content">
 
-        <!-- Contact Form -->
-        <form>
 
+        <div class="alert alert-success" role="alert">Message sent</div>
+
+        <!-- Contact Form -->
+        <form id="form-contact" method="POST">
+
+          <!-- Name -->
           <div class="fieldset">
             <div>
-              <input type="text" name="name">
+              <input type="text" name="name" required>
             </div>
             <div>
               <label for="name">Name</label>
             </div>
           </div>
 
+          <!-- Email -->
           <div class="fieldset">
             <div>
-              <input type="text" name="email">
+              <input type="text" name="_replyto" required>
             </div>
             <div>
-              <label for="email">Email</label>
+              <label for="_replyto">Email</label>
             </div>
           </div>
 
+          <!-- Subject -->
+          <!--
+          <div class="fieldset">
+            <div>
+              <input type="text" name="subject">
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+            </div>
+          </div>
+          -->
+
+          <input type="text" name="_gotcha" style="display:none" />
+
+          <!-- Message -->
           <div class="fieldset">
           <div>
-            <textarea name="message"></textarea>
+            <textarea name="message" required></textarea>
           </div>
           <div>
             <label for="message">Message</label>
@@ -423,8 +449,8 @@
             Send Message
           </button>
 
-
         </form>
+
         <!-- End Contact Form -->
 
       </div>
