@@ -184,7 +184,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
     .container-devicon { display: inline-block; };
   }
 
-
 }
 
 // Contact
@@ -270,7 +269,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 #section-footer {
 
   // Background Image.
-  //background: url($bg-section-footer-url);
   background-color: $grey;
 
   // No padding, and no minimum height.
@@ -289,16 +287,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
   .container-devicons-array {
 
     margin-bottom: 30px;
-
-    /*
-    // Icon hover effects.
-    .icon { &:hover { transition: all 0.5s ease; }; };
-
-    // Icon colours.
-    .fa-github:hover {color: $colour-github-grey; };
-    .fa-linkedin-square:hover {color: $colour-linkedin-blue; };
-    .fa-fire:hover {color: $colour-freecodecamp-green; };
-    */
 
     // Link colours.
     a {
