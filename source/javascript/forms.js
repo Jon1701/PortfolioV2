@@ -128,20 +128,13 @@ $(document).ready(function() {
 
   }
 
-  // Action.
-  var action = atob("aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vam9uLmJhbG9uQGFsdW0udXRvcm9udG8uY2E=");
-
-  // Uncomment during development to prevent accidental spam.
-  //action = "www.jonbalon.io";
-
-  // Set form action.
-  $("#form-contact").attr("action", action);
-
   // Alert box.
-  var alertBox = $("#section-contact .alert-success");
+  var alertBoxSuccess = $("#section-contact .alert-success");
+  var alertBoxDanger = $("#section-contact .alert-danger");
 
   // Hide alert box.
-  alertBox.hide();
+  alertBoxSuccess.hide();
+  alertBoxDanger.hide();
 
   // Error free flags.
   var nameIsValid = false;
@@ -154,39 +147,67 @@ $(document).ready(function() {
   // Check if email is valid.
   $("#field-email").on("input", testEmailField);
 
+  // Check if gotcha is empty.
+  var checkGotchaEmpty = $("#field-gotcha").val() === "";
+
   // Check if message is valid.
   $("#field-message").on("input", testMessageField);
 
   // On submit, check if all fields are valid, and send the request.
-  $("#form-contact").submit(function(event) {
+  $("#form-btn-submit").on("click", function(event) {
+
+    // Prevent submit.
+    event.preventDefault();
 
     // Check if all fields are valid.
-    if (nameIsValid && emailIsValid && messageIsValid) { // All valid.
+    if (nameIsValid && emailIsValid && messageIsValid && checkGotchaEmpty) { // All valid.
 
-      // Popup message and clear form.
-      $("#section-contact .alert-success").fadeIn("slow", function() {
-        $(this).show();
+      // Send email via AJAX.
+      $.ajax({
+          url: atob("aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vam9uLmJhbG9uQGFsdW0udXRvcm9udG8uY2E="),
+          method: "POST",
+          data: {
+            name: $("#field-name").val(),
+            _replyto: $("#field-email").val(),
+            message: $("#field-message").val()
+          },
+          dataType: "json",
+          success: function() {
 
-        // Clear the form.
-        $("#field-name").val("");
-        $("#field-email").val("");
-        $("#field-message").val("");
+            $("#section-contact .alert-success").fadeIn("slow", function() {
+              $(this).show();
 
-        // Reset indicator.
-        $("#field-name").removeClass("field-valid");
-        $("#field-email").removeClass("field-valid");
-        $("#field-message").removeClass("field-valid");
+              // Clear the form.
+              $("#field-name").val("");
+              $("#field-email").val("");
+              $("#field-message").val("");
 
-        return false;
+              // Reset indicator.
+              $("#field-name").removeClass("field-valid");
+              $("#field-email").removeClass("field-valid");
+              $("#field-message").removeClass("field-valid");
 
+              // Reset flags
+              nameIsValid = false;
+              emailIsValid = false;
+              messageIsValid = false;
+
+            });
+
+            return false;
+          }
       });
-
-      return false;
 
     } else { // Invalid, prevent submission.
 
       // Prevent submit.
       event.preventDefault();
+
+      // Show error message.
+      $("#section-contact .alert-danger").fadeIn("fast", function() {
+        $(this).show();
+      });
+
       return false;
     }
 
@@ -194,14 +215,21 @@ $(document).ready(function() {
 
   // Hide the alertbox if there is a change to the text input.
   $("#form-contact input").keydown(function() {
-    alertBox.hide();
+    alertBoxSuccess.hide();
+    alertBoxDanger.hide()
   });
   $("#form-contact textarea").keydown(function() {
-    alertBox.hide();
+    alertBoxSuccess.hide();
+    alertBoxDanger.hide();
   });
 
   // Close the alertbox if clicked.
-  $("#form-alertbox").on("click", function() {
+  $("#form-alertbox-success").on("click", function() {
+    $(this).fadeOut("slow", function() {
+      $(this).hide();
+    });
+  })
+  $("#form-alertbox-danger").on("click", function() {
     $(this).fadeOut("slow", function() {
       $(this).hide()
     });

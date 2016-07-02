@@ -290,18 +290,22 @@
       <div class="content">
 
         <!-- Alert box -->
-        <div id="form-alertbox" class="alert alert-success" role="alert">
+        <div id="form-alertbox-success" class="alert alert-success" role="alert">
           <div>Message sent</div>
+          <div class="fa fa-times-circle fa-fw"></div>
+        </div>
+        <div id="form-alertbox-danger" class="alert alert-danger" role="alert">
+          <div>Check all fields</div>
           <div class="fa fa-times-circle fa-fw"></div>
         </div>
 
         <!-- Contact Form -->
-        <form id="form-contact" method="POST">
+        <form id="form-contact">
 
           <!-- Name -->
           <div class="fieldset">
             <div>
-              <input id="field-name" class="field-neutral" type="text" name="name" required>
+              <input id="field-name" class="field-neutral" type="text" name="name" minlength="3" maxlength="50" required>
             </div>
             <div>
               <label for="name">Name</label>
@@ -311,7 +315,7 @@
           <!-- Email -->
           <div class="fieldset">
             <div>
-              <input id="field-email" class="field-neutral" type="text" name="_replyto" required>
+              <input id="field-email" class="field-neutral" type="text" name="_replyto" minlength="3" maxlength="50" required>
             </div>
             <div>
               <label for="_replyto">Email</label>
@@ -319,12 +323,12 @@
           </div>
 
           <!-- Voluptate id aliquip mollit consectetur qui minim ex culpa ut voluptate. -->
-          <input type="text" name="_gotcha" style="display:none" />
+          <input id="field-gotcha" type="text" name="_gotcha" style="display:none" />
 
           <!-- Message -->
           <div class="fieldset">
           <div>
-            <textarea id="field-message" class="field-neutral" name="message" required></textarea>
+            <textarea id="field-message" class="field-neutral" name="message" minlength="10" required></textarea>
           </div>
           <div>
             <label for="message">Message</label>
@@ -332,7 +336,7 @@
           </div>
 
           <!-- Submit -->
-          <button type="submit">
+          <button id="form-btn-submit">
             <span class="fa fa-paper-plane-o fa-fw"></span>
             Send Message
           </button>
