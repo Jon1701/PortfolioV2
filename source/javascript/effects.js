@@ -1,21 +1,11 @@
 $(document).ready(function() {
 
   //////////////////////////////////////////////////////////////////////////////
-  // Navbar mouseover/mouseleave effect.
+  // Navbar toggle
   //////////////////////////////////////////////////////////////////////////////
-
-  // Callback function: show the > symbol on navbar links.
-  function mouseEnter() {
-    $(this).children("span").css("visibility", "visible");
-  }
-
-  // Callback function: hide the > symbol on navbar links.
-  function mouseLeave() {
-    $(this).children("span").css("visibility", "hidden");
-  }
-
-  // Perform effect when mouse enters/leaves a navbar link.
-  $(".navbar-nav > li > a").hover(mouseEnter, mouseLeave);
+  $("#navbar-main .handle").on("click", function() {
+    $("#navbar-main ul").toggleClass("showing");
+  });
 
   //////////////////////////////////////////////////////////////////////////////
   // Navbar background effect
@@ -28,18 +18,22 @@ $(document).ready(function() {
     if ($(document).scrollTop() > 100) {
 
       // Remove transparent background.
-      $("#navbar-main").removeClass("navbar-transparent-bg");
+      $("#navbar-main ul").removeClass("navbar-bg-transparent");
+      $(".handle").removeClass("navbar-bg-transparent");
 
       // Apply a light dark background.
-      $("#navbar-main").addClass("navbar-lightdark-bg");
+      $("#navbar-main ul").addClass("navbar-bg-translucent");
+      $(".handle").addClass("navbar-bg-translucent");
 
     } else { // When not scrolled more than 100 from the top,
 
       // Remove light dark background.
-      $("#navbar-main").removeClass("navbar-lightdark-bg");
+      $("#navbar-main ul").removeClass("navbar-bg-translucent");
+      $(".handle").removeClass("navbar-bg-translucent");
 
       // Apply transparent background.
-      $("#navbar-main").addClass("navbar-transparent-bg");
+      $("#navbar-main ul").addClass("navbar-bg-transparent");
+      $(".handle").addClass("navbar-bg-transparent");
 
     }
 
@@ -50,7 +44,7 @@ $(document).ready(function() {
   //////////////////////////////////////////////////////////////////////////////
 
   // When a navbar link is clicked,
-  $("#navbar-main > li > a").on("click", function(event) {
+  $("#navbar-main a").on("click", function(event) {
 
     // Do not immediately go to the desired section.
     event.preventDefault();
