@@ -8,77 +8,6 @@ body {
   font-family: 'Oswald', sans-serif;
   font-size: 100%; }
 
-@media screen and (min-width: 320px) {
-  .controls {
-    font-size: 1.25em; }
-  .clock {
-    width: 250px;
-    height: 250px;
-    font-size: 2em; }
-  .instructions {
-    font-size: 1.5em; } }
-
-@media screen and (min-width: 480px) {
-  .controls {
-    font-size: 1.25em; }
-  .clock {
-    width: 400px;
-    height: 400px;
-    font-size: 2em; }
-  .instructions {
-    font-size: 1.25em; } }
-
-@media screen and (min-width: 768px) {
-  .controls {
-    font-size: 2em; }
-  .clock {
-    width: 600px;
-    height: 600px;
-    font-size: 3em; }
-  .instructions {
-    font-size: 2em; } }
-
-#app-container {
-  position: absolute;
-  max-width: 100vw; }
-  #app-container .clearfix {
-    clear: both; }
-  #app-container .controls {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 0px; }
-    #app-container .controls .duration {
-      display: inline-block;
-      float: left;
-      padding: 0;
-      margin: 0; }
-    #app-container .controls .break {
-      display: inline-block;
-      float: right;
-      padding: 0;
-      margin: 0; }
-    #app-container .controls .minus, #app-container .controls .plus {
-      padding-left: 25px;
-      padding-right: 25px;
-      cursor: hand; }
-  #app-container .clock {
-    cursor: hand;
-    position: relative;
-    width: 250px;
-    height: 250px;
-    background-color: #333333;
-    margin: 0 auto;
-    text-align: center;
-    border: solid 20px white;
-    border-radius: 100%; }
-
-.container-clockdisplay {
-  position: absolute; }
-
-.instructions {
-  margin-top: 15px;
-  text-align: center; }
-
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -95,9 +24,65 @@ body {
                                   not supported by any browser */ }
 
 .middle {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.text-center {
+  text-align: center; }
+
 .hidden {
   visibility: hidden; }
+
+#app-container {
+  width: 99vw;
+  height: 99vh;
+  margin: auto; }
+
+#app-title {
+  font-size: 5vmax; }
+
+#app-clock {
+  border: solid 10px white;
+  width: 65vmin;
+  height: 65vmin;
+  border-radius: 100%;
+  cursor: pointer; }
+  #app-clock .container-clockdisplay {
+    font-size: 10vmin; }
+
+#app-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: table;
+  width: 100%; }
+  #app-controls .control {
+    display: table-cell;
+    width: 33.33%;
+    vertical-align: middle;
+    font-size: 2vmax; }
+    #app-controls .control .container-control {
+      display: table;
+      width: 100%; }
+      #app-controls .control .container-control .minus {
+        display: table-cell;
+        width: 33.33%;
+        text-align: right;
+        vertical-align: middle;
+        font-family: monospace;
+        font-size: 7vmax;
+        cursor: pointer; }
+      #app-controls .control .container-control .info {
+        display: table;
+        width: 100%;
+        font-size: 1em; }
+      #app-controls .control .container-control .plus {
+        display: table-cell;
+        width: 33.33%;
+        text-align: left;
+        vertical-align: middle;
+        font-family: monospace;
+        font-size: 7vmax;
+        cursor: pointer; }

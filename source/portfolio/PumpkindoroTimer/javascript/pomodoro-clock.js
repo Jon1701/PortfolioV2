@@ -35,7 +35,7 @@ function timerSessionFunction() {
       timerSession = null;
 
       // Reset numSecondsSession.
-      numSecondsSession = parseInt($(".duration > .widgets > .value").text()) * 60;
+      numSecondsSession = parseInt($(".duration .info .value").text()) * 60;
 
       // Update label on clock.
       $("#display-session > .display").eq(0).text(formatMinutesCountdown(numSecondsSession));
@@ -80,7 +80,7 @@ function timerBreakFunction() {
       timerBreak = null;
 
       // Reset numSecondsBreak.
-      numSecondsBreak = parseInt($(".break > .widgets > .value").text()) * 60;
+      numSecondsBreak = parseInt($(".break .info .value").text()) * 60;
 
       // Update label on clock.
       $("#display-break > .display").text(formatMinutesCountdown(numSecondsSession));
@@ -133,7 +133,7 @@ function plusMinusControls() {
     var className = $(this).attr("class");
 
     // Find the parent, and access its child .value button.
-    var btnValue = $(this).parent().children(".value");
+    var btnValue = $(this).siblings(".info").children(".value");
 
     // Get the container div node.
     //
@@ -141,6 +141,7 @@ function plusMinusControls() {
     //
     // Split the id by - and take last element.
     var parentId = $(this).parent("div").attr("id");
+
     parentId = parentId.split("-").slice(-1)[0];
 
     // Get the current value;
@@ -210,6 +211,9 @@ function plusMinusControls() {
 
 $(document).ready(function() {
 
+  // Control arrow font size;
+  //$(".minus")
+
   // Current state of the clock.
   active = false;
 
@@ -227,7 +231,6 @@ $(document).ready(function() {
   // Increments/Decrements the .value button text by 1 when the
   // .minus or .plus buttons are pressed.
   $(".minus, .plus").on("click", plusMinusControls);
-
 
   $(".clock").on("click", function() {
 

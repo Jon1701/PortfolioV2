@@ -17,41 +17,45 @@
 
   <body>
 
+    <script type="text/javascript">
+      /*
+            <div class="duration">
+              <div class="name">Session Length</div>
+              <div class="widgets" id="parent-duration">
+                <span class="minus">&#10096;</span>
+                <span class="value">1</span>
+                <span class="plus">&#10097;</span>
+              </div>
+              <div class="name">minutes</div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions">
+              Click the above circle to start/stop the timer.
+            </div>
+
+            <div class="break">
+              <div class="name">Break Length</div>
+              <div class="widgets" id="parent-break">
+                <span class="minus">&#10096;</span>
+                <span class="value">30</span>
+                <span class="plus">&#10097;</span>
+              </div>
+              <div class="name">minutes</div>
+            </div>
+          */
+      </script>
     <!-- Start Main Container -->
     <div id="app-container" class="noselect middle">
 
-      <!-- Controls -->
-      <div class="controls">
-
-        <div class="duration">
-          <div class="name">Session Length</div>
-          <div class="widgets" id="parent-duration">
-            <span class="minus">&#10096;</span>
-            <span class="value">1</span>
-            <span class="plus">&#10097;</span>
-          </div>
-          <div class="name">seconds</div>
-        </div>
-
-        <div class="break">
-          <div class="name">Break Length</div>
-          <div class="widgets" id="parent-break">
-            <span class="minus">&#10096;</span>
-            <span class="value">30</span>
-            <span class="plus">&#10097;</span>
-          </div>
-          <div class="name">seconds</div>
-        </div>
-
-      </div>
-
-      <div class="clearfix"></div>
+      <!-- Title -->
+      <div id="app-title" class="text-center">Pumpkindoro Timer</div>
 
       <!-- Clock -->
-      <div class="clock">
+      <div id="app-clock" class="middle clock">
 
         <!-- Display Session Time -->
-        <div id="display-session" class="container-clockdisplay middle">
+        <div id="display-session" class="container-clockdisplay text-center middle">
           <div class="mode">
             Session
           </div>
@@ -61,7 +65,7 @@
         </div>
 
         <!-- Display Break Time -->
-        <div id="display-break" class="container-clockdisplay middle hidden">
+        <div id="display-break" class="container-clockdisplay text-center middle hidden">
           <div class="mode">
             Break
           </div>
@@ -74,8 +78,39 @@
 
 
 
-      <!-- Instructions -->
-      <div class="instructions">Click the above circle to start/stop the timer.</div>
+      <!-- Controls -->
+      <div id="app-controls" class="controls text-center">
+
+        <div class="control duration">
+          <div class="container-control" id="parent-duration">
+            <div class="minus">&lt;</div>
+            <div class="info">
+              <div class="name">Duration</div>
+              <div class="value">1</div>
+              <div class="name minute">min.</div>
+            </div>
+            <div class="plus">&gt;</div>
+          </div>
+        </div>
+
+        <div class="control instructions">
+          Click the circle to start/stop the timer.
+        </div>
+
+        <div class="control break">
+          <div class="container-control" id="parent-break">
+            <div class="minus">&lt;</div>
+            <div class="info">
+              <div class="name">Break</div>
+              <div class="value">30</div>
+              <div class="name minute">min.</div>
+            </div>
+            <div class="plus">&gt;</div>
+          </div>
+        </div>
+
+      </div>
+
 
     </div>
     <!-- End Main Container -->
