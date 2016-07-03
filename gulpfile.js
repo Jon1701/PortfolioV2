@@ -75,8 +75,8 @@ gulp.task("components", function() {
     .pipe(gulp.dest(destPath + "components/jquery/"));
 
   // Bootstrap.
-  gulp.src(modulesPath + "bootstrap/dist/**/*")
-    .pipe(gulp.dest(destPath + "components/bootstrap/"));
+  gulp.src(srcPath + "components/bootstrap/css/bootstrap.css")
+    .pipe(gulp.dest(destPath + "components/bootstrap/css/"));
 
   // Font-Awesome
   gulp.src(modulesPath + "font-awesome/css/*")
