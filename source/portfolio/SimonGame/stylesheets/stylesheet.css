@@ -24,33 +24,32 @@ body {
   background-color: #34495E; }
 
 #board {
-  width: 800px;
-  height: 800px;
-  margin: 0 auto; }
+  position: relative; }
   #board .btn {
-    display: table-cell;
-    width: 400px;
-    height: 400px; }
+    position: absolute; }
 
 #board-mask {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border-radius: 100%;
   background-color: rgba(33, 33, 33, 0); }
 
-#board-buttons-inner-donut {
-  pointer-events: none;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto; }
-  #board-buttons-inner-donut .btn {
-    display: table-cell;
-    background-color: #34495E;
-    width: 200px;
-    height: 200px; }
+#btn-green {
+  top: 0;
+  left: 0; }
+
+#btn-red {
+  top: 0;
+  right: 0; }
+
+#btn-yellow {
+  bottom: 0;
+  left: 0; }
+
+#btn-blue {
+  bottom: 0;
+  right: 0; }
 
 .btn-green-inactive {
   background-color: #00A74A; }
@@ -116,39 +115,111 @@ body {
   border-right: solid 5px #1C8CFF;
   border-bottom: solid 5px #1C8CFF; }
 
-#control-panel-outer-donut {
-  width: 380px;
-  height: 380px;
+#control-panel-bg {
+  position: absolute;
   background-color: #ECE7EE;
   border: solid 5px #34495E;
   border-radius: 100%; }
 
 #control-panel {
+  position: absolute;
   font-family: 'Share Tech Mono', monospace;
   background-color: none;
   text-align: center; }
   #control-panel #title {
-    font-size: 4.5em; }
+    font-size: 1.5em; }
   #control-panel #lcd {
     background-color: white;
     border: solid 4px #333333;
     border-radius: 5%;
     outline: none;
-    width: 125px;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 3em;
     color: black; }
   #control-panel #btn-start, #control-panel #btn-strict {
     background-color: transparent;
     border: none;
     outline: none;
+    text-align: center;
     margin: 0;
     padding: 0;
-    width: 100px;
-    height: 125px;
     font-family: 'Oswald', sans-serif;
-    font-size: 2em;
     color: black; }
     #control-panel #btn-start span, #control-panel #btn-strict span {
-      font-size: 1.5em;
-      line-height: 0px; }
+      line-height: 15px;
+      font-size: 1em; }
+
+@media screen and (min-width: 320px) {
+  #board {
+    width: 315px;
+    height: 315px; }
+    #board .btn {
+      width: 152.5px;
+      height: 152.5px; }
+  #control-panel-bg {
+    width: 152.5px;
+    height: 152.5px; }
+  #control-panel #title {
+    font-size: 1.5em; }
+  #control-panel #lcd {
+    width: 75%;
+    font-size: 2em;
+    margin-bottom: 0px; }
+  #control-panel #btn-start, #control-panel #btn-strict {
+    width: 50px;
+    height: 50px; }
+    #control-panel #btn-start .indicator-symbol, #control-panel #btn-strict .indicator-symbol {
+      font-size: 3em; }
+    #control-panel #btn-start .indicator-name, #control-panel #btn-strict .indicator-name {
+      font-size: 1em; } }
+
+@media screen and (min-width: 480px) {
+  #board {
+    width: 475px;
+    height: 475px; }
+    #board .btn {
+      width: 232.5px;
+      height: 232.5px; }
+  #control-panel-bg {
+    width: 232.5px;
+    height: 232.5px; }
+  #control-panel #title {
+    font-size: 2.5em; }
+  #control-panel #lcd {
+    width: 95%;
+    font-size: 3em;
+    margin-bottom: 25px; }
+  #control-panel #btn-start, #control-panel #btn-strict {
+    width: 50px;
+    height: 50px; }
+    #control-panel #btn-start span, #control-panel #btn-strict span {
+      line-height: 20px; }
+    #control-panel #btn-start .indicator-symbol, #control-panel #btn-strict .indicator-symbol {
+      font-size: 4em; }
+    #control-panel #btn-start .indicator-name, #control-panel #btn-strict .indicator-name {
+      font-size: 1.5em; } }
+
+@media screen and (min-width: 768px) {
+  #board {
+    width: 760px;
+    height: 760px; }
+    #board .btn {
+      width: 375px;
+      height: 375px; }
+  #control-panel-bg {
+    width: 375px;
+    height: 375px; }
+  #control-panel #title {
+    font-size: 3.5em; }
+  #control-panel #lcd {
+    width: 150px;
+    font-size: 4em;
+    margin-bottom: 5px; }
+  #control-panel #btn-start, #control-panel #btn-strict {
+    width: 150px;
+    height: 150px; }
+    #control-panel #btn-start span, #control-panel #btn-strict span {
+      line-height: 35px; }
+    #control-panel #btn-start .indicator-symbol, #control-panel #btn-strict .indicator-symbol {
+      font-size: 5em; }
+    #control-panel #btn-start .indicator-name, #control-panel #btn-strict .indicator-name {
+      font-size: 2em; } }
