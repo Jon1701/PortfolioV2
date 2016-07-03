@@ -37,6 +37,12 @@ $red: #DC143C;
                                   not supported by any browser */
 }
 
+.image-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .clearfix {
   clear: both;
   visibility: hidden;
