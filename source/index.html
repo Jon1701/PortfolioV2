@@ -208,39 +208,26 @@
           <!-- End Portfolio Image -->
 
           <!-- Portfolio Button Array -->
-          <div class="btn-group btn-group-justified portfolio-project-btn-array" role="group" aria-label="...">
+          <div class="container-btn-array">
 
-            <!-- Demo -->
-            <div class="btn-group" role="group">
-              <a href="{{ link.demo }}" target="_blank">
-                <button type="button" class="btn btn-default btn-portfolio-demo">
-                  <div><i class="icon icon-demo fa fa-play-circle-o fa-fw"></i></div>
-                  <div class="name">Demo</div>
-                </button>
-              </a>
+            <a href="{{ link.demo }}" target="_blank">
+              <div class="button button-demo">
+                <div><i class="icon icon-demo fa fa-play-circle-o fa-fw"></i></div>
+                <div class="name">Demo</div>
+              </div>
+            </a>
+
+            <div class="button button-moreinfo" data-portfolio-reference="{{ popout.id }}">
+              <div><i class="icon icon-moreinfo fa fa-info-circle fa-fw"></i></div>
+              <div class="name">More Info</div>
             </div>
-            <!-- End Demo -->
 
-            <!-- More Info -->
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default btn-portfolio-info" data-portfolio-reference="{{ popout.id }}">
-                <div><i class="icon icon-moreinfo fa fa-info-circle fa-fw"></i></div>
-                <div class="name">More Info</div>
-              </button>
-            </div>
-            <!-- End More Info -->
-
-            <!-- GitHub -->
-            <div class="btn-group" role="group">
-              <a href="{{ link.github }}" target="_blank">
-                <button type="button" class="btn btn-default btn-portfolio-github">
-                  <div><i class="icon icon-github fa fa-github fa-fw"></i></div>
-                  <div class="name">GitHub</div>
-                </button>
-              </a>
-            </div>
-            <!-- End GitHub -->
-
+            <a href="{{ link.github }}" target="_blank">
+              <div class="button button-github">
+                <div><i class="icon icon-github fa fa-github fa-fw"></i></div>
+                <div class="name">GitHub</div>
+              </div>
+            </a>
           </div>
           <!-- End Portfolio Button Array -->
 

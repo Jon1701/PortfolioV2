@@ -1,23 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Single portfolio panel
 ////////////////////////////////////////////////////////////////////////////////
-.container-portfolio-project {
-  display: block;
-  padding-top: 15px;
 
-  position: relative;
 
-  // Portfolio Image Container.
-  .portfolio-image-container {
-
-    // Image
-    img {
-      border: solid 1px $lightgrey;
-      background-color: $white;
-      padding: 3px;
-    }
-
-  }
 
   // Portfolio Title.
   .portfolio-project-title {
@@ -32,34 +17,65 @@
   }
 
 
-  // Container for Demo, Info, GitHub buttons.
-  .portfolio-project-btn-array {
-    border-left: solid 1px $lightgrey;
-    border-right: solid 1px $lightgrey;
-    border-bottom: solid 1px $lightgrey;
-    background-color: $white;
 
-    // Demo, Info, GitHub button styles.
-    .btn-default {
 
-      // Borders.
-      border: 0px;
-      border-top: 0px;
-      border-bottom: 0px;
-      border-radius: 0px;
-      outline: none;
 
-      // Hover styles.
-      &:hover {
-        color: $red;
-        background-color: transparent;
+  // Portfolio Image Container.
+  .portfolio-image-container {
+
+    // Image
+    img {
+      border: solid 1px $lightgrey;
+      background-color: $white;
+      padding: 3px;
+    }
+
+  }
+
+
+
+  // Demo, More Info, GitHub Buttons.
+  .container-portfolio-project {
+    display: block;
+    padding-top: 15px;
+
+    position: relative;
+
+    .container-btn-array {
+      width: 100%;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      };
+
+      .button {
+        background-color: $white;
+        border-bottom: solid 1px $lightgrey;
+        width: 33.33%;
+        float: left;
+
+        margin: 0 auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        .icon { font-size: 4em; };
+        .name { font-size: 2em; };
+
+        &:hover {
+          color: $red;
+          cursor: pointer;
+        };
       }
-      &:focus {
-        background-color: transparent;
-      }
+
+      .button-demo {border-left: solid 1px $lightgrey;};
+      .button-github {border-right: solid 1px $lightgrey;};
 
     }
-  }
+
+
+
+
 
   .container-portfolio-project-description {
 

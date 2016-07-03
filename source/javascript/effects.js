@@ -76,17 +76,17 @@ $(document).ready(function() {
   // and only show the container for the selected portfolio project. Also, if
   // the same "More Info" button is pressed, close its Description.
   //
-  $(".btn-portfolio-info").on("click", function() {
+  $(".button-moreinfo").on("click", function() {
 
     // Get the data-portfolio-reference value for the clicked element.
     var currentReference = $(this).data("portfolio-reference");
 
     // Select all More Info buttons.
-    var allReferences = $(".btn-portfolio-info").toArray();
+    var allReferences = $(".button-moreinfo").toArray();
 
     // Get a list of all data-portfolio-reference="" values attached to the
     // More Info buttons.
-    allReferences = $(".btn-portfolio-info").map(function() {
+    allReferences = $(".button-moreinfo").map(function() {
       return $(this).data("portfolio-reference");
     }).get();
 
