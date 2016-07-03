@@ -5,8 +5,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 var gulp = require("gulp");
 var sass = require("gulp-sass");
-var webserver = require('gulp-webserver');
-var minifyCSS = require("gulp-minify-css");
+var webserver = require("gulp-webserver");
 var uglify = require("gulp-uglify");
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -21,7 +20,6 @@ var modulesPath = "./node_modules/";
 ////////////////////////////////////////////////////////////////////////////////
 
 // Move CNAME.
-// Move fonts.
 gulp.task("cname", function() {
   gulp.src("assets/CNAME")
     .pipe(gulp.dest(destPath));
@@ -55,8 +53,7 @@ gulp.task("portfolio", function() {
 // Compile and move stylesheets.
 gulp.task("stylesheets", function() {
   gulp.src(srcPath + "stylesheets/**/*")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(minifyCSS())
+    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
     .pipe(gulp.dest(destPath + "stylesheets/"));
 });
 
@@ -82,12 +79,12 @@ gulp.task("components", function() {
 
   // Bootstrap.
   gulp.src(srcPath + "components/bootstrap/css/bootstrap.css")
-    .pipe(minifyCSS())
+    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
     .pipe(gulp.dest(destPath + "components/bootstrap/css/"));
 
   // Font-Awesome
-  gulp.src(modulesPath + "font-awesome/css/*")
-    .pipe(minifyCSS())
+  gulp.src(modulesPath + "font-awesome/css/font-awesome.css")
+    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
     .pipe(gulp.dest(destPath + "components/font-awesome/css/"));
   gulp.src(modulesPath + "font-awesome/fonts/*")
     .pipe(gulp.dest(destPath + "components/font-awesome/fonts/"));
@@ -99,7 +96,7 @@ gulp.task("components", function() {
 
   // Dev Icons
   gulp.src(modulesPath + "devicons/css/devicons.css")
-    .pipe(minifyCSS())
+    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
     .pipe(gulp.dest(destPath + "components/devicons/css/"));
     gulp.src(modulesPath + "devicons/fonts/*")
       .pipe(gulp.dest(destPath + "components/devicons/fonts/"));
