@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 // Background Image URLs
 ////////////////////////////////////////////////////////////////////////////////
-$bg-section-home-url: "../images/backgrounds/W1YL4ZANPU.png";
+$bg-section-home-url: "../images/backgrounds/W1YL4ZANPU.jpg";
 $bg-section-aboutme-url: "../images/backgrounds/cubes/cubes.png";
 $bg-section-portfolio-url: "../images/backgrounds/cubes/cubes.png";
 $bg-section-contact-url: "../images/backgrounds/footer_lodyas/footer_lodyas.png";
@@ -146,13 +146,6 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
   // Fonts.
   font-family: "Oswald";
-
-  .container-w3c-badges {
-    div img {
-      margin: 0 auto;
-      width: 10vw;
-    }
-  }
 
   // Array of devicons.
   .container-devicons-array {
