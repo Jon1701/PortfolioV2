@@ -11,6 +11,19 @@ $(document).ready(function() {
   // Navbar background effect
   //////////////////////////////////////////////////////////////////////////////
 
+  // Add translucent background if the menu is expanded.
+  //
+  // Initially the user will be on the Home section, which has a light
+  // background, and cannot see the menu if on mobile.
+  $(".handle").on("click", function() {
+
+    if ($("ul").hasClass("showing")) {
+      $("ul").removeClass("navbar-bg-transparent");
+      $("ul").addClass("navbar-bg-translucent");
+    }
+
+  });
+
   // Effect triggers when window scrolls.
   $(window).scroll(function() {
 
