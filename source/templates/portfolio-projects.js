@@ -148,11 +148,11 @@ $(document).ready(function() {
       {
         image: "../images/portfolio/cover-website.png",
         title: "JonBalon.io",
-        description: "Press F5 (or Command-R)",
+        description: "Press F5 (or ⌘-R)",
         popout: {
           id: "portfolio-project-6"
         },
-        components: [component.html5, component.css3, component.jquery, component.mustache, component.bootstrap],
+        components: [component.html5, component.css3, component.jquery, component.mustache],
         link: {
           github: "https://github.com/Jon1701/WebsiteV2",
           demo: "https://www.jonbalon.io"
