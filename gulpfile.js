@@ -6,6 +6,8 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var webserver = require('gulp-webserver');
+var minifyCSS = require("gulp-minify-css");
+var uglify = require("gulp-uglify");
 
 ////////////////////////////////////////////////////////////////////////////////
 // Paths
@@ -40,6 +42,7 @@ gulp.task("images", function() {
 // Move JavaScript.
 gulp.task("javascript", function() {
   gulp.src(srcPath + "javascript/**/*")
+    .pipe(uglify())
     .pipe(gulp.dest(destPath + "javascript/"));
 });
 
@@ -53,11 +56,13 @@ gulp.task("portfolio", function() {
 gulp.task("stylesheets", function() {
   gulp.src(srcPath + "stylesheets/**/*")
     .pipe(sass().on("error", sass.logError))
+    .pipe(minifyCSS())
     .pipe(gulp.dest(destPath + "stylesheets/"));
 });
 
 gulp.task("templates", function() {
   gulp.src(srcPath + "templates/**/*")
+    .pipe(uglify())
     .pipe(gulp.dest(destPath + "templates/"));
 });
 
@@ -72,24 +77,29 @@ gulp.task("components", function() {
 
   // jQuery.
   gulp.src(modulesPath + "jquery/dist/jquery.js")
+    .pipe(uglify())
     .pipe(gulp.dest(destPath + "components/jquery/"));
 
   // Bootstrap.
   gulp.src(srcPath + "components/bootstrap/css/bootstrap.css")
+    .pipe(minifyCSS())
     .pipe(gulp.dest(destPath + "components/bootstrap/css/"));
 
   // Font-Awesome
   gulp.src(modulesPath + "font-awesome/css/*")
+    .pipe(minifyCSS())
     .pipe(gulp.dest(destPath + "components/font-awesome/css/"));
   gulp.src(modulesPath + "font-awesome/fonts/*")
     .pipe(gulp.dest(destPath + "components/font-awesome/fonts/"));
 
   // Mustache.js
   gulp.src(modulesPath + "mustache/mustache.js")
+    .pipe(uglify())
     .pipe(gulp.dest(destPath + "components/mustache/"));
 
   // Dev Icons
-  gulp.src(modulesPath + "devicons/css/*")
+  gulp.src(modulesPath + "devicons/css/devicons.css")
+    .pipe(minifyCSS())
     .pipe(gulp.dest(destPath + "components/devicons/css/"));
     gulp.src(modulesPath + "devicons/fonts/*")
       .pipe(gulp.dest(destPath + "components/devicons/fonts/"));
