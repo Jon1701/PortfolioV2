@@ -178,10 +178,10 @@
   .portfolio-project-title { font-size: 2.5em; };
 
   // Portfolio Project Buttons (Demo, More Info, GitHub).
-  .portfolio-project-btn-array {
-    .icon { font-size: 2.75em; };
-    .name {font-size: 1.25em; };
-  };
+  .container-portfolio-project {
+    .icon { font-size: 4em; };
+    .name { font-size: 2em; };
+  }
 
   // Popover.
   .container-portfolio-project-description {
