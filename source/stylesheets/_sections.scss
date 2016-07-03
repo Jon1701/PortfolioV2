@@ -88,8 +88,8 @@ $colour-freecodecamp-green: rgba(00,64,00,0.7);
 
   // Buffer zone.
   padding-top: 20vh;
-  padding-left: 0vw;
-  padding-right: 0vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 
   // Background Image.
   @include set-bg-cover($bg-section-home-url, "dark", 0.3);
