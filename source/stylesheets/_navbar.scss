@@ -67,7 +67,6 @@
 
       &:hover {
         color: $red;
-        span { visibility: visible; };
       }
     }// end link and link effects.
   }// end navbar item.
@@ -92,10 +91,6 @@
 
     .showing {
       max-height: 20em;
-
-      .arrow {
-        display: none;
-      }
     }
 
     // Menu.
