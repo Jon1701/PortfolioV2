@@ -27,3 +27,5 @@
 .container-devicons-github_badge { @include colourize($lightgrey); };
 .container-devicons-code { @include colourize($lightgrey); };
 .container-devicons-terminal { @include colourize($lightgrey); };
+
+.container-devicons-materializecss { @include colourize(#EE6E73); };
