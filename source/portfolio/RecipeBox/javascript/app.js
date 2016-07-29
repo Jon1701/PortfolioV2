@@ -21230,7 +21230,7 @@
 	      var blankRecipe = {
 	        'id': _nodeUuid2.default.v4(),
 	        'name': '',
-	        'picture': '../media/images/placeholders/recipe-no-image.png',
+	        'picture': './media/images/placeholders/recipe-no-image.png',
 	        'description': '',
 	        'ingredients': '',
 	        'instructions': ''
