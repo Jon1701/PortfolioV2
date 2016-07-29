@@ -21271,7 +21271,7 @@
 
 	      // Load default recipes.
 	      window.defaultRecipes = function () {
-	        _jquery2.default.getJSON('../data/recipes-default.json', function (data) {
+	        _jquery2.default.getJSON('./data/recipes-default.json', function (data) {
 	          thisComp.setState({
 	            recipes: data
 	          });
