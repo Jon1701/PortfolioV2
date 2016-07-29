@@ -132,8 +132,15 @@ $(document).ready(function() {
         iconName: "devicons-code",
         name: "Flask",
         description: "Flask is a micro web framework written in Python and based on the Werkzeug toolkit and Jinja2 template engine."
-      }
+      },
 
+      // Materialize
+      {
+        className: "devicons devicons-materializecss",
+        iconName: "devicons-materializecss",
+        name: "Materialize",
+        description: "A modern responsive front-end framework based on Material Design"
+      }
 
     ]
 

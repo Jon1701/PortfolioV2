@@ -62,6 +62,14 @@ $(document).ready(function() {
       className: "devicons devicons-sass",
       iconName:"devicons-sass",
       iconDescription: "A CSS pre-processor with syntax advancements."
+    },
+
+    // Materialize
+    materialize: {
+      name: "Materialize",
+      className: "devicons devicons-materializecss",
+      iconName: "devicons-materializecss",
+      iconDescription: "A modern responsive front-end framework based on Material Design"
     }
 
   }
@@ -76,16 +84,16 @@ $(document).ready(function() {
     projects: [
 
       {
-        image: "../images/portfolio/cover-quote-generator.png",
-        title: "Life is Strange Quote Generator",
-        description: "Relive the horror here with quotes from the game",
+        image: "../images/portfolio/cover-recipebox.png",
+        title: "Recipe Box",
+        description: "Recipe Box",
         popout: {
           id: "portfolio-project-1"
         },
-        components: [component.html5, component.css3, component.javascript, component.jquery],
+        components: [component.html5, component.css3, component.javascript, component.react, component.materialize],
         link: {
-          github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
-          demo: "../portfolio/LifeIsStrangeQuoteGenerator"
+          github: "https://github.com/Jon1701/RecipeBox",
+          demo: "../portfolio/RecipeBox"
         }
       },
 
