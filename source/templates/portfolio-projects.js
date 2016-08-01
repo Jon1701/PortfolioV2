@@ -165,7 +165,36 @@ $(document).ready(function() {
           github: "https://github.com/Jon1701/WebsiteV2",
           demo: "https://www.jonbalon.io"
         }
+      },
+
+      {
+        image: "../images/portfolio/cover-quote-generator.png",
+        title: "Life is Strange Quote Generator",
+        description: "Relive the horror here with quotes from the game",
+        popout: {
+          id: "portfolio-project-7"
+        },
+        components: [component.html5, component.css3, component.javascript, component.jquery],
+        link: {
+          github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
+          demo: "../portfolio/LifeIsStrangeQuoteGenerator"
+        }
+      },
+
+      {
+        image: "../images/portfolio/cover-markdown-previewer.png",
+        title: "Markdown Previewer",
+        description: "Converts markdown into HTML markup",
+        popout: {
+          id: "portfolio-project-8"
+        },
+        components: [component.html5, component.css3, component.javascript, component.react],
+        link: {
+          github: "https://github.com/Jon1701/MarkdownPreviewer",
+          demo: "../portfolio/MarkdownPreviewer"
+        }
       }
+
 
     ]// End list.
   } // End data
