@@ -6,7 +6,6 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var webserver = require("gulp-webserver");
-var uglify = require("gulp-uglify");
 
 ////////////////////////////////////////////////////////////////////////////////
 // Paths
@@ -40,7 +39,6 @@ gulp.task("images", function() {
 // Move JavaScript.
 gulp.task("javascript", function() {
   gulp.src(srcPath + "javascript/**/*")
-    .pipe(uglify())
     .pipe(gulp.dest(destPath + "javascript/"));
 });
 
@@ -59,7 +57,6 @@ gulp.task("stylesheets", function() {
 
 gulp.task("templates", function() {
   gulp.src(srcPath + "templates/**/*")
-    .pipe(uglify())
     .pipe(gulp.dest(destPath + "templates/"));
 });
 
@@ -74,7 +71,6 @@ gulp.task("components", function() {
 
   // jQuery.
   gulp.src(modulesPath + "jquery/dist/jquery.js")
-    .pipe(uglify())
     .pipe(gulp.dest(destPath + "components/jquery/"));
 
   // Bootstrap.
@@ -91,7 +87,6 @@ gulp.task("components", function() {
 
   // Mustache.js
   gulp.src(modulesPath + "mustache/mustache.js")
-    .pipe(uglify())
     .pipe(gulp.dest(destPath + "components/mustache/"));
 
   // Dev Icons
