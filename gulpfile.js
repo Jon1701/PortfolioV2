@@ -49,13 +49,6 @@ gulp.task("images", function() {
     .pipe(gulp.dest(destPath + "images/"));
 });
 
-// Move JavaScript.
-
-//gulp.task("javascript", function() {
-//  gulp.src(srcPath + "javascript/**/*")
-//    .pipe(gulp.dest(destPath + "javascript/"));
-//});
-
 // Move portfolio.
 gulp.task("portfolio", function() {
   gulp.src(srcPath + "portfolio/**/*")
@@ -83,10 +76,6 @@ gulp.task("html", function() {
 // Move Components.
 gulp.task("components", function() {
 
-  // jQuery.
-  //gulp.src(modulesPath + "jquery/dist/jquery.js")
-  //  .pipe(gulp.dest(destPath + "components/jquery/"));
-
   // Bootstrap.
   gulp.src(srcPath + "components/bootstrap/css/bootstrap.css")
     .pipe(sass().on("error", sass.logError))
@@ -98,10 +87,6 @@ gulp.task("components", function() {
     .pipe(gulp.dest(destPath + "components/font-awesome/css/"));
   gulp.src(modulesPath + "font-awesome/fonts/*")
     .pipe(gulp.dest(destPath + "components/font-awesome/fonts/"));
-
-  // Mustache.js
-  //gulp.src(modulesPath + "mustache/mustache.js")
-  //  .pipe(gulp.dest(destPath + "components/mustache/"));
 
   // Dev Icons
   gulp.src(modulesPath + "devicons/css/devicons.css")
