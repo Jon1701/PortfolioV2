@@ -119,7 +119,7 @@ $(document).ready(function() {
   // and only show the container for the selected portfolio project. Also, if
   // the same "More Info" button is pressed, close its Description.
   //
-  $(".button-moreinfo").on("click", function() {
+  $("#section-portfolio").on("click", ".button-moreinfo", function() {
 
     // Get the data-portfolio-reference value for the clicked element.
     var currentReference = $(this).data("portfolio-reference");
