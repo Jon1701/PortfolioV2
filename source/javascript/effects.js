@@ -1,6 +1,107 @@
 $(document).ready(function() {
 
   //////////////////////////////////////////////////////////////////////////////
+  // Function to calculate the start and ending positions of the Home, About Me,
+  // Portfolio, and Contact Me sections.
+  //////////////////////////////////////////////////////////////////////////////
+  function getSectionDimensions() {
+
+    // Shorthand variables to access DOM elements.
+    var $home = $("#section-home");
+    var $aboutme = $("#section-aboutme");
+    var $portfolio = $("#section-portfolio");
+    var $contact = $("#section-contact");
+
+    // Return an object containing the start and end positions for each section.
+    return {
+      'home': {
+        'start': $home.offset().top,
+        'end': $home.offset().top + $home.outerHeight()
+      },
+      'aboutme': {
+        'start': $aboutme.offset().top,
+        'end': $aboutme.offset().top + $aboutme.outerHeight()
+      },
+      'portfolio': {
+        'start': $portfolio.offset().top,
+        'end': $portfolio.offset().top + $portfolio.outerHeight()
+      },
+      'contact': {
+        'start': $contact.offset().top,
+        'end': $contact.offset().top + $contact.outerHeight()
+      }
+    }// end return/
+  }// end function.
+
+  //////////////////////////////////////////////////////////////////////////////
+  // Function to calculate the start and ending positions of the Home, About Me,
+  // Portfolio, and Contact Me sections.
+  //////////////////////////////////////////////////////////////////////////////
+  $(window).scroll(function() {
+
+    // Current offset from top of page + 100px.
+    var screenTop = $(document).scrollTop() + 100;
+
+    // Get dimensions and position of each section.
+    sectionDimensions = getSectionDimensions();
+
+    // Check to see if the current screen position is inside any of the Home,
+    // About me, portfolio, contact sections.
+    if (screenTop >= sectionDimensions.home.start && screenTop < sectionDimensions.home.end) {
+
+      // If inside the Home section, remove navbar .active classes,
+      // and add .active class to Home nav item.
+      $(".container-items li").removeClass('active');
+      $(".container-items li:nth-child(1)").addClass('active');
+
+    } else if (screenTop >= sectionDimensions.aboutme.start && screenTop < sectionDimensions.aboutme.end) {
+
+      // If inside the About Me section, remove navbar .active classes,
+      // and add .active class to About Me nav item.
+      $(".container-items li").removeClass('active');
+      $(".container-items li:nth-child(2)").addClass('active');
+
+    } else if (screenTop >= sectionDimensions.portfolio.start && screenTop < sectionDimensions.portfolio.end) {
+
+      // If inside the Portfolio section, remove navbar .active classes,
+      // and add .active class to Portfolio nav item.
+      $(".container-items li").removeClass('active');
+      $(".container-items li:nth-child(3)").addClass('active');
+
+    } else if (screenTop >= sectionDimensions.contact.start && screenTop < sectionDimensions.contact.end) {
+
+      // If inside the Contact Me section, remove navbar .active classes,
+      // and add .active class to Contact me nav item.
+      $(".container-items li").removeClass('active');
+      $(".container-items li:nth-child(4)").addClass('active');
+
+    } // end if.
+
+  });
+
+  //////////////////////////////////////////////////////////////////////////////
+  // Navbar item hover effects.
+  //////////////////////////////////////////////////////////////////////////////
+  $("#navbar-main .container-items li").on("click", function(event) {
+
+    // Prevent default action.
+    event.preventDefault();
+
+    // Remove existing .active classes from navbar items.
+    $("#navbar-main .container-items li").removeClass("active");
+
+    // Add .active class to the clicked navbar item.
+    $(this).addClass("active");
+
+    // Get the hyperlink.
+    var hyperlink = $(this).children('a').attr('href');
+
+    $("html, body").animate({
+      scrollTop: $(hyperlink).offset().top
+    }, 500);
+  });
+
+  //////////////////////////////////////////////////////////////////////////////
   // Portfolio Project Description Popouts.
   //////////////////////////////////////////////////////////////////////////////
 

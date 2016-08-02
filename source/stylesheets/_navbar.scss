@@ -1,0 +1,95 @@
+#navbar-main {
+
+  // Navbar bottom shadow.
+  box-shadow: -5px 0 20px $grey;
+
+  // Navbar item hover effect definition..
+  @mixin navbar-hover() {
+    background-color: white;
+    color: $red;
+    box-shadow: inset 0 -3px 0 0 $red;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+
+  // Navbar item active effect.
+  .active {
+    @include navbar-hover();
+  }
+
+  position: fixed;
+  width: 100%;
+
+  background-color: white;
+  color: $grey;
+
+  // Highest layer.
+  z-index: 100;
+
+  .brand {
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container-items {
+
+    ul {
+      display: -moz-box;
+      display: -webkit-box;
+      display: box;
+
+      margin: 0;
+      padding: 0;
+
+      li {
+          -moz-box-flex: 1;
+          -webkit-box-flex: 1;
+          box-flex: 1;
+          list-style-type: none;
+          text-align: center;
+
+          text-transform: uppercase;
+
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          cursor: pointer;
+
+          // Item hover effect.
+          &:hover {
+            @include navbar-hover();
+          }
+
+          // Icon and button size.
+          .fa {
+            font-size: 3em;
+          }
+
+          // Icon label.
+          .label {
+            font-size: 2em;
+          }
+
+          // Link and link hover effects.
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover { text-decoration: none; };
+          }
+
+      }
+    }
+  }
+
+  // Remove Navbar item labels (retain icons) when screen width is less than
+  // 550px.
+  @media (max-width: 550px) {
+    .container-items {
+      .label {
+        display: none;
+      }
+    }
+  }
+
+}
