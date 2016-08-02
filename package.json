@@ -24,6 +24,7 @@
     "gulp-uglify": "^1.5.4",
     "gulp-webserver": "^0.9.1",
     "jquery": "^3.1.0",
-    "mustache": "^2.2.1"
+    "mustache": "^2.2.1",
+    "webpack-stream": "^3.2.0"
   }
 }

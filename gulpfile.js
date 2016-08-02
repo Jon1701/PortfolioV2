@@ -6,6 +6,7 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var webserver = require("gulp-webserver");
+var webpack = require('webpack-stream');
 
 ////////////////////////////////////////////////////////////////////////////////
 // Paths
@@ -17,6 +18,18 @@ var modulesPath = "./node_modules/";
 ////////////////////////////////////////////////////////////////////////////////
 // Tasks
 ////////////////////////////////////////////////////////////////////////////////
+
+gulp.task('webpack', function() {
+
+  gulp.src(srcPath + 'javascript/index.js')
+    .pipe(webpack({
+      watch: true,
+      output: {
+        filename: 'app.js'
+      }
+    }))
+    .pipe(gulp.dest(destPath + 'javascript/'));
+  });
 
 // Move CNAME.
 gulp.task("cname", function() {
@@ -37,10 +50,11 @@ gulp.task("images", function() {
 });
 
 // Move JavaScript.
-gulp.task("javascript", function() {
-  gulp.src(srcPath + "javascript/**/*")
-    .pipe(gulp.dest(destPath + "javascript/"));
-});
+
+//gulp.task("javascript", function() {
+//  gulp.src(srcPath + "javascript/**/*")
+//    .pipe(gulp.dest(destPath + "javascript/"));
+//});
 
 // Move portfolio.
 gulp.task("portfolio", function() {
@@ -70,8 +84,8 @@ gulp.task("html", function() {
 gulp.task("components", function() {
 
   // jQuery.
-  gulp.src(modulesPath + "jquery/dist/jquery.js")
-    .pipe(gulp.dest(destPath + "components/jquery/"));
+  //gulp.src(modulesPath + "jquery/dist/jquery.js")
+  //  .pipe(gulp.dest(destPath + "components/jquery/"));
 
   // Bootstrap.
   gulp.src(srcPath + "components/bootstrap/css/bootstrap.css")
@@ -86,8 +100,8 @@ gulp.task("components", function() {
     .pipe(gulp.dest(destPath + "components/font-awesome/fonts/"));
 
   // Mustache.js
-  gulp.src(modulesPath + "mustache/mustache.js")
-    .pipe(gulp.dest(destPath + "components/mustache/"));
+  //gulp.src(modulesPath + "mustache/mustache.js")
+  //  .pipe(gulp.dest(destPath + "components/mustache/"));
 
   // Dev Icons
   gulp.src(modulesPath + "devicons/css/devicons.css")
@@ -116,7 +130,6 @@ gulp.task("webserver", function() {
 gulp.task("watch", function() {
   gulp.watch(srcPath + "fonts/**/*", ["fonts"]); // Fonts.
   gulp.watch(srcPath + "images/**/*", ["images"]); // Images.
-  gulp.watch(srcPath + "javascript/**/*", ["javascript"]); // JavaScript.
   gulp.watch(srcPath + "portfolio/**/*", ["portfolio"]); // JavaScript.
   gulp.watch(srcPath + "stylesheets/**/*.scss", ["stylesheets"]); // SASS Main.
   gulp.watch(srcPath + "stylesheets/**/_*.scss", ["stylesheets"]); // SASS Partials.
@@ -127,4 +140,4 @@ gulp.task("watch", function() {
 ////////////////////////////////////////////////////////////////////////////////
 // Default Task.
 ////////////////////////////////////////////////////////////////////////////////
-gulp.task("default", ["cname", "fonts", "images", "javascript", "portfolio", "stylesheets", "templates", "html", "components", "watch", "webserver"]);
+gulp.task("default", ["cname", 'webpack', "fonts", "images", "portfolio", "stylesheets", "templates", "html", "components", "watch", "webserver"]);
