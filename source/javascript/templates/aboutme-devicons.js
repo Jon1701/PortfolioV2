@@ -40,10 +40,24 @@ $(document).ready(function() {
       },
 
       {
+        className: "devicons devicons-javascript_badge",
+        iconName: "devicons-javascript_badge",
+        name: "JSX",
+        description: "JSX is a preprocessor step that adds XML syntax to JavaScript."
+      },
+
+      {
         className: "devicons devicons-bootstrap",
         iconName: "devicons-bootstrap",
         name: "Bootstrap",
         description: "A web framework for designing responsive websites. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components."
+      },
+
+      {
+        className: "devicons devicons-materializecss",
+        iconName: "devicons-materializecss",
+        name: "Materialize",
+        description: "A modern responsive front-end framework based on Material Design"
       },
 
       {
@@ -86,6 +100,13 @@ $(document).ready(function() {
         iconName: "devicons-gulp",
         name: "Gulp",
         description: "A streaming build system used to automate and enhance your development workflow."
+      },
+
+      {
+        className: "devicons devicons-codepen",
+        iconName: "devicons-codepen",
+        name: "Webpack",
+        description: "A module bundler which takes modules with dependencies and generates static assets representing those modules."
       },
 
       {
@@ -137,13 +158,7 @@ $(document).ready(function() {
         description: "Flask is a micro web framework written in Python and based on the Werkzeug toolkit and Jinja2 template engine."
       },
 
-      // Materialize
-      {
-        className: "devicons devicons-materializecss",
-        iconName: "devicons-materializecss",
-        name: "Materialize",
-        description: "A modern responsive front-end framework based on Material Design"
-      }
+
 
     ]
 
