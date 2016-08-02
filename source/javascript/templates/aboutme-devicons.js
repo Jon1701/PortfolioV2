@@ -1,3 +1,6 @@
+var $ = require('jquery');
+var Mustache = require('mustache');
+
 $(document).ready(function() {
 
   // Select the template.
