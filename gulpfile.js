@@ -53,7 +53,7 @@ gulp.task("portfolio", function() {
 // Compile and move stylesheets.
 gulp.task("stylesheets", function() {
   gulp.src(srcPath + "stylesheets/**/*")
-    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
+    .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest(destPath + "stylesheets/"));
 });
 
@@ -79,12 +79,12 @@ gulp.task("components", function() {
 
   // Bootstrap.
   gulp.src(srcPath + "components/bootstrap/css/bootstrap.css")
-    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
+    .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest(destPath + "components/bootstrap/css/"));
 
   // Font-Awesome
   gulp.src(modulesPath + "font-awesome/css/font-awesome.css")
-    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
+    .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest(destPath + "components/font-awesome/css/"));
   gulp.src(modulesPath + "font-awesome/fonts/*")
     .pipe(gulp.dest(destPath + "components/font-awesome/fonts/"));
@@ -96,7 +96,7 @@ gulp.task("components", function() {
 
   // Dev Icons
   gulp.src(modulesPath + "devicons/css/devicons.css")
-    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
+    .pipe(sass().on("error", sass.logError))
     .pipe(gulp.dest(destPath + "components/devicons/css/"));
     gulp.src(modulesPath + "devicons/fonts/*")
       .pipe(gulp.dest(destPath + "components/devicons/fonts/"));
