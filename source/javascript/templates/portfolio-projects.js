@@ -48,7 +48,6 @@ $(document).ready(function() {
       className: "devicons devicons-code",
       iconName:"devicons-code",
       iconDescription: "A logic-less HTML templating system."
-
     },
 
     // React
@@ -73,7 +72,15 @@ $(document).ready(function() {
       className: "devicons devicons-materializecss",
       iconName: "devicons-materializecss",
       iconDescription: "A modern responsive front-end framework based on Material Design"
-    }
+    },
+
+    // D3
+    d3: {
+      name: "D3.js",
+      className: "devicons devicons-code",
+      iconName:"devicons-code",
+      iconDescription: "A JavaScript library for manipulating documents based on data."
+    },
 
   }
 
@@ -196,9 +203,21 @@ $(document).ready(function() {
           github: "https://github.com/Jon1701/MarkdownPreviewer",
           demo: "../portfolio/MarkdownPreviewer"
         }
-      }
+      },
 
-
+      {
+        image: "../images/portfolio/cover-d3-projects.png",
+        title: "FreeCodeCamp D3 Charts",
+        description: "A collection of charts made in D3",
+        popout: {
+          id: "portfolio-project-9"
+        },
+        components: [component.html5, component.css3, component.javascript, component.d3],
+        link: {
+          github: "https://github.com/Jon1701/FCC-D3-Projects",
+          demo: "../portfolio/D3Projects"
+        }
+      },
     ]// End list.
   } // End data
 
