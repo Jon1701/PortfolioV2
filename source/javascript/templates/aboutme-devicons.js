@@ -74,6 +74,14 @@ $(document).ready(function() {
         description: "A logic-less HTML templating system."
       },
 
+      // D3
+      {
+        name: "D3.js",
+        className: "devicons devicons-code",
+        iconName:"devicons-code",
+        iconDescription: "A JavaScript library for manipulating documents based on data."
+      },
+
       {
         className: "devicons devicons-atom",
         iconName: "devicons-atom",
@@ -157,8 +165,6 @@ $(document).ready(function() {
         name: "Flask",
         description: "Flask is a micro web framework written in Python and based on the Werkzeug toolkit and Jinja2 template engine."
       },
-
-
 
     ]
 
