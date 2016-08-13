@@ -218,6 +218,21 @@ $(document).ready(function() {
           demo: "../portfolio/D3Projects"
         }
       },
+
+      {
+        image: "../images/portfolio/cover-gameoflife.png",
+        title: "The Game of Life",
+        description: "A simulation of Conway's Game of Life, built with React.js",
+        popout: {
+          id: "portfolio-project-10"
+        },
+        components: [component.html5, component.css3, component.javascript, component.react],
+        link: {
+          github: "https://github.com/Jon1701/GameOfLife",
+          demo: "../portfolio/GameOfLife"
+        }
+      },
+
     ]// End list.
   } // End data
 
