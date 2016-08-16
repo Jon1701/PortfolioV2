@@ -233,6 +233,20 @@ $(document).ready(function() {
         }
       },
 
+      {
+        image: "../images/portfolio/cover-dungeoncrawler.png",
+        title: "Dungeon Crawler",
+        description: "A simple dungeon crawler game",
+        popout: {
+          id: "portfolio-project-11"
+        },
+        components: [component.html5, component.css3, component.javascript, component.react],
+        link: {
+          github: "https://github.com/Jon1701/DungeonCrawler",
+          demo: "../portfolio/DungeonCrawler"
+        }
+      },
+
     ]// End list.
   } // End data
 
