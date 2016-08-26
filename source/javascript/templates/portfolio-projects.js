@@ -82,6 +82,23 @@ $(document).ready(function() {
       iconDescription: "A JavaScript library for manipulating documents based on data."
     },
 
+    // Node
+    nodejs: {
+      name: "Node.js",
+      className: "devicons devicons devicons-nodejs",
+      iconName: "devicons-nodejs",
+      iconDescription: "Node.js is an open-source, cross-platform runtime environment for developing server-side Web applications."
+    },
+
+    // Express
+    expressjs: {
+      name: "Express.js",
+      className: "devicons devicons-code",
+      iconName: "devicons-code",
+      iconDescription: "Express.js is a Node.js web application framework for creating web and network applications."
+    },
+
+
   }
 
   // Select the template.
@@ -94,9 +111,24 @@ $(document).ready(function() {
     projects: [
 
       {
+        image: "../images/portfolio/cover-requestheaderparser.png",
+        title: "Request Header Parser Microservice",
+        description: "Simple Node.js/Express.js application to parse web browser HTTP request headers",
+        popout: {
+          id: "portfolio-project-12"
+        },
+        components: [component.html5, component.css3, component.react, component.nodejs, component.expressjs],
+        link: {
+          github: "https://github.com/Jon1701/MS-RequestHeaderParser",
+          demo: "https://ms-request-header-parser-jon1701.c9users.io"
+        }
+      },
+
+
+      {
         image: "../images/portfolio/cover-recipebox.png",
         title: "Recipe Box",
-        description: "Recipe Box",
+        description: "Simple web application built using React.js and Materialize to store recipes using a web browser's local storage",
         popout: {
           id: "portfolio-project-1"
         },
@@ -107,117 +139,21 @@ $(document).ready(function() {
         }
       },
 
-      {
-        image: "../images/portfolio/cover-pumpkindoro-timer.png",
-        title: "Pumpkindoro Timer",
-        description: "A variation of the world famous Pomodoro Timer, now made with real pumpkins.",
-        popout: {
-          id: "portfolio-project-2"
-        },
-        components: [component.html5, component.css3, component.javascript, component.jquery],
-        link: {
-          github: "https://github.com/Jon1701/PumpkindoroTimer",
-          demo: "../portfolio/PumpkindoroTimer"
-        }
-      },
 
       {
-        image: "../images/portfolio/cover-simongame.png",
-        title: "Simon Game",
-        description: "A classic, rebuilt for modern times, and in 4K. (Batteries not included)",
+        image: "../images/portfolio/cover-dungeoncrawler.png",
+        title: "Dungeon Crawler",
+        description: "A simple dungeon crawler game",
         popout: {
-          id: "portfolio-project-3"
-        },
-        components: [component.html5, component.css3, component.javascript, component.jquery],
-        link: {
-          github: "https://github.com/Jon1701/SimonGame",
-          demo: "../portfolio/SimonGame"
-        }
-      },
-
-      {
-        image: "../images/portfolio/cover-twitch-viewer.png",
-        title: "TwitchViewer",
-        description: "See what some of my favourite Twitch streamers are playing",
-        popout: {
-          id: "portfolio-project-4"
-        },
-        components: [component.html5, component.css3, component.javascript, component.jquery, component.react],
-        link: {
-          github: "https://github.com/Jon1701/TwitchViewer",
-          demo: "../portfolio/TwitchViewer"
-        }
-      },
-
-      {
-        image: "../images/portfolio/cover-wikiviewer.png",
-        title: "Wiki Viewer",
-        description: "Search for Wikipedia using Wikipedia",
-        popout: {
-          id: "portfolio-project-5"
-        },
-        components: [component.html5, component.css3, component.javascript, component.jquery, component.mustache],
-        link: {
-          github: "https://github.com/Jon1701/WikiViewer",
-          demo: "../portfolio/WikiViewer"
-        }
-      },
-
-      {
-        image: "../images/portfolio/cover-website.png",
-        title: "JonBalon.io",
-        description: "Press F5 (or ⌘-R)",
-        popout: {
-          id: "portfolio-project-6"
-        },
-        components: [component.html5, component.css3, component.jquery, component.mustache],
-        link: {
-          github: "https://github.com/Jon1701/WebsiteV2",
-          demo: "https://www.jonbalon.io"
-        }
-      },
-
-      {
-        image: "../images/portfolio/cover-quote-generator.png",
-        title: "Life is Strange Quote Generator",
-        description: "Relive the horror here with quotes from the game",
-        popout: {
-          id: "portfolio-project-7"
-        },
-        components: [component.html5, component.css3, component.javascript, component.jquery],
-        link: {
-          github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
-          demo: "../portfolio/LifeIsStrangeQuoteGenerator"
-        }
-      },
-
-      {
-        image: "../images/portfolio/cover-markdown-previewer.png",
-        title: "Markdown Previewer",
-        description: "Converts markdown into HTML markup",
-        popout: {
-          id: "portfolio-project-8"
+          id: "portfolio-project-11"
         },
         components: [component.html5, component.css3, component.javascript, component.react],
         link: {
-          github: "https://github.com/Jon1701/MarkdownPreviewer",
-          demo: "../portfolio/MarkdownPreviewer"
+          github: "https://github.com/Jon1701/DungeonCrawler",
+          demo: "../portfolio/DungeonCrawler"
         }
       },
 
-      {
-        image: "../images/portfolio/cover-d3-projects.png",
-        title: "FreeCodeCamp D3 Charts",
-        description: "A collection of charts made in D3",
-        popout: {
-          id: "portfolio-project-9"
-        },
-        components: [component.html5, component.css3, component.javascript, component.d3],
-        link: {
-          github: "https://github.com/Jon1701/FCC-D3-Projects",
-          demo: "../portfolio/D3Projects"
-        }
-      },
 
       {
         image: "../images/portfolio/cover-gameoflife.png",
@@ -233,19 +169,111 @@ $(document).ready(function() {
         }
       },
 
+
       {
-        image: "../images/portfolio/cover-dungeoncrawler.png",
-        title: "Dungeon Crawler",
-        description: "A simple dungeon crawler game",
+        image: "../images/portfolio/cover-d3-projects.png",
+        title: "FreeCodeCamp D3 Charts",
+        description: "A collection of charts made in D3",
         popout: {
-          id: "portfolio-project-11"
+          id: "portfolio-project-9"
+        },
+        components: [component.html5, component.css3, component.javascript, component.d3],
+        link: {
+          github: "https://github.com/Jon1701/FCC-D3-Projects",
+          demo: "../portfolio/D3Projects"
+        }
+      },
+
+
+      {
+        image: "../images/portfolio/cover-twitch-viewer.png",
+        title: "TwitchViewer",
+        description: "See what some of my favourite Twitch streamers are playing",
+        popout: {
+          id: "portfolio-project-4"
+        },
+        components: [component.html5, component.css3, component.javascript, component.jquery, component.react],
+        link: {
+          github: "https://github.com/Jon1701/TwitchViewer",
+          demo: "../portfolio/TwitchViewer"
+        }
+      },
+
+
+      {
+        image: "../images/portfolio/cover-markdown-previewer.png",
+        title: "Markdown Previewer",
+        description: "Converts markdown into HTML markup",
+        popout: {
+          id: "portfolio-project-8"
         },
         components: [component.html5, component.css3, component.javascript, component.react],
         link: {
-          github: "https://github.com/Jon1701/DungeonCrawler",
-          demo: "../portfolio/DungeonCrawler"
+          github: "https://github.com/Jon1701/MarkdownPreviewer",
+          demo: "../portfolio/MarkdownPreviewer"
         }
       },
+
+
+      {
+        image: "../images/portfolio/cover-simongame.png",
+        title: "Simon Game",
+        description: "A classic, rebuilt for modern times, and in 4K. (Batteries not included)",
+        popout: {
+          id: "portfolio-project-3"
+        },
+        components: [component.html5, component.css3, component.javascript, component.jquery],
+        link: {
+          github: "https://github.com/Jon1701/SimonGame",
+          demo: "../portfolio/SimonGame"
+        }
+      },
+
+
+      {
+        image: "../images/portfolio/cover-wikiviewer.png",
+        title: "Wiki Viewer",
+        description: "Search for Wikipedia using Wikipedia",
+        popout: {
+          id: "portfolio-project-5"
+        },
+        components: [component.html5, component.css3, component.javascript, component.jquery, component.mustache],
+        link: {
+          github: "https://github.com/Jon1701/WikiViewer",
+          demo: "../portfolio/WikiViewer"
+        }
+      },
+
+
+      {
+        image: "../images/portfolio/cover-pumpkindoro-timer.png",
+        title: "Pumpkindoro Timer",
+        description: "A variation of the world famous Pomodoro Timer, now made with real pumpkins.",
+        popout: {
+          id: "portfolio-project-2"
+        },
+        components: [component.html5, component.css3, component.javascript, component.jquery],
+        link: {
+          github: "https://github.com/Jon1701/PumpkindoroTimer",
+          demo: "../portfolio/PumpkindoroTimer"
+        }
+      },
+
+
+      {
+        image: "../images/portfolio/cover-quote-generator.png",
+        title: "Life is Strange Quote Generator",
+        description: "Relive the horror here with quotes from the game",
+        popout: {
+          id: "portfolio-project-7"
+        },
+        components: [component.html5, component.css3, component.javascript, component.jquery],
+        link: {
+          github: "https://github.com/Jon1701/LifeIsStrangeQuoteGenerator",
+          demo: "../portfolio/LifeIsStrangeQuoteGenerator"
+        }
+      },
+
 
     ]// End list.
   } // End data
