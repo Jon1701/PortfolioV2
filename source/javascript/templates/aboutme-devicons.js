@@ -112,8 +112,8 @@ $(document).ready(function() {
 
       {
         name: "Webpack",
-        className: "devicons devicons-codepen",
-        iconName: "devicons-codepen",
+        className: "devicons devicons-code",
+        iconName: "devicons-code",
         description: "A module bundler which takes modules with dependencies and generates static assets representing those modules."
       },
 
